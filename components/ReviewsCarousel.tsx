@@ -63,7 +63,7 @@ const ReviewsCarousel = () => {
         title="What Our Clients Say"
         description="Real Reviews from Satisfied <br /> Customers"
         buttonText="Read More Reviews"
-        isButton={true}
+        isButton={false}
       />
 
       <div className="w-full max-w-3xl mx-auto px-4">

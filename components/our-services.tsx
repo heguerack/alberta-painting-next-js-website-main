@@ -10,6 +10,7 @@ import {
 import ServiceSection from "./service-section";
 import Link from "next/link";
 import { services } from "../app/servicedata";
+import AboutArrow from "@/app/assets/AboutArrow";
 
 export default function OurServices() {
   const [activeSection, setActiveSection] = useState<any>(1);
@@ -33,6 +34,7 @@ export default function OurServices() {
           title="Our Services"
           description="Bringing Colour to Every Corner <br /> of Your Home and Business"
           buttonText="Explore Our Services"
+          isButton={true}
         />
       </div>
 
@@ -90,25 +92,7 @@ export default function OurServices() {
                     {/* Corrected to activeService.href */}
                     <button className="flex items-center gap-2 border-2 border-white rounded-full pl-5 pr-1.5 py-1 text-sm md:text-base font-medium bg-[#0D378D] cursor-pointer transition-colors">
                       Learn More
-                      <svg
-                        width="32"
-                        height="30"
-                        viewBox="0 0 32 30"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <rect
-                          x="0.5"
-                          width="31"
-                          height="30"
-                          rx="15"
-                          fill="white"
-                        />
-                        <path
-                          d="M23 9C23 8.44771 22.5523 8 22 8L13 8C12.4477 8 12 8.44771 12 9C12 9.55228 12.4477 10 13 10L21 10L21 18C21 18.5523 21.4477 19 22 19C22.5523 19 23 18.5523 23 18L23 9ZM10.7071 21.7071L22.7071 9.70711L21.2929 8.29289L9.29289 20.2929L10.7071 21.7071Z"
-                          fill="#0D378D"
-                        />
-                      </svg>
+                      <AboutArrow/>
                     </button>
                   </Link>
                 </div>

@@ -43,7 +43,7 @@ export default function ServiceDetails() {
             quoteLink="/quote"
             bookLink="/contact"
             quoteText="Get a Free Quote"
-            bookText="Book Now"
+            bookText="Question ?"
           />
           {/* Background Image Section */}
           <div className="relative">

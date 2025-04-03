@@ -34,7 +34,7 @@ export default function page() {
         quoteLink="/quote"
         bookLink="/book"
         quoteText="Get a Free Quote"
-        bookText="Book Now"
+        bookText="Question ?"
       />
 
       <PaintingCompany />

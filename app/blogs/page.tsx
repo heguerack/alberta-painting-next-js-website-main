@@ -24,7 +24,7 @@ export default function blogs() {
         quoteLink="/quote"
         bookLink="/book"
         quoteText="Get a Free Quote"
-        bookText="Book Now"
+        bookText="Question ?"
       />
       <main className="container mx-auto px-4 py-8 lg:mt-20 mt-10">
         <BlogGrid posts={posts} />

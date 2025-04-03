@@ -384,7 +384,7 @@ export default function MobileMenu() {
               href="/contact"
               className="bg-[#0D378D] text-white border-4 border-[#CADBFF] text-center px-8 py-1 rounded-4xl font-medium hover:bg-[#0D378D] transition-colors cursor-pointer"
             >
-              <Button className="cursor-pointer">Book Now</Button>
+              <Button className="cursor-pointer">Question ?</Button>
             </Link>
           </div>
         </div>
