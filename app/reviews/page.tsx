@@ -96,7 +96,7 @@ const page = () => {
   return (
     <div>
       <Navbar />
-      {/* Hero Section */}
+
       <section className="h-[400px] md:h-[600px] relative">
         <div className="absolute inset-0">
           <Image
@@ -132,7 +132,7 @@ const page = () => {
         <div className="">
           <div className="bg-[#B7CEFF] rounded-2xl shadow-lg -mt-20 lg:max-w-[30%] max-w-3xl mx-auto px-4 py-4 relative z-10">
             <div className="w-full max-w-3xl mx-auto">
-              {/* Tab Navigation */}
+ 
               <div className="flex gap-4">
                 <button
                   onClick={() => setActiveTab("google")}
@@ -172,7 +172,7 @@ const page = () => {
           </div>
         </div>
         <div className="container w-full lg:w-4xl mx-auto">
-          {/* Content Area */}
+
           <div className="mt-8">
             {activeTab === "google" && (
               <div className="flex flex-col items-center">

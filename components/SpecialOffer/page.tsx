@@ -9,6 +9,7 @@ import slider2 from "@/public/special-Offer-2.png";
 import { Navigation  } from "swiper/modules"
 import BgBackground from '@/public/about-background-vector-line.svg'
 import Link from "next/link";
+import AboutArrow from "@/app/assets/AboutArrow";
 
 const Index = () => {
   useEffect(() => {
@@ -26,12 +27,12 @@ const Index = () => {
       },
       breakpoints: {
         640: {
-          // Small tablets
+          
           slidesPerView: 2,
           spaceBetween: 20,
         },
         768: {
-          // Medium tablets
+          
           slidesPerView: 2,
           spaceBetween: 20,
         },
@@ -41,27 +42,27 @@ const Index = () => {
           spaceBetween: 20,
         },
         1024: {
-          // Small desktops
+          
           slidesPerView: 2,
           spaceBetween: 30,
         },
         1280: {
-          // Medium desktops
+          
           slidesPerView: 2,
           spaceBetween: 30,
         },
         1536: {
-          // Large desktops
+          
           slidesPerView: 2,
           spaceBetween: 30,
         },
       },
     })
 
-    // return () => {
-    //   // Cleanup swiper instance when component unmounts
-    //   if (swiper) swiper.destroy()
-    // }
+    return () => {
+      // Cleanup swiper instance when component unmounts
+      if (swiper) swiper.destroy()
+    }
   }, [])
 
   return (
@@ -72,13 +73,13 @@ const Index = () => {
           Top Calgary House Painting Offers and Discounts
         </h2>
         <div className="offer_bg">
-          {/* Grid layout for content */}
+          
           <div className=" flex flex-col lg:flex-row gap-6 lg:gap-10">
-            {/* Swiper slider section */}
+            
             <div className="w-full lg:w-3/5">
               <div className="swiper mySwiper offer_slider">
                 <div className="swiper-wrapper">
-                  {/* Slide 1 */}
+                 
                   <div className="swiper-slide">
                     <div className="offer-card relative">
                       <Image src={slider1} className="w-full h-auto" alt="Offer 1" />
@@ -93,7 +94,7 @@ const Index = () => {
                       </div>
                     </div>
                   </div>
-                  {/* Slide 2 */}
+                
                   <div className="swiper-slide">
                     <div className="offer-card relative">
                       <Image src={slider2} className="w-full h-auto" alt="Offer 2" />
@@ -108,7 +109,7 @@ const Index = () => {
                       </div>
                     </div>
                   </div>
-                  {/* Slide 3 */}
+                 
                   <div className="swiper-slide">
                     <div className="offer-card relative">
                       <Image src={slider1} className="w-full h-auto" alt="Offer 1" />
@@ -123,7 +124,7 @@ const Index = () => {
                       </div>
                     </div>
                   </div>
-                  {/* Slide 4 */}
+               
                   <div className="swiper-slide">
                     <div className="offer-card relative">
                       <Image src={slider2} className="w-full h-auto" alt="Offer 4" />
@@ -139,12 +140,12 @@ const Index = () => {
                     </div>
                   </div>
                 </div>
-                {/* Navigation Buttons */}
+          
                 <div className="swiper-button-prev image3  custom-prev-button offer_slider_prev" />
                 <div className="swiper-button-next image4 custom-prev-button  offer_slider_next" />
               </div>
             </div>
-            {/* Text content section */}
+        
             <div className="w-full pr-5 flex flex-col justify-center ">
               <h5 className=" lg:text-xl  text-[20px]  mb-5">
                 For a limited time, Alberta Colour Painting is offering exclusive discounts to help you refresh your space at an unbeatable price!
@@ -156,19 +157,8 @@ const Index = () => {
               <Link href="/contact" className="cursor-pointer z-30">
               <button className="flex items-center w-45 mt-3.5 gap-4 border-2 border-white rounded-full pl-5 pr-1.5  py-2 text-sm md:text-base font-medium bg-[#0D378D]  cursor-pointer transition-colors">
                   contact US
-                  <svg
-                    width="32"
-                    height="30"
-                    viewBox="0 0 32 30"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <rect x="0.5" width="31" height="30" rx="15" fill="white" />
-                    <path
-                      d="M23 9C23 8.44771 22.5523 8 22 8L13 8C12.4477 8 12 8.44771 12 9C12 9.55228 12.4477 10 13 10L21 10L21 18C21 18.5523 21.4477 19 22 19C22.5523 19 23 18.5523 23 18L23 9ZM10.7071 21.7071L22.7071 9.70711L21.2929 8.29289L9.29289 20.2929L10.7071 21.7071Z"
-                      fill="#0D378D"
-                    />
-                  </svg>
+                <AboutArrow/>
+                 
                 </button>
               </Link>
             </div>

@@ -75,7 +75,7 @@ const ContactForm = () => {
         GET IN TOUCH
       </p>
       <div className="grid md:grid-cols-2 gap-12 text-center" style={{ textAlign: "left" }}>
-        {/* Contact Info Section */}
+        
         <div className="w-full md:w-full lg:w-[60%] lg:ml-[5em]">
           <h2 className="text-[#0D378D] lg:text-4xl text-2xl font-semibold tracking-normal ">
             HAVE A PROJECT IN MIND OR NEED A QUOTE?
@@ -109,13 +109,13 @@ const ContactForm = () => {
           </p>
         </div>
 
-        {/* Contact Form Section */}
+       
         <div className="contact-form w-full md:w-full lg:w-[90%] shadow-lg rounded-lg p-6 lg:mt-[-30px] md:mt-[-30px] mt-[-70px] bg-white">
           <Formik<ContactFormValues>
             initialValues={{
               name: "",
               email: "",
-              phone: "+1", // Default value with country code
+              phone: "+1", 
               message: "",
             }}
             validationSchema={validationSchema}

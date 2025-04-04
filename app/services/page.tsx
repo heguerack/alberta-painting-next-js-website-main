@@ -18,6 +18,7 @@ import blogsBanner from "@/public/blogs-banner.png";
 import BlogHeros from "@/components/blogs-hero";
 import BgBackground2 from "@/public/above-gallery-bg-line.svg";
 import { services } from "../servicedata";
+import Arrow from "../assets/Arrow";
 
 export default function Services() {
   return (
@@ -32,16 +33,15 @@ export default function Services() {
         quoteLink="/quote"
         bookLink="/book"
         quoteText="Get a Free Quote"
-        bookText="Book Now"
+        bookText="Question ?"
       />
 
-      {/* <PaintingCompany /> */}
 
       <div className="lg:mt-20 mx-4 mt-10">
         <div className="absolute ">
           <Image src={BgBackground2} alt="bg-Image" />
         </div>
-        {/* Services Grid */}
+     
         <div className="container mx-auto max-w-7xl py-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mb-10">
             {services.map((service, index) => (
@@ -76,18 +76,7 @@ export default function Services() {
                   >
                     {service.buttonText}
                     <span className="ml-2 bg-white rounded-full p-2">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="15"
-                        height="14"
-                        viewBox="0 0 15 14"
-                        fill="none"
-                      >
-                        <path
-                          d="M14.5 0.999999C14.5 0.447714 14.0523 -8.61581e-07 13.5 -1.11446e-06L4.5 -3.13672e-07C3.94772 -6.50847e-07 3.5 0.447715 3.5 0.999999C3.5 1.55228 3.94772 2 4.5 2L12.5 2L12.5 10C12.5 10.5523 12.9477 11 13.5 11C14.0523 11 14.5 10.5523 14.5 10L14.5 0.999999ZM2.20711 13.7071L14.2071 1.70711L12.7929 0.292893L0.792893 12.2929L2.20711 13.7071Z"
-                          fill="#0D378D"
-                        />
-                      </svg>
+                    <Arrow/>
                     </span>
                   </Link>
                 </CardFooter>
@@ -101,31 +90,7 @@ export default function Services() {
         <div className="lg:mt-10 mt-5">
           <HomeBanner />
         </div>
-        {/* CTA Banner */}
-        {/* <div className="relative w-full  h-[300px] mb-10 rounded-lg overflow-hidden">
-        <div className="absolute inset-0 bg-black/70">
-          <Image
-            src={PaintingServices}
-            alt="Transform Your Space"
-            fill
-            className="object-cover mix-blend-overlay"
-          />
-        </div>
-        <div className="relative z-10 h-full flex flex-col items-center justify-center text-white p-6 text-center">
-          <h2 className="text-2xl font-bold uppercase mb-2">
-            Ready to transform your space?
-          </h2>
-          <p className="mb-4 max-w-xl">
-           {` Whether you're looking to refresh your home or update your business
-            space, our team is ready to help you create the perfect environment.`}
-          </p>
-          <Button className="bg-primary hover:bg-primary/90 text-white rounded-full">
-            Schedule a Consultation
-          </Button>
-        </div>
-      </div> */}
 
-        {/* Contact Form Section */}
 
         <div className="relative">
           <div className="absolute z-[-200]">
