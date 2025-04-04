@@ -44,7 +44,7 @@ export default function page() {
       </div>
       </div>
       <div className=" ">
-        {/* Quality Section */}
+  
 <div className="container mx-auto max-w-7xl px-4">
   
         <div className="grid md:grid-cols-2 gap-8 items-center relative mt-10 my-3.5 pb-[40px]">
@@ -92,6 +92,7 @@ export default function page() {
               alt="Modern living room with wooden floors and fireplace"
               fill
               className="object-cover "
+              loading="lazy" 
             />
           </div>
         </div>
@@ -156,7 +157,7 @@ export default function page() {
         </div>
 
 
-        {/* Eco-Friendly Section */}
+       
         <div className="grid md:grid-cols-2 gap-8 items-center relative mt-10 my-3.5">
         <div className="absolute top-[400px]">
         <Image src={BgBackground2} alt="bg-Image"/>

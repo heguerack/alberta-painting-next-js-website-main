@@ -136,7 +136,6 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import MobileMenu from "./mobile-menu";
 import Image from "next/image";
-// import ScrollingBanner from "./scrolling-banner";
 import { usePathname } from "next/navigation";
 import Call from "@/app/assets/Call";
 
@@ -157,7 +156,7 @@ export function Navbar() {
 
   return (
     <>
-      {/* <ScrollingBanner /> */}
+
       <header className="bg-white py-2 px-4 md:px-8 sticky top-0 z-[99999] shadow-lg">
         <div className=" mx-auto flex items-center justify-between">
           <div className="flex items-center">

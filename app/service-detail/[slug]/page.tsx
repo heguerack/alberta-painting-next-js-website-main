@@ -12,7 +12,6 @@ import { useEffect, useState } from "react";
 import { services } from "../../servicedata";
 
 export default function ServiceDetails() {
-  // Fixed typo here
   const params = useParams();
   const [service, setService] = useState<any>({});
   const [loading, setLoading] = useState<boolean>(false);
@@ -45,7 +44,7 @@ export default function ServiceDetails() {
             quoteText="Get a Free Quote"
             bookText="Question ?"
           />
-          {/* Background Image Section */}
+
           <div className="relative">
             <div className="absolute top-[-100px] z-[-2]">
               <Image src={BgBackground2} alt="bg-Image" />
@@ -60,18 +59,17 @@ export default function ServiceDetails() {
             </header>
 
             <div className="space-y-6">
-              {/* Service Image */}
-              <div className="relative w-full h-[300px] sm:h-[400px] md:h-[450px] overflow-hidden">
-                <Image
-                  src={service?.coverImage}
-                  alt={service?.slug}
-                  fill
-                  className="md:object-cover sm:object-contain"
-                  priority
-                />
-              </div>
-
-              {/* Service Description */}
+              {service?.coverImage && (
+                <div className="relative w-full h-[300px] sm:h-[400px] md:h-[450px] overflow-hidden">
+                  <Image
+                    src={service?.coverImage}
+                    alt={service?.slug}
+                    fill
+                    className="md:object-cover sm:object-contain"
+                    priority
+                  />
+                </div>
+              )}
               <div className="space-y-4 text-[16px] text-black">
                 {service?.descriptions?.map((item: any, index: any) => (
                   <p key={index}>{item}</p>

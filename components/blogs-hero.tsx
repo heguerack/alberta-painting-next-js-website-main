@@ -41,6 +41,7 @@ const Hero: React.FC<HeroProps> = ({
             src={imageSrc}
             alt="Hero Image"
             fill
+       
             className="object-cover brightness-75"
             priority
           />

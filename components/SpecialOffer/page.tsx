@@ -27,12 +27,12 @@ const Index = () => {
       },
       breakpoints: {
         640: {
-          // Small tablets
+          
           slidesPerView: 2,
           spaceBetween: 20,
         },
         768: {
-          // Medium tablets
+          
           slidesPerView: 2,
           spaceBetween: 20,
         },
@@ -42,27 +42,27 @@ const Index = () => {
           spaceBetween: 20,
         },
         1024: {
-          // Small desktops
+          
           slidesPerView: 2,
           spaceBetween: 30,
         },
         1280: {
-          // Medium desktops
+          
           slidesPerView: 2,
           spaceBetween: 30,
         },
         1536: {
-          // Large desktops
+          
           slidesPerView: 2,
           spaceBetween: 30,
         },
       },
     })
 
-    // return () => {
-    //   // Cleanup swiper instance when component unmounts
-    //   if (swiper) swiper.destroy()
-    // }
+    return () => {
+      // Cleanup swiper instance when component unmounts
+      if (swiper) swiper.destroy()
+    }
   }, [])
 
   return (
@@ -73,13 +73,13 @@ const Index = () => {
           Top Calgary House Painting Offers and Discounts
         </h2>
         <div className="offer_bg">
-          {/* Grid layout for content */}
+          
           <div className=" flex flex-col lg:flex-row gap-6 lg:gap-10">
-            {/* Swiper slider section */}
+            
             <div className="w-full lg:w-3/5">
               <div className="swiper mySwiper offer_slider">
                 <div className="swiper-wrapper">
-                  {/* Slide 1 */}
+                 
                   <div className="swiper-slide">
                     <div className="offer-card relative">
                       <Image src={slider1} className="w-full h-auto" alt="Offer 1" />
@@ -94,7 +94,7 @@ const Index = () => {
                       </div>
                     </div>
                   </div>
-                  {/* Slide 2 */}
+                
                   <div className="swiper-slide">
                     <div className="offer-card relative">
                       <Image src={slider2} className="w-full h-auto" alt="Offer 2" />
@@ -109,7 +109,7 @@ const Index = () => {
                       </div>
                     </div>
                   </div>
-                  {/* Slide 3 */}
+                 
                   <div className="swiper-slide">
                     <div className="offer-card relative">
                       <Image src={slider1} className="w-full h-auto" alt="Offer 1" />
@@ -124,7 +124,7 @@ const Index = () => {
                       </div>
                     </div>
                   </div>
-                  {/* Slide 4 */}
+               
                   <div className="swiper-slide">
                     <div className="offer-card relative">
                       <Image src={slider2} className="w-full h-auto" alt="Offer 4" />
@@ -140,12 +140,12 @@ const Index = () => {
                     </div>
                   </div>
                 </div>
-                {/* Navigation Buttons */}
+          
                 <div className="swiper-button-prev image3  custom-prev-button offer_slider_prev" />
                 <div className="swiper-button-next image4 custom-prev-button  offer_slider_next" />
               </div>
             </div>
-            {/* Text content section */}
+        
             <div className="w-full pr-5 flex flex-col justify-center ">
               <h5 className=" lg:text-xl  text-[20px]  mb-5">
                 For a limited time, Alberta Colour Painting is offering exclusive discounts to help you refresh your space at an unbeatable price!

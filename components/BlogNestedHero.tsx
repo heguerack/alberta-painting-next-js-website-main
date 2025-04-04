@@ -32,6 +32,7 @@ const BlogNestedHero: React.FC<HeroProps> = ({
             fill
             className="object-cover brightness-75"
             priority
+       
           />
         </div>
 

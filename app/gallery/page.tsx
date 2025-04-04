@@ -22,7 +22,7 @@ export default function gallery() {
       };
 
       window.addEventListener("resize", handleResize);
-      handleResize(); // Run once on mount to check window size
+      handleResize(); 
 
       return () => {
         window.removeEventListener("resize", handleResize);
@@ -42,7 +42,7 @@ export default function gallery() {
         bookLink="/book"
         quoteText="Get a Free Quote"
       />
-      {/* <TrustBadges/> */}
+  
       {isMobile ? <OurGalleryMobile /> : <OurGallery />}
 
       <HomeBanner />

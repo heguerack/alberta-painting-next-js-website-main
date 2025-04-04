@@ -51,9 +51,9 @@ export default function Home() {
     </section>
   
   
-  {/* <main className=""> */}
+
       <div className="flex flex-col md:flex-row">
-        {/* Left Section */}
+
         <div className="bg-[#0D378D] text-white p-8 md:p-12 lg:py-30 md:py-20 lg:p-16 flex flex-col justify-center md:w-1/2">
           <div className="max-w-6xl mx-auto">
             <h1 className="lg:text-3xl md:text-2xl text-xl font-bold mb-6 uppercase">We are your Calgary painting company</h1>
@@ -101,20 +101,9 @@ export default function Home() {
           </div>
         </div>
 
-            {/* <div className="flex  mt-20">
-              <button className="flex items-center gap-2 border-2 border-white rounded-full pl-3 pr-1.5 py-2  text-sm md:text-base font-medium hover:bg-blue-800 transition-colors">
-                Book Your Estimate Today
-                <svg width="32" height="30" viewBox="0 0 32 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect x="0.5" width="31" height="30" rx="15" fill="white"/>
-<path d="M23 9C23 8.44771 22.5523 8 22 8L13 8C12.4477 8 12 8.44771 12 9C12 9.55228 12.4477 10 13 10L21 10L21 18C21 18.5523 21.4477 19 22 19C22.5523 19 23 18.5523 23 18L23 9ZM10.7071 21.7071L22.7071 9.70711L21.2929 8.29289L9.29289 20.2929L10.7071 21.7071Z" fill="#0D378D"/>
-</svg>
-
-              </button>
-            </div> */}
           </div>
         </div>
 
-        {/* Right Section - Image */}
         <div className="md:w-1/2 h-[300px] md:h-auto relative">
         <Image
           src={paintingCompany}
@@ -125,7 +114,7 @@ export default function Home() {
         />
         </div>
       </div>
-    {/* </main> */}
+
   
   
   </div>
@@ -141,7 +130,7 @@ export default function Home() {
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {/* Quality Workmanship */}
+
             <div className="flex flex-col  text-start">
               <div className="text-[#0D378D] mb-4">
                 <div className="flex text-start">
@@ -156,7 +145,7 @@ export default function Home() {
               </p>
             </div>
 
-            {/* Quality Materials */}
+
             <div className="flex flex-col ">
               <div className="text-[#0D378D] mb-4">
                <OualityMaterialIcon/>
@@ -170,7 +159,7 @@ export default function Home() {
               </p>
             </div>
 
-            {/* Experienced Team */}
+
             <div className="flex flex-col ">
               <div className="text-[#0D378D] mb-4">
                 <ExperiencedTeam/>
@@ -183,7 +172,7 @@ export default function Home() {
               </p>
             </div>
 
-            {/* Customer Satisfaction */}
+
             <div className="flex flex-col ">
               <div className="text-blue mb-4">
                 <CustomerSatisfactionIcon/>
@@ -199,7 +188,7 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Background decorative element */}
+
      
       </div>
       <DiscussSection/>

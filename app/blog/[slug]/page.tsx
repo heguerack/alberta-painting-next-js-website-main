@@ -42,15 +42,6 @@ export default function BlogPost({ params }: { params: { slug: string } }) {
        imageSrc={homeHero}
        />
 
-  {/* <BlogHero
-        title={post.title}
-      
-        imageSrc={homeHero}
-        quoteLink="/quote"
-        bookLink="/book"
-        quoteText="Get a Free Quote"
-        bookText="Read More"
-      /> */}
       <div className="relative">
       <div className="absolute  z-[-2]">
         <Image src={BgBackground2} alt="bg-Image"/>
@@ -67,9 +58,6 @@ export default function BlogPost({ params }: { params: { slug: string } }) {
       </Link>
 
       <article className="bg-white rounded-lg overflow-hidden ">
-        {/* <div className="relative h-80 w-full">
-          <Image src={post.imageUrl || "/placeholder.svg"} alt={post.title} fill className="object-cover" priority />
-        </div> */}
 
         <div className="p-6">
           <p className="text-sm text-blue-600 font-semibold uppercase tracking-wide">{post.date}</p>

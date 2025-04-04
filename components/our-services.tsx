@@ -41,7 +41,7 @@ export default function OurServices() {
       <div className="w-full bg-black text-white mb-10">
         <div className="container mx-auto max-w-7xl py-8 px-4 lg:py-30">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-32 place-items-center">
-            {/* Services Accordion */}
+          
             <div className="space-y-1">
               <Accordion
                 type="single"
@@ -68,7 +68,7 @@ export default function OurServices() {
               </Accordion>
             </div>
 
-            {/* Featured Content */}
+          
             {activeService && (
               <div className="flex flex-col space-y-4">
                 <div className="relative w-full h-64 md:h-80 overflow-hidden">
@@ -89,7 +89,7 @@ export default function OurServices() {
                   </p>
                   <Link href={"/service-detail/" + activeService?.slug}>
                     {" "}
-                    {/* Corrected to activeService.href */}
+                   
                     <button className="flex items-center gap-2 border-2 border-white rounded-full pl-5 pr-1.5 py-1 text-sm md:text-base font-medium bg-[#0D378D] cursor-pointer transition-colors">
                       Learn More
                       <AboutArrow/>

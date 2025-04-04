@@ -29,6 +29,7 @@ export default function RootLayout({
         <link
           rel="stylesheet"
           href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+        
         />
 
 <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -38,7 +39,7 @@ export default function RootLayout({
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         {children}
         <Toaster />
-        {/* It's better to place the script tag at the bottom of the body for performance */}
+       
         <script
           type="module"
           dangerouslySetInnerHTML={{

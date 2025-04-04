@@ -21,9 +21,9 @@ export default function PaintingCompany() {
       <div className="absolute top-[-390px] z-[-1]">
         <Image src={BgBackground} alt="bg-Image"/>
       </div>
-      {/* Hero Section */}
+    
       <div className=" flex flex-col lg:flex-row  lg:h-[38rem]">
-        {/* Left side with image */}
+
         <div className="relative w-full lg:w-[50%]" >
           <div className="absolute top-10 left-0 z-50 bg-blue-900 text-white py-3 px-4">
             <p className="text-[16px] font-semibold">10 Years of Experience</p>
@@ -38,7 +38,7 @@ export default function PaintingCompany() {
           />
         </div>
 
-        {/* Right side with text */}
+        
         <div className="w-full xl:max-w-2xl   bg-white lg:px-16 px-4 py-8 flex flex-col justify-center ">
           <p className="text-black text-[22px]  font-semibold mb-2">About Us</p>
           <h1 className="lg:text-[36px] text-[26px] font-bold text-[#0D378D] mb-4">
@@ -59,18 +59,18 @@ export default function PaintingCompany() {
           {showLearnMoreButton && (
 
           <Link href="/about" className="cursor-pointer z-30">
-          <button className="bg-blue-900  cursor-pointer text-white rounded-full w-fit pl-4 pr-1.5 py-1 flex items-center gap-2 cursor-pointer">
+          <button className="bg-blue-900 text-white rounded-full w-fit pl-4 pr-1.5 py-1 flex items-center gap-2 cursor-pointer">
             Learn More
           <AboutArrow/>
           </button>
           </Link>
           )}
-        {/* <button className="learn-more-button">Learn More</button> */}
+
       
         </div>
       </div>
 
-      {/* Why Choose Us Section */}
+  
       <div className="bg-[#E2E7F1] py-20 lg:px-4 px-10 relative">
       <div className="absolute top-[-490px]">
         <Image src={BgBackground} alt="bg-Image"/>
@@ -81,7 +81,7 @@ export default function PaintingCompany() {
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {/* Quality Workmanship */}
+            
             <div className="flex flex-col  text-start">
               <div className="text-[#0D378D] mb-4">
                 <div className="flex text-start">
@@ -96,7 +96,7 @@ export default function PaintingCompany() {
               </p>
             </div>
 
-            {/* Quality Materials */}
+           
             <div className="flex flex-col ">
               <div className="text-[#0D378D] mb-4">
                 <OualityMaterialIcon />
@@ -110,7 +110,7 @@ export default function PaintingCompany() {
               </p>
             </div>
 
-            {/* Experienced Team */}
+          
             <div className="flex flex-col ">
               <div className="text-[#0D378D] mb-4">
                 <ExperiencedTeam/>
@@ -123,7 +123,7 @@ export default function PaintingCompany() {
               </p>
             </div>
 
-            {/* Customer Satisfaction */}
+          
             <div className="flex flex-col ">
               <div className="text-blue mb-4">
                 <CustomerSatisfactionIcon/>
@@ -139,7 +139,7 @@ export default function PaintingCompany() {
           </div>
         </div>
 
-        {/* Background decorative element */}
+
       </div>
     </div>
   );

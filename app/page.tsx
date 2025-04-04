@@ -25,7 +25,7 @@ export default function Home() {
   return (
     <main className="flex  flex-col">
       <Navbar />
-      {/* Hero Section */}
+ 
       <Hero />
 
       <PaintingCompany />
@@ -42,11 +42,10 @@ export default function Home() {
         <OurGallery />
         <CalgaryPainting />
 
-        {/* Google Reviews Section */}
+      
         <ReviewsCarousel />
         <ContactFormSection />
 
-        {/* <SpecialOffer /> */}
         <main className="container mx-auto px-4 py-8 ">
           <div className="text-center  mb-10">
             <h4 className=" text-[22px] font-semibold text-black ont-medium">

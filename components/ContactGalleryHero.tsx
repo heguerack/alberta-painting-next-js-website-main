@@ -15,7 +15,7 @@ interface HeroProps {
   title: string;
   title2: string;
   subtitle?: string;
-  subtitle2?: string; // Add subtitle2 for contact page
+  subtitle2?: string; 
   imageSrc: any;
   quoteLink: string;
   bookLink: string;
@@ -31,7 +31,7 @@ const ContactGalleryHero: React.FC<HeroProps> = ({
   quoteLink,
   bookLink,
   quoteText,
-  // bookText,
+
 }) => {
 
   const router = usePathname();
@@ -46,8 +46,9 @@ const ContactGalleryHero: React.FC<HeroProps> = ({
             src={imageSrc}
             alt="Hero Image"
             fill
+        priority
             className="object-cover brightness-75"
-            priority
+          
           />
         </div>
         <div className="md:hidden absolute top-4  right-[-70] transform -translate-x-1/2 z-10">

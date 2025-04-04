@@ -247,6 +247,7 @@ const Hero = () => {
                 src={image.src}
                 alt={image.alt}
                 fill
+                
                 className="object-cover brightness-75 w-full h-full"
                 priority={image.priority}
               />

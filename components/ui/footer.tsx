@@ -13,7 +13,7 @@ export default function Footer() {
   return (
     <div className="bg-black text-white min-h-[400px] p-6 md:p-10">
       <div className="max-w-7xl mx-auto">
-        {/* Header */}
+
         <div className="flex flex-col md:flex-row justify-between  mb-6">
           <div className=" md:text-left mb-6 md:mb-0">
             <h2 className="text-[44px] font-semibold uppercase tracking-wider">
@@ -29,15 +29,14 @@ export default function Footer() {
           </Link>
         </div>
 
-        {/* Divider */}
         <div className="border-t border-gray-700 my-4"></div>
 
-        {/* Content */}
+ 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-0.5 ">
-          {/* Logo and Description */}
+     
           <div className="space-y-6 my-5">
 
-            {/* <div className=" w-48 h-16 flex items-center justify-center rounded"> */}
+   
 
               <Link href="/">
 
@@ -49,7 +48,7 @@ export default function Footer() {
                 className="object-contain"
               />
               </Link>
-            {/* </div> */}
+            
             <p className="text-sm text-white leading-relaxed mt-10">
               {`The Alberta Global Painting logo represents the essence of quality
               work and exceptional service. Our brand features a clean, modern
@@ -58,7 +57,7 @@ export default function Footer() {
             </p>
           </div>
 
-          {/* Quick Links */}
+
           <div className="md:place-self-center">
             <h3 className="font-medium mb-4 text-[20px]">Quick Links</h3>
             <nav>
@@ -83,7 +82,7 @@ export default function Footer() {
             </nav>
           </div>
 
-          {/* Contact Information */}
+
           <div className="place-self-start">
             <h3 className="font-medium mb-4 text-[20px]">Contact</h3>
             <div className="space-y-5 ">
