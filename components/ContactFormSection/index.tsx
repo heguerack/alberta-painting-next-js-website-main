@@ -48,13 +48,13 @@ const ContactFormSection = () => {
    
        const result = await response.text();
    
-    
+       // Show success message
        toast.success("Your message has been sent successfully!", {
          description: "We will get back to you shortly.",
        });
    
-   
-       resetForm(); 
+       // Reset form after success
+       resetForm(); // This will clear the form fields
    
        setSubmitting(false);
      } catch (error: any) {
@@ -83,7 +83,7 @@ const ContactFormSection = () => {
              initialValues={{
                          name: "",
                          email: "",
-                         phone: "+1", 
+                         phone: "+1", // Default value with country code
                          message: "",
                        }}
             validationSchema={validationSchema}
@@ -137,7 +137,7 @@ const ContactFormSection = () => {
                           setFieldValue("phone", value);
                         }
                       }}
-                    
+                      // onBlur={handleBlur}
                     />
                     <ErrorMessage
                       name="phone"

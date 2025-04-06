@@ -1,90 +1,78 @@
-"use client";
-import Image from "next/image";
-import Footer from "@/components/ui/footer";
-import HomeBanner from "@/components/HomeBanner/home-banner";
-import ContactFormSection from "@/components/ContactFormSection";
-import { Navbar } from "@/components/navbar";
-import BlogHeros from "@/components/blogs-hero";
-import blogsBanner from "@/public/blogs-banner.png";
-import BgBackground2 from "@/public/above-gallery-bg-line.svg";
-import { useParams } from "next/navigation";
-import { useEffect, useState } from "react";
-import { services } from "../../servicedata";
+// app/services/[slug]/page.tsx
+import Image from 'next/image'
+import { notFound } from 'next/navigation'
+import blogsBanner from '@/public/blogs-banner.png'
+import BgBackground2 from '@/public/above-gallery-bg-line.svg'
+import HomeBanner from '@/components/HomeBanner/home-banner'
+import ContactFormSection from '@/components/ContactFormSection'
 
-export default function ServiceDetails() {
-  const params = useParams();
-  const [service, setService] = useState<any>({});
-  const [loading, setLoading] = useState<boolean>(false);
+import StandardHero from '@/components/heros/StandardHero'
+import { services } from '@/data/serviceData'
 
-  useEffect(() => {
-    setLoading(true);
-    if (params && params?.slug) {
-      const temp: any = services?.find((el: any) => el?.slug === params?.slug);
-      if (temp) {
-        setService(temp);
-        setLoading(false);
-      } else setLoading(false);
-    } else {
-      setLoading(false);
-    }
-  }, [params]);
+//THIS IS SO YTHAT THE PAGES DONT BECOME DINAMIC PAGES!!
+export async function generateStaticParams() {
+  return services.map((service) => ({
+    slug: service.slug,
+  }))
+}
+
+export default async function ServiceDetails( ///Next 15 stuff , one cant destructure params the regular way anymore
+  //   {
+  //   params,
+  // }: {
+  //   params: { slug: string }
+  // }
+  props: { params: { slug: string } }
+) {
+  const { slug } = await props.params //Next js 15 stuff, omne must await
+  const service = services.find((s) => s.slug === slug)
+
+  if (!service) return notFound()
 
   return (
     <>
-      <Navbar />
-      {!loading && service && (
-        <>
-          <BlogHeros
-            title={service?.hero?.start}
-            title2={service?.hero?.end}
-            subtitle=""
-            imageSrc={blogsBanner}
-            quoteLink="/quote"
-            bookLink="/contact"
-            quoteText="Get a Free Quote"
-            bookText="Question ?"
-          />
+      <StandardHero
+        title={service?.hero.start}
+        title2={service?.hero.end}
+        subtitle=''
+        imageSrc={blogsBanner}
+      />
 
-          <div className="relative">
-            <div className="absolute top-[-100px] z-[-2]">
-              <Image src={BgBackground2} alt="bg-Image" />
-            </div>
+      {/* Background Image Section */}
+      <div className='relative'>
+        <div className='absolute top-[-100px] z-[-2]'>
+          <Image src={BgBackground2} alt='bg-Image' />
+        </div>
+      </div>
+
+      <div className='max-w-7xl mx-auto px-4 py-8 mt-10'>
+        <header className='mb-6'>
+          <h1 className='text-[26px] font-medium text-[#0D378D]'>
+            {service.title}
+          </h1>
+        </header>
+
+        <div className='space-y-6'>
+          <div className='relative w-full h-[300px] sm:h-[400px] md:h-[450px] overflow-hidden'>
+            <Image
+              src={service.coverImage}
+              alt={service.slug}
+              fill
+              className='md:object-cover sm:object-contain'
+              priority
+            />
           </div>
 
-          <div className="max-w-7xl mx-auto px-4 py-8 mt-10">
-            <header className="mb-6">
-              <h1 className="text-[26px] font-medium text-[#0D378D]">
-                {service?.title}
-              </h1>
-            </header>
-
-            <div className="space-y-6">
-              {service?.coverImage && (
-                <div className="relative w-full h-[300px] sm:h-[400px] md:h-[450px] overflow-hidden">
-                  <Image
-                    src={service?.coverImage}
-                    alt={service?.slug}
-                    fill
-                    className="md:object-cover sm:object-contain"
-                    priority
-                  />
-                </div>
-              )}
-              <div className="space-y-4 text-[16px] text-black">
-                {service?.descriptions?.map((item: any, index: any) => (
-                  <p key={index}>{item}</p>
-                ))}
-              </div>
-            </div>
+          <div className='space-y-4 text-[16px] text-black'>
+            {service.descriptions?.map((item, index) => (
+              <p key={index}>{item}</p>
+            ))}
           </div>
-        </>
-      )}
+        </div>
+      </div>
 
       <HomeBanner />
-
       <ContactFormSection />
-
-      <Footer />
     </>
-  );
+  )
 }
