@@ -1,9 +1,9 @@
-@import "tailwindcss";
-
+@import 'tailwindcss';
 
 :root {
   --background: #ffffff;
   --foreground: #ffffff;
+  --blueButtonColor: #2f60ab;
 }
 
 @theme inline {
@@ -23,7 +23,26 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 500;
   font-style: normal;
+}
+
+@keyframes bgReveal {
+  0% {
+    background-size: 0% 100%;
+  }
+  100% {
+    background-size: 100% 100%;
+  }
+}
+
+.bg-reveal {
+  background-image: linear-gradient(to right, #0d378d, #0d378d);
+  background-repeat: no-repeat;
+  background-position: 0% 100%;
+  background-size: 0% 100%;
+  animation: bgReveal 2s ease-out forwards;
+  color: white;
+  padding: 0 4px;
 }

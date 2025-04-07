@@ -1,0 +1,48 @@
+import { cn } from '@/lib/utils'
+import GoogleLogo2 from '@/public/google-icon-download.svg'
+import homeStars from '@/public/home-stars.svg'
+import Image from 'next/image'
+
+export default function ReviewsToggler({
+  activeTab,
+  setActiveTab,
+}: {
+  activeTab: 'google' | 'homestars'
+  setActiveTab: React.Dispatch<React.SetStateAction<'google' | 'homestars'>>
+}) {
+  return (
+    <div className='flex gap-4 mb-8'>
+      <button
+        onClick={() => setActiveTab('google')}
+        className={cn(
+          'flex items-center gap-1  cursor-pointer  px-2 rounded-[20px] transition-colors w-full justify-center',
+          activeTab === 'google'
+            ? 'bg-[#0D378D] text-white'
+            : 'bg-white text-[#0D378D] border-2 border-[#CADBFF]'
+        )}>
+        <div className='h-10 w-10 relative'>
+          <Image src={GoogleLogo2} alt='gooleLogo' />
+        </div>
+        <span className='text-[10px] md:text-[15px]  text-left font-medium lg:text-[19px]'>
+          Google Reviews
+        </span>
+      </button>
+
+      <button
+        onClick={() => setActiveTab('homestars')}
+        className={cn(
+          'flex items-center gap-2 py-3 px-6 cursor-pointer rounded-[20px] transition-colors w-full justify-center',
+          activeTab === 'homestars'
+            ? 'bg-[#0D378D] text-white'
+            : 'bg-white text-[#0D378D] border-2 border-[#CADBFF]'
+        )}>
+        <div className='flex justify-center items-center relative'>
+          <Image src={homeStars} alt='gooleLogo' />
+        </div>
+        <span className='text-[10px] md:text-[15px] text-left font-medium lg:text-[19px]'>
+          HomeStars Reviews
+        </span>
+      </button>
+    </div>
+  )
+}

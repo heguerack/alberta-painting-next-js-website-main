@@ -22,7 +22,7 @@ const OurGallery: React.FC = () => {
       };
 
       window.addEventListener("resize", handleResize);
-      handleResize(); 
+      handleResize(); // Run once on mount to check window size
 
       return () => {
         window.removeEventListener("resize", handleResize);

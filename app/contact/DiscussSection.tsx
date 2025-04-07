@@ -13,14 +13,14 @@ const DiscussSection = () => {
         Let’s Discuss Your Project Today!
       </h2>
       <div className="grid grid-cols-1 sm:grid-cols-3 sm:gap-10 justify-center items-center">
-        <div className="text-center sm:mb-4 mb-6"> 
+        <div className="text-center sm:mb-4 mb-6"> {/* Margin for small screens */}
           <div className="icon mb-4">
           <Link href="tel:+1 587-966-6547">
             <Image
               src={PhoneLogo}
               alt="Call Us"
               style={{margin:"auto"}}
-              className="w-24 h-24 sm:w-20 sm:h-20 md:w-20 md:h-20 cursor-pointer" 
+              className="w-24 h-24 sm:w-20 sm:h-20 md:w-20 md:h-20 cursor-pointer" // Adjust size for different screens
             />
             </Link>
           </div>
@@ -29,28 +29,28 @@ const DiscussSection = () => {
 
         
 
-        <div className="text-center sm:mb-4 mb-6"> 
+        <div className="text-center sm:mb-4 mb-6"> {/* Margin for small screens */}
           <div className="icon mb-4">
           <Link href="mailto:info@albertacolourpainting.com">
             <Image
               src={EmailLogo}
               alt="Email Us"
               style={{margin:"auto"}}
-              className="w-24 h-24 sm:w-20 sm:h-20 md:w-20 md:h-20 cursor-pointer" 
+              className="w-24 h-24 sm:w-20 sm:h-20 md:w-20 md:h-20 cursor-pointer" // Adjust size for different screens
             />
             </Link>
           </div>
           <h3 className="text-[#000000] md:text-4xl sm:text-[20px] font-medium cursor-pointer"><Link href="mailto:info@albertaglobalpainting.com">EMAIL US</Link></h3>
         </div>
 
-        <div className="text-center sm:mb-4 mb-6"> 
+        <div className="text-center sm:mb-4 mb-6"> {/* Margin for small screens */}
           <div className="icon mb-4">
           
             <Image
               src={DirectionLogo}
               alt="Get Directions"
               style={{margin:"auto"}}
-              className="w-24 h-24 sm:w-20 sm:h-20 md:w-20 md:h-20 cursor-pointer" 
+              className="w-24 h-24 sm:w-20 sm:h-20 md:w-20 md:h-20 cursor-pointer" // Adjust size for different screens
             />
           
           </div>
