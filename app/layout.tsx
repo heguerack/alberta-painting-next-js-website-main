@@ -4,6 +4,7 @@ import './globals.css'
 import { Toaster } from '@/components/ui/sonner'
 import Footer from '@/components/ui/footer'
 import { Navbar } from '@/components/Header'
+import Script from 'next/script'
 const geistSans = Geist({
   variable: '--font-geist-sans',
   subsets: ['latin'],
@@ -48,22 +49,35 @@ export default function RootLayout({
         <main>
           <Navbar />
           {children}
-          <Toaster />
           {/* It's better to place the script tag at the bottom of the body for performance */}
-          <script
-            type='module'
-            dangerouslySetInnerHTML={{
-              __html: `
+        </main>
+        <Toaster />
+        <Footer />
+        <script
+          type='module'
+          dangerouslySetInnerHTML={{
+            __html: `
               import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs';
 
               const swiper = new Swiper('.swiper-container', {
                 // Swiper configuration options
               });
             `,
-            }}
-          />
-        </main>
-        <Footer />
+          }}
+        />
+        {/* Load Swiper module script after the page is interactive */}
+        {/* <Script
+          type='module'
+          strategy='afterInteractive'
+          src='https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs'
+        /> */}
+
+        {/* Initialize Swiper */}
+        {/* <Script type='module' strategy='afterInteractive'>{`
+          const swiper = new Swiper('.swiper-container', {
+            // your Swiper config here
+          });
+        `}</Script> */}
       </body>
     </html>
   )

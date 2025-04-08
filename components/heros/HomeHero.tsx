@@ -14,7 +14,7 @@ const HomeHero = () => {
         <div className='relative h-[calc(100vh-50px)]'>
           <Image
             src={'/galleryHome-5.png'}
-            alt={' dark blue siding just pained'}
+            alt={'Dark blue siding just pained'}
             fill
             className='object-cover brightness-75 w-full h-full'
             priority
