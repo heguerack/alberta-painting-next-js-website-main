@@ -16,7 +16,7 @@ import bg3 from '@/public/BG2.png'
 import Reviews1 from '@/public/Reviews1.png'
 import Reviews2 from '@/public/Reviews2.png'
 import Reviews3 from '@/public/Reviews3.png'
-import Footer from '@/components/ui/footer'
+
 import axios from 'axios'
 import Cookies from 'js-cookie'
 
