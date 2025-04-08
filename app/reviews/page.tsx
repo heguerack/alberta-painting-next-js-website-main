@@ -1,5 +1,5 @@
 'use client'
-import { Navbar } from '@/components/navbar'
+
 import Image from 'next/image'
 import React, { useEffect, useState } from 'react'
 import imageSrc from '@/public/HomeBannerBG.png'
