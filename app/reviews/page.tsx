@@ -95,8 +95,6 @@ const page = () => {
   ]
   return (
     <div>
-      <Navbar />
-
       <section className='h-[400px] md:h-[600px] relative'>
         <div className='absolute inset-0'>
           <Image
@@ -310,7 +308,6 @@ const page = () => {
           )}
         </div>
       </div>
-      <Footer />
     </div>
   )
 }
