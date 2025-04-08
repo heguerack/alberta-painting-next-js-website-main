@@ -29,8 +29,10 @@ export default function OurServices() {
       <div className='lg:mb-15 mb-5'>
         <ServiceSection
           title='Our Services'
-          description='Bringing Colour to Every Corner <br /> of Your Home and Business'
+          description='Transform Your Space with Our <br />Expert Painting Services in Calgary'
           buttonText='Explore Our Services'
+          galleryText=''
+          galleryTextSec=''
         />
       </div>
 

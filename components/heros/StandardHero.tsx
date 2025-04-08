@@ -117,7 +117,12 @@ export default function StandardHero({
         </div>
         <div className='relative h-full flex flex-col items-center justify-center text-center px-4'>
           <h1 className='text-4xl md:text-6xl font-bold text-white mb-4'>
-            {title} <span className='bg-reveal'>{title2}</span>
+            {title} 
+           {/* <span className='bg-reveal'>{title2}</span> */}
+          </h1>
+          <h1 className='text-4xl md:text-6xl font-bold text-white mb-4'>
+            {title2} 
+           
           </h1>
           <p className='text-xl md:text-2xl text-white mb-8'>{subtitle}</p>
           {subtitle2 && (

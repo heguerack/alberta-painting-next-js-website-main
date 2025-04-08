@@ -19,9 +19,12 @@ const ReviewsCarousel = ({
     <div className='lg:mb-20 lg:mt-20 mb-10 px-8 lg:px-24'>
       <ServiceSection
         title='What Our Clients Say'
-        description='Real Reviews from Satisfied <br /> Customers'
+        description='Reviews from Satisfied Customers'
         buttonText='Read More Reviews'
         isButton={true}
+        galleryText='See why Alberta Colour Painting is a trusted choice for professional painting in Calgary. Our happy customers share their experiences, praising our quality work and great service. From detailed interior painting to full exterior projects, these testimonials show the skill and dedication of our Calgary painters.
+'
+        galleryTextSec=''
       />
 
       <ReviewsToggler activeTab={activeTab} setActiveTab={setActiveTab} />

@@ -1,5 +1,5 @@
 'use client'
-import { Navbar } from '@/components/navbar'
+// import { Navbar } from '@/components/navbar'
 import Image from 'next/image'
 import React, { useEffect, useState } from 'react'
 import imageSrc from '@/public/HomeBannerBG.png'
@@ -95,7 +95,7 @@ const page = () => {
   ]
   return (
     <div>
-      <Navbar />
+      {/* <Navbar /> */}
 
       <section className='h-[400px] md:h-[600px] relative'>
         <div className='absolute inset-0'>

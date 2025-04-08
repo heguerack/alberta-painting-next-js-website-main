@@ -23,8 +23,8 @@ export default function page() {
   return (
     <>
       <StandardHero
-        title='About  '
-        title2='Alberta Colour Painting'
+        title=''
+        title2='Bringing Colour to Calgary with Flawless Paint Jobs! '
         subtitle='Your Trusted, Skilled, and Eco-Friendly Painting Experts'
         imageSrc={blogsBanner}
       />
@@ -41,44 +41,18 @@ export default function page() {
           <div className='grid md:grid-cols-2 gap-8 items-center relative mt-10 my-3.5 pb-[40px]'>
             <div className='space-y-6 '>
               <div className='space-y-2'>
-                <p className='text-[22px]  font-medium text-black'>
-                  Our Skilled Painters
+                <p className='lg:text-[36px] text-[22px] font-bold text-[#0D378D] uppercase'>
+                Calgary's Finest Painters at Your Service
                 </p>
-                <h2 className='lg:text-[36px] text-[22px] font-bold text-[#0D378D] uppercase'>
-                  Trained & Skilled House
-                  <br />
-                  Painters
-                </h2>
+                
               </div>
 
-              <ul className='space-y-4 text-black list-disc lg:text-[16px] text-[14px]'>
-                <li className='flex items-start gap-2 list-disc'>
-                  <Dot className='h-5 w-5 mt-0.5 text-black ' />
-                  <span>
-                    We protect your furniture and surrounding areas before
-                    painting.
-                  </span>
-                </li>
-                <li className='flex items-start gap-2'>
-                  <Dot className='h-5 w-5 mt-0.5 text-black flex-shrink-0' />
-                  <span>
-                    Our painters respect your home as if it were their own.
-                  </span>
-                </li>
-                <li className='flex items-start gap-2'>
-                  <Dot className='h-5 w-5 mt-0.5 text-black flex-shrink-0' />
-                  <span>
-                    We believe in skill and attention to detail, ensuring your
-                    satisfaction.
-                  </span>
-                </li>
-              </ul>
+              <p className=' lg:text-[20px] text-[18px] text-black '>A great paint job isn't just about the colour, but it's about the experience. That's why we do more than just paint by protecting your space, respecting your home, and delivering results that truly stand out. From carefully covering furniture to keeping everything neat and tidy, we treat your home like our own. </p>
 
+      
               <div className='pt-4'>
                 <p className='lg:text-[20px] text-[18px] text-black'>
-                  Our commitment to excellence means that every home we paint is
-                  treated with care and precision, leaving behind a space you’ll
-                  love.
+                Our skilled Calgary painters bring attention to detail to every brushstroke, ensuring a smooth finish. When we're done, the only thing we leave behind is a beautifully transformed space you'll love.
                 </p>
               </div>
             </div>
@@ -109,45 +83,20 @@ export default function page() {
 
             <div className='space-y-6'>
               <div className='space-y-2'>
-                <p className='text-[22px] font-medium text-black'>
-                  Commitment to Quality
+                <p className='text-2xl lg:text-3xl font-bold text-[#0D378D]'>
+                Eco-Friendly Painting for a Cleaner and Greener Home 
                 </p>
-                <h2 className='text-2xl lg:text-3xl font-bold text-[#0D378D]'>
-                  PREMIUM MATERIALS & <br />
-                  EXCEPTIONAL WORKMANSHIP
-                </h2>
+            
               </div>
+              <p className='lg:text-[20px] text-[18px] text-black'> At Alberta Colour, we're committed to making a positive impact on the environment. That's why we use zero to low-VOC paints, creating healthier spaces for our clients, painters, and the planet!</p>
 
-              <ul className='space-y-4 text-black lg:text-[16px] text-[14px]'>
-                <li className='flex items-start gap-2'>
-                  <Dot className='h-5 w-5 mt-0.5 text-black flex-shrink-0' />
-                  <span>
-                    We use the best paints and materials for long-lasting
-                    results.
-                  </span>
-                </li>
-                <li className='flex items-start gap-2'>
-                  <Dot className='h-5 w-5 mt-0.5 text-black flex-shrink-0' />
-                  <span>
-                    Our expert team ensures flawless finishes with attention to
-                    every detail.
-                  </span>
-                </li>
-                <li className='flex items-start gap-2'>
-                  <Dot className='h-5 w-5 mt-0.5 text-black flex-shrink-0' />
-                  <span>
-                    We receive numerous positive reviews from satisfied clients
-                    who trust our work.
-                  </span>
-                </li>
-              </ul>
 
-              <div className='pt-4'>
                 <p className='lg:text-[20px] text-[18px] text-black'>
-                  Our reputation is built on trust, professionalism, and
-                  superior quality—ensuring every project exceeds expectations.
+                Got leftover paint? We've got you covered! We'll collect any unused paint and take it to our shop, ensuring it gets properly recycled instead of wasted. Plus, all materials from our projects, like garbage, cardboard, and plastics,  
                 </p>
-              </div>
+
+                <p className='lg:text-[20px] text-[18px] text-black'>Our painting company in Calgary focuses on making a clean and green impact on the environment while ensuring perfection in every project that we undertake. </p>
+           
             </div>
           </div>
 

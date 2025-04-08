@@ -6,14 +6,18 @@ interface ServiceSectionProps {
   title: string;
   description: string;
   buttonText: string;
-  isButton?: boolean
+  isButton?: boolean;
+  galleryText:string;
+  galleryTextSec:string
 }
 
 const ServiceSection: React.FC<ServiceSectionProps> = ({
   title,
   description,
   buttonText,
-  isButton = true
+  isButton = true,
+  galleryText,
+  galleryTextSec,
 }) => {
   // Split the description by line breaks
   const descriptionLines = description.split("<br />");
@@ -35,14 +39,23 @@ const ServiceSection: React.FC<ServiceSectionProps> = ({
       <div className="container max-w-7xl mx-auto px-4">
         <p className="text-[18px] text-black font-medium lg:text-[22px]">{title}</p>
         <div className="flex flex-col justify-between mb-8 md:flex-row">
+       
           <h2 className="text-[#0D378D] text-[26px] font-semibold lg:text-[36px] uppercase">
-            {descriptionLines.map((line, index) => (
-              <React.Fragment key={index}>
-                {line}
-                {index < descriptionLines.length - 1 && <br />}
-              </React.Fragment>
-            ))}
+            {descriptionLines.map((line, index) =>{
+              console.log("line",line)
+              return(
+                (
+                  <React.Fragment key={index}>
+                    {line}
+                    {index < descriptionLines.length - 1 && <br />}
+                  </React.Fragment>
+                )
+              )
+            })}
           </h2>
+        
+       
+        
           {isButton &&
           <div className="flex md:mt-0 mt-4">
             <Button
@@ -56,6 +69,9 @@ const ServiceSection: React.FC<ServiceSectionProps> = ({
           </div>
 }
         </div>
+        <p className="text-black text-[18px]">{galleryText}</p>
+        <br></br>
+        <p className="text-black text-[18px]">{galleryTextSec}</p>
       </div>
     </section>
   );
