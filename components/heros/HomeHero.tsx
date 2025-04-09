@@ -22,10 +22,15 @@ const HomeHero = () => {
           <div className='absolute inset-0 bg-black/20' />
           <div className='absolute inset-0 flex flex-col items-center justify-center text-center px-4'>
             <h1 className='text-4xl md:text-6xl font-bold text-white mb-4'>
-              EXPERT <span className='bg-reveal'>CALGARY PAINTERS</span>
-            </h1>{' '}
+            Say Hello to a Glow-Up with the Best 
+              {/* <span className='bg-reveal'></span> */}
+            </h1>
+            <h1 className='text-4xl md:text-6xl font-bold text-white mb-4 bg-reveal'>Painters in Calgary</h1>
+            <p className='text-xl md:text-2xl text-white mb-2'>
+            We're among the top painting companies in Calgary, turning dull walls into eye candy
+            </p>
             <p className='text-xl md:text-2xl text-white mb-8'>
-              for Interior and Exterior House Painting Services
+             with flawless interior and exterior makeovers. 
             </p>
             <HeroCallToAction />
           </div>

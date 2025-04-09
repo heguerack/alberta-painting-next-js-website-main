@@ -114,13 +114,62 @@ export default async function ServiceDetails( ///Next 15 stuff , one cant destru
         </div>
       );
     }
-
-    // If it's just a string (paragraph), render it as a paragraph
-    return <p key={index}>{item}</p>;
+    return <p key={index} className="text-[26px] font-medium text-[#0D378D]">{item}</p>;
   })}
 </div>
 
 
+<div className="space-y-4 text-[16px] text-black">
+  {service.descriptionList?.map((item, index) => {
+    // Check if the item contains a 'list' property and it's an array
+    if (item?.list && Array.isArray(item.list)) {
+      return (
+        <div key={index}>
+          {item.list.map((listItem, listIndex) => (
+            <ul key={listIndex} className="space-y-2">
+              <li>
+                {/* Render the list item as a paragraph */}
+                <p className="my-2 mx-5">{listItem}</p>
+              </li>
+            </ul>
+          ))}
+        </div>
+      );
+    }
+    
+    // If it's just a string (paragraph), render it as a paragraph
+    return <p key={index} className="text-[26px] font-medium text-[#0D378D]">{item}</p>;
+  })}
+</div>
+
+
+            {/* <h1 className=" text-black">
+              {service.title3}
+            </h1> */}
+
+
+<div className="space-y-4 text-[16px] text-black">
+  {service.description4?.map((item, index) => {
+    // Check if the item contains a 'list' property and it's an array
+    if (item?.list && Array.isArray(item.list)) {
+      return (
+        <div key={index}>
+          {item.list.map((listItem, listIndex) => (
+            <ul key={listIndex} className="space-y-2">
+              <li>
+                {/* For each list item, display the item as a paragraph */}
+                <p className="my-2 mx-5">{listItem}</p>
+              </li>
+            </ul>
+          ))}
+        </div>
+      );
+    }
+
+    // If it's just a string (paragraph), render it as a paragraph
+    return <p key={index} className="text-[20px] font-medium text-[#0D378D]">{item}</p>;
+  })}
+</div>
 
   {service?.listData?.map((item, index) => (
 

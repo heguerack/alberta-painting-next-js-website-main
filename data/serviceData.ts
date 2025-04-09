@@ -215,8 +215,8 @@ export const services = [
     id: 5,
     title: 'Cabinet Painting Calgary ',
     hero: {
-      start: 'Cabinet ',
-      end: 'Painting Calgary',
+      start: 'Give Your Space a New Life with Custom  ',
+      end: 'Cabinet Painting in Calgary',
     },
     slug: 'cabinet_painting_calgary',
     short_description:
@@ -227,6 +227,38 @@ export const services = [
       'Your space should speak volumes of your style and vibe, and that is why we offer custom cabinet painting in Calgary, understanding your vision and bringing it to life. Our experts use a wide range of colours and finishes to match your style and home décor through a hassle-free process. Our team manages everything from cleaning and sanding to priming and painting, ensuring a durable and professional finish. By choosing our cabinet painting in Calgary, you save money and make an eco-friendly choice by repurposing existing materials.',
       "Don't settle for outdated, dull cabinets, and elevate your space's vibe and feel with our top-quality cabinet painting in Calgary. Contact Alberta Colour Painting today and give your space the makeover it deserves!",
     ],
+    title2:"Cabinet Painting in Calgary— A Local Touch That Makes All the Difference",
+    description2:[
+      `Transforming your kitchen or bathroom cabinets doesn't have to mean a full renovation. In Calgary's dynamic housing market, cabinet painting has become the smart, affordable way to refresh your space while adding real value to your home.
+Whether you live in a cozy bungalow in Bridgeland, a modern condo downtown, or a family home, we understand the styles and finishes that resonate with Calgarians. 
+`,
+      `From trendy two-toned cabinets to classic whites that brighten up our winter days, we tailor every project to fit your space, your taste, and our local vibe.`,
+
+      `And because we’re among the best cabinet painting companies in Calgary, you’re getting more than just a service— you're getting a team that knows the city, respects your home, and cares about delivering results that last through all four seasons.`,
+    ],
+    descriptionList:[
+      "Why You Need Our Cabinet Painting Services in Calgary",
+      {
+        list: [
+        ` In a city where the cost of living keeps rising and full renovations can break the bank, our cabinet painting in Calgary is the budget-friendly solution. `,
+        ]
+      },
+    ],
+
+      
+    // title3:`In a city where the cost of living keeps rising and full renovations can break the bank, our cabinet painting in Calgary is the budget-friendly solution. `,
+    description4:[
+      "Here’s why:",
+      {
+        list: [
+          `Painting your existing cabinets costs just a fraction of what you'd spend on a full kitchen remodel or cabinet replacement. At Alberta Colour Painting, our Calgary cabinet painters are highly experienced and experts at delivering stunning results that look and fit your budget, too.`,
+          `Now there is no need to wait weeks (or months) for custom cabinetry. Most of the projects we undertake are done in just a few days.`,
+          `Our Calgary cabinet painting services offer style flexibility where you can pick from downtown minimalism to cozy suburban charm and update your home's look to match your lifestyle and your personal taste. `,
+          `Whether you're planning to sell or just want to impress guests, a freshly painted cabinet instantly elevates the space. We offer a wide range of bathroom, vanity, closet, and kitchen cabinet painting in Calgary, all under one expert roof. `,
+        
+        ]
+      },
+    ],
     coverImage: '/cabinet painting/cabinet-painting-img9.jpg',
     imageSrc: '/cabinet painting/cabinet-painting-img9.jpg',
     altText: 'Drywall Mud & Tape',
@@ -236,8 +268,8 @@ export const services = [
     id: 6,
     title: 'Garage Painting Calgary',
     hero: {
-      start: 'Garage ',
-      end: 'Painting Calgary',
+      start: 'Your Car Deserves a Sleek Space Too! ',
+      end: 'Upgrade with Premium Garage Painting In Calgary',
     },
     slug: 'garage_painting_calgary',
     short_description:
@@ -245,7 +277,20 @@ export const services = [
     descriptions: [
       'Just like your ride deserves the best care, it also needs a fresh, stylish space to call home! Whether you use it for storage, as a workshop, or simply as a space to keep your vehicles safe, a fresh coat of paint can make a huge difference. At Alberta Colour Painting, we specialize in garage painting in Calgary, helping homeowners refresh and protect their garage walls, ceilings, and floors with high-quality, durable paints.',
       "Your garage isn't just a parking spot, but your car's personal space should look just as sleek and well-kept. With our garage painting in Calgary, we'll transform your garage into a clean, polished space that matches your style. At Alberta Colour Painting, quality comes first, and that is why our team of garage painters uses premium paints and durable finishes to keep your space looking fresh and protected for years to come. And the best part? Top-tier quality doesn't have to break the bank! We offer affordable pricing without compromising on quality.",
-      "Give your car a home that looks just as good as it does! Let's upgrade your garage with our garage painting in Calgary.",
+      "And the best part? Top-tier quality doesn't have to break the bank! We offer affordable pricing without compromising on quality. Give your car a home that looks just as good as it does! Let's upgrade your garage with our garage painting in Calgary.",
+    ],
+
+    descriptionList:[
+      "Why Our Garage Painting in Calgary Is Worth It",
+      {
+        list: [
+        `It’s no secret that the garage is one of the most overlooked spaces in any home. While your ride might be sleek and stylish, parking it in a dull, dusty, or outdated space can seriously take away from its shine.`,
+        `No matter how impressive your car is, the surroundings matter, and a fresh, clean, and well-painted garage can make all the difference. `,
+        `At Alberta Colour Painting, we use high-quality, durable paints designed to withstand Calgary’s fluctuating temperatures, moisture, and daily wear. Painted garage walls and ceilings are easier to clean, reduce dust, and instantly brighten the space. But the transformation doesn’t stop there. Garage floor painting is the final touch that truly infuses life into the entire space. It not only restores damaged or stained flooring but also adds a durable, protective layer that can withstand oil spills, tire marks, and daily wear and tear. `,
+        `Whether you use your garage for parking, storage, or as a hobby space, a professionally painted floor gives it that crisp, finished look, almost like a showroom. It’s not just about aesthetics, either; it's about extending the life of your surfaces and creating a garage that feels as well cared for as the rest of your home.`,
+        `So whether you're going for a clean, showroom-style garage or just want to protect and refresh a hardworking space, we've got you covered. Alberta Colour Painting is your trusted partner for garage painting in Calgary, offering high-quality work with precision and great value. `,
+        ]
+      },
     ],
     coverImage: '/garage/20201205_105326_lxmmlz.jpg',
     imageSrc: '/garage/20201205_105341_l1hwp4.jpg',
