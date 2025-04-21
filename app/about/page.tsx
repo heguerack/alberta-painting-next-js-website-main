@@ -236,7 +236,6 @@ export default function page() {
           </Button>
         </div>
       </main>
-      <Footer />
     </>
   )
 }

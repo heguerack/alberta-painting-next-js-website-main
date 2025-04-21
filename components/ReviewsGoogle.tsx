@@ -66,8 +66,8 @@ export default function ReviewsGoogle({
               </div>
               <div className='p-[20px] lg:p-[25px] md:p-[10px]'>
                 <p className='text-[11px] text-base text-black font-normal lg:pl-[30px] lg:text-[15px] mb-4 pb-0 pt-[40px] review-text sm:pl-[20px] sm:pr-[-40px]'>
-                  {review?.text?.length > 200
-                    ? review?.text.slice(0, 300) + '...'
+                  {review?.text?.length > 150
+                    ? review?.text.slice(0, 150) + '...'
                     : review.text}
                 </p>
                 <span className='text-[#202020] text-sm font-bold lg:pl-[22px] md:pl-[12px] sm:pl-[-20px] sm:text-lg'>
