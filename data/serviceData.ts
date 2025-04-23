@@ -1,19 +1,27 @@
 export const services = [
   {
-    id: 1,
+    id: '1',
     title: 'Interior Painting Calgary',
     hero: {
-      start: 'Interior ',
-      end: 'Painting Calgary',
+      title1: 'Expert ',
+      title2: 'Interior Painting Services in Calgary',
+      title3: 'for Homes & Businesses',
     },
     slug: 'interior_painting_calgary',
     short_description:
       'Interior painting in Calgary can be a daunting task for many homeowners. It requires a significant amount of time, effort, and attention to detail to achieve a professional finish.',
     descriptions: [
       "Let's be honest, your home is more than just walls and a roof. It's where you spend your life, create memories, and feel safest being yourself. That's why it deserves the utmost care and attention. At Alberta Colour Painting, we bring your vision to life by offering stunning designs that make your walls speak! Whether you're looking for a bold statement or a modern refresh, our expert team delivers high-quality finishes every time.",
-      'Are you thinking about giving your home a fresh new look? A simple coat of paint can make all the difference and transform your space, making it look brighter and feel cozier. At Alberta Colour Painting, we offer the highest-quality interior painting services, ensuring that your space not only looks aesthetic but also feels magnetic!',
-      "Whether you're updating your living space, revamping your dining hall, or want to infuse a new feel into your bedroom, our skilled painters use premium, long-lasting paints to deliver a sleek and polished look. We help you choose the perfect colors and finishes to reflect your style and create the atmosphere you want.",
-      "Our process is quick and hassle-free, and we handle everything from prep work and priming to the final coat, so you can sit back and enjoy the transformation. Get in touch with us today, and let's give your home the makeover it's been waiting for!",
+      'Are you thinking about giving your home a fresh new look? A simple coat of paint can make all the difference and transform your space, making it look brighter and feel cozier. At Alberta Colour Painting, we offer the highest-quality interior painting services in Calgary, ensuring that your space not only looks aesthetic but also feels magnetic!',
+      "Whether you're updating your living space, revamping your dining hall, or want to infuse a new feel into your bedroom, our skilled interior house painters in Calgary use premium, long-lasting paints to deliver a sleek and polished look. We help you choose the perfect colors and finishes to reflect your style and create the atmosphere you want.",
+      "Our process is quick and hassle-free, and we handle everything from prep work and priming to the final coat, so you can sit back and enjoy the transformation. Get in touch with us today, and let's give your house the makeover it's been waiting for!",
+    ],
+    articlesTitle1: 'Beyond Just Paint,',
+    articlesTitle2: 'We Elevate Your Space',
+    articles: [
+      "At our painting company in Calgary, interior painting is more than just changing the shade or color of a space; it's about transforming the entire atmosphere and creating a feeling of comfort and style. A fresh coat of paint can breathe new life into a room, making it feel more inviting, spacious, or even more sophisticated, depending on the colors and finishes chosen.",
+      "We understand that choosing the right colors and finishes can be a bit of a task, which is why we’re here to make it easy for you. Whether you want to refresh your cozy living room that's been the same for a long time or give your bedroom a fresh, welcoming feel, our interior painting services in Calgary have got you covered. Our expert painters help bring your vision to life with top-quality paints and professional techniques that ensure a flawless finish. With a strong commitment to quality, we use only the best materials, giving you long-lasting, durable results that stand the test of time. So, whether it's your house or your workplace, we make sure every brushstroke adds beauty, warmth, and personality to your space just the way you want it.",
+      'From preparation to cleanup, we handle every step of the painting process with efficiency. We take the time to properly prepare surfaces, ensuring a smooth and even application, leaving your space spotless once the job is done. Our goal is not just to meet your expectations but to exceed them, providing you with an interior that feels perfectly tailored to your style.',
     ],
     // coverImage: require('@/public/interior/PXL_20220622_192016887.jpg'),
     // you are just giving the lcaol path!! not need to pull nothin gfrom public!! its NExt JS!!!
@@ -25,28 +33,31 @@ export const services = [
     buttonText: 'Learn More',
   },
   {
-    id: 2,
+    id: '2',
     title: 'Exterior Painting Calgary',
     hero: {
-      start: 'Exterior ',
-      end: 'Painting Calgary',
+      title1: '',
+      title2: 'Exterior House Painting Services',
+      title3: 'Built for Calgary Weather',
     },
     slug: 'exterior_painting_calgary',
     short_description:
       'Exterior painting is a crucial step in maintaining and enhancing the appearance of your property. In Calgary, the harsh weather conditions can take a toll on your exteriors, making it essential to choose a durable and high-quality paint.',
     descriptions: [
-      "First impressions are the last impressions'—a saying that holds true, especially when it comes to your home! Your home's exterior is the first thing people notice, and a dull, outdated, or worn-out look can leave the wrong impression and maybe even spark some unwanted gossip! At Alberta Colour Painting, we're here to refresh and transform your home's exterior, making it look stylish and well-maintained",
-      "Calgary has an extreme climate, which is why it is very crucial to safeguard the exterior of your house with weather-resistant and high-quality exterior painting. We use premium-grade paints and expert techniques to ensure your home's exterior stands up to Calgary's tough conditions. Whether you need to refresh faded walls, protect wooden surfaces, or update your home's look, our professional exterior painting services guarantee a durable, long-lasting finish.",
-      "Investing in exterior painting services in Calgary can save you from costly repairs down the road. Don't let the extreme weather take a toll on your home.",
-      'Contact us today for reliable and expert exterior painting services!',
+      "Updating your home's exterior is more than just a cosmetic choice in Calgary's extreme climate. Frequent temperature swings and harsh weather conditions can quickly wear down exterior paint, making regular maintenance necessary.",
+      'The summers are extremely harsh with a high UV index that results in the paint fading and chalking out, especially for darker shades. Winters in the city are no less punishing; the bone-biting cold and temperature drop cause the materials underneath the paint to expand and contract. This constant movement can lead to cracking, peeling, or blistering over time. These are only a few challenges posed by the city’s extreme weather, which is why choosing the right exterior painting services for your beloved home is very important.',
+      "At Alberta Colour Painting, we're here to give your home that fresh and transformed look so that it looks stylish, well-maintained, and stands the test of time. We use premium and certified paints to ensure your home's exterior meets the city’s harsh climatic conditions. Our exterior house painting in Calgary covers a wide range of services from refreshing faded walls, protecting wooden surfaces, and updating your home's overall look. Our Calgary exterior painters take the time to thoroughly clean and prepare surfaces, repair any damage, and apply primer as needed. This attention to detail ensures that the paint adheres properly and provides a durable and attractive finish.",
     ],
     coverImage: '/exterior/PXL_20230430_173645223.jpg',
     imageSrc: '/exterior/PXL_20230605_193213526.jpg',
     altText: 'Commercial Painting',
     buttonText: 'Learn More',
+    articlesTitle1: "How to Know When It's Time",
+    articlesTitle2: "to Repaint Your Home's Exterior in Calgary?",
+    articles: [],
   },
   {
-    id: 3,
+    id: '3',
     title: 'Commercial Painting Calgary',
     hero: {
       start: 'Commercial ',
@@ -66,9 +77,12 @@ export const services = [
       '/commercial/commercial-painting-project-downtown-paint-finished.jpg',
     altText: 'Commercial Painting',
     buttonText: 'Learn More',
+    articlesTitle1: '',
+    articlesTitle2: '',
+    articles: [],
   },
   {
-    id: 4,
+    id: '4',
     title: 'Popcorn Ceiling Removal Calgary',
     hero: {
       start: 'Popcorn ',
@@ -86,9 +100,12 @@ export const services = [
     imageSrc: '/Popcorn Ceiling Removal/20220605_151419_z32cgm.jpg',
     altText: 'Popcorn Ceiling Removal',
     buttonText: 'Learn More',
+    articlesTitle1: '',
+    articlesTitle2: '',
+    articles: [],
   },
   {
-    id: 5,
+    id: '5',
     title: 'Cabinet Painting Calgary ',
     hero: {
       start: 'Cabinet ',
@@ -107,9 +124,12 @@ export const services = [
     imageSrc: '/cabinet painting/cabinet-painting-img9.jpg',
     altText: 'Drywall Mud & Tape',
     buttonText: 'Learn More',
+    articlesTitle1: '',
+    articlesTitle2: '',
+    articles: [],
   },
   {
-    id: 6,
+    id: '6',
     title: 'Garage Painting Calgary',
     hero: {
       start: 'Garage ',
@@ -127,5 +147,8 @@ export const services = [
     imageSrc: '/garage/20201205_105341_l1hwp4.jpg',
     altText: 'Ceiling Texturing',
     buttonText: 'Learn More',
+    articlesTitle1: '',
+    articlesTitle2: '',
+    articles: [],
   },
 ]

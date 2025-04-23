@@ -29,7 +29,7 @@ export default function OurServices() {
       <div className='lg:mb-15 mb-5'>
         <ServiceSection
           title='Our Services'
-          description='Bringing Colour to Every Corner <br /> of Your Home and Business'
+          description='Transform Your Space  <br />with Our Expert Painting Services'
           buttonText='Explore Our Services'
         />
       </div>

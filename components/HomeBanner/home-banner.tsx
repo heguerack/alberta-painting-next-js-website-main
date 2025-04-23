@@ -1,9 +1,6 @@
-'use client'
-
 import Link from 'next/link'
-import Image from 'next/image'
+
 import './homebanner.css'
-import BgBackground from '@/public/about-background-vector-line.svg'
 
 const HomeBanner = () => {
   return (
@@ -17,9 +14,9 @@ const HomeBanner = () => {
               Ready to Transform Your Space?
             </h1>
             <p className=' font-extralight lg:text-[16px] sm:text-[12px]'>
-              Whether it’s a fresh coat of paint for your home or business,
-              we’re here to make it happen. Let us bring your vision to life
-              with precision and care.
+              Get professional advice, a free quote, and a flawless finish for
+              your space. Book a consultation with our expert painters in
+              Calgary today.
             </p>
           </div>
 

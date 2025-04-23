@@ -2,8 +2,8 @@ import { Button } from '@/components/ui/button'
 import Image from 'next/image'
 import BgBackground from '@/public/about-background-vector-line.svg'
 import OurServices from '@/components/our-services'
-import PaintingCompany from '@/components/painting-company'
-import OurGallery from '@/components/gallery/page'
+import PaintingCompany from '@/components/AboutUs/AboutusHome'
+// import OurGallery from '@/components/gallery/page'
 import { CalgaryPainting } from '@/components/calgary-painting'
 import ContactFormSection from '@/components/ContactFormSection'
 
@@ -16,6 +16,8 @@ import SpecialOffer from '@/components/SpecialOffer/page'
 import ReviewsCarousel from '@/components/ReviewsCarousel'
 import HomeHero from '@/components/heros/HomeHero'
 import { ReviewsGoogleType } from '@/types/review'
+import GallerySection from '@/components/gallery/GallerySection'
+import AboutusHome from '@/components/AboutUs/AboutusHome'
 
 const posts = getBlogPosts()
 
@@ -31,7 +33,7 @@ export default async function Home() {
   return (
     <>
       <HomeHero />
-      <PaintingCompany />
+      <AboutusHome />
       <OurServices />
       <div className='flex flex-col '>
         <div className='relative'>
@@ -41,7 +43,7 @@ export default async function Home() {
           <HomeBanner />
         </div>
         <SpecialOffer />
-        <OurGallery />
+        <GallerySection />
         <CalgaryPainting />
         {/* Google Reviews Section */}
         <ReviewsCarousel newestGoogleReviews={newestGoogleReviews} />

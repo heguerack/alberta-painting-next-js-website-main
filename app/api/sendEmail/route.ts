@@ -4,7 +4,7 @@ export async function POST(req: any) {
   try {
     const { name, email, phone, message } = await req.json()
 
-    if (!name || !email || !message) {
+    if (!name || !email || !message || !phone) {
       //we need too add phone to the form
       return new Response(
         JSON.stringify({ error: 'All fields are required.' }),
@@ -28,7 +28,7 @@ export async function POST(req: any) {
       replyTo: email,
       subject: `New message from ${name}`,
       text: `You have received a new message from ${name} (${email}).\n\nMessage: ${message}`,
-      html: `<p>You have received a new message from <strong>${name}</strong> (${email}).</p><p><strong>Message:</strong><p>${message}</p>`,
+      html: `<p>You have received a new message from <strong>${name}</strong> Email:${email}.Number:${phone}.</p><p><strong>Message:</strong><p>${message}</p>`,
     }
 
     // Send the email

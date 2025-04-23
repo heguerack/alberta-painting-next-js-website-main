@@ -10,7 +10,6 @@ import {
 
 import Link from 'next/link'
 import ContactFormSection from '../../components/ContactFormSection'
-import Footer from '@/components/ui/footer'
 import HomeBanner from '@/components/HomeBanner/home-banner'
 import blogsBanner from '@/public/blogs-banner.png'
 

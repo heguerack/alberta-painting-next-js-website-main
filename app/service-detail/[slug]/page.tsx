@@ -5,9 +5,9 @@ import blogsBanner from '@/public/blogs-banner.png'
 import BgBackground2 from '@/public/above-gallery-bg-line.svg'
 import HomeBanner from '@/components/HomeBanner/home-banner'
 import ContactFormSection from '@/components/ContactFormSection'
-
-import StandardHero from '@/components/heros/StandardHero'
 import { services } from '@/data/serviceData'
+import ServiceArticle from '@/components/services/ServiceArticle'
+import ServiceHero from '@/components/heros/ServiceHero'
 
 //THIS IS SO YTHAT THE PAGES DONT BECOME DINAMIC PAGES!!
 export async function generateStaticParams() {
@@ -24,17 +24,17 @@ export default async function ServiceDetails( ///Next 15 stuff , one cant destru
   // }
   props: { params: { slug: string } }
 ) {
-  const { slug } = await props.params //Next js 15 stuff, omne must await
+  const { slug } = await props.params //Next js 15 stuff, one must await
   const service = services.find((s) => s.slug === slug)
 
   if (!service) return notFound()
 
   return (
     <>
-      <StandardHero
-        title={service?.hero.start}
-        title2={service?.hero.end}
-        subtitle=''
+      <ServiceHero
+        title={service?.hero.title1}
+        title2={service?.hero.title2}
+        title3={service?.hero.title3}
         imageSrc={blogsBanner}
       />
 
@@ -72,6 +72,12 @@ export default async function ServiceDetails( ///Next 15 stuff , one cant destru
       </div>
 
       <HomeBanner />
+
+      <ServiceArticle
+        articles={service.articles}
+        title1={service.articlesTitle1}
+        title2={service.articlesTitle2}
+      />
       <ContactFormSection />
     </>
   )

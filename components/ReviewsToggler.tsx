@@ -11,7 +11,7 @@ export default function ReviewsToggler({
   setActiveTab: React.Dispatch<React.SetStateAction<'google' | 'homestars'>>
 }) {
   return (
-    <div className='flex gap-4 mb-8'>
+    <div className='container m-auto flex  gap-4 mb-16'>
       <button
         onClick={() => setActiveTab('google')}
         className={cn(

@@ -23,6 +23,13 @@ const ReviewsCarousel = ({
         buttonText='Read More Reviews'
         isButton={true}
       />
+      <p className='container max-w-7xl mx-auto px-4'>
+        See why Alberta Colour Painting is a trusted choice for professional
+        painting in Calgary. Our happy customers share their experiences,
+        praising our quality work and great service. From detailed interior
+        painting to full exterior projects, these testimonials show the skill
+        and dedication of our Calgary painters.
+      </p>
 
       <ReviewsToggler activeTab={activeTab} setActiveTab={setActiveTab} />
 
