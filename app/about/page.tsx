@@ -17,6 +17,31 @@ import SkillPainters from '@/components/AboutUs/SkillPaintersSection'
 
 import FinestPainters from '@/components/AboutUs/FinestPaintersSection'
 import CommitmentQualitySection from '@/components/AboutUs/CommitmentQualitySection'
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Cabinet Painting in Calgary | Bathroom & Kitchen Cabinet Painters',
+  description:
+    'Our team of experienced painters is dedicated to delivering top-quality results for your home or business. From interior and exterior painting to wallpaper removal and more, we have the skills and expertise to handle all of your painting needs. Contact us today to learn more about our services and to schedule a consultation.',
+  viewport: 'width=device-width, initial-scale=1.0',
+
+  alternates: {
+    canonical: 'https://www.albertacolourpainting.com/about',
+  },
+  openGraph: {
+    title: 'Need Calgary Painters?',
+    description:
+      'Book your free estimate today with Alberta Colour Painting, the top-rated painting company in Calgary.',
+    images: [
+      {
+        url: 'https://res.cloudinary.com/alberta-colour-painting/image/upload/v1672799089/home/awards/best-of-the-best-award-homestars-winner-2022-white-version_psaofg.webp',
+      },
+    ],
+    url: 'https://www.albertacolourpainting.com/about',
+    siteName: 'Alberta Colour Painting',
+    type: 'website',
+  },
+}
 
 export default function page() {
   const posts = getBlogPosts()

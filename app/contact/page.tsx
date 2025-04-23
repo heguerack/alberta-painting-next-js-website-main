@@ -7,6 +7,30 @@ import blogsBanner from '@/public/blogs-banner.png'
 import BgBackground2 from '@/public/above-gallery-bg-line.svg'
 import { CalgaryPainting } from '@/components/calgary-painting'
 import StandardHero from '@/components/heros/StandardHero'
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Contact Alberta Colour Painting | Get a Free Painting Estimate Today',
+  description:
+    'Reach out to Alberta Colour Painting for expert residential and commercial painting services. Contact us today for a free quote or consultation in Calgary, Alberta.',
+  viewport: 'width=device-width, initial-scale=1.0',
+  alternates: {
+    canonical: 'https://www.albertacolourpainting.com/contact',
+  },
+  openGraph: {
+    title: 'Need Calgary Painters?',
+    description:
+      'Book your free estimate today with Alberta Colour Painting, the top-rated painting company in Calgary.',
+    images: [
+      {
+        url: 'https://res.cloudinary.com/alberta-colour-painting/image/upload/v1672799089/home/awards/best-of-the-best-award-homestars-winner-2022-white-version_psaofg.webp',
+      },
+    ],
+    url: 'https://www.albertacolourpainting.com/contact',
+    siteName: 'Alberta Colour Painting',
+    type: 'website',
+  },
+}
 
 export default function contactPage() {
   return (

@@ -4,8 +4,8 @@ import './globals.css'
 import { Toaster } from '@/components/ui/sonner'
 // import Footer from '@/components/Footer'
 import { Navbar } from '@/components/Header'
-import Script from 'next/script'
 import Footer from '@/components/Footer'
+import ScrollingBanner from '@/components/scrolling-banner'
 const geistSans = Geist({
   variable: '--font-geist-sans',
   subsets: ['latin'],
@@ -48,6 +48,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <main>
+          <ScrollingBanner />
           <Navbar />
           {children}
           {/* It's better to place the script tag at the bottom of the body for performance */}
@@ -66,19 +67,6 @@ export default function RootLayout({
             `,
           }}
         />
-        {/* Load Swiper module script after the page is interactive */}
-        {/* <Script
-          type='module'
-          strategy='afterInteractive'
-          src='https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs'
-        /> */}
-
-        {/* Initialize Swiper */}
-        {/* <Script type='module' strategy='afterInteractive'>{`
-          const swiper = new Swiper('.swiper-container', {
-            // your Swiper config here
-          });
-        `}</Script> */}
       </body>
     </html>
   )

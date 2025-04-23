@@ -6,6 +6,37 @@ import blogsBanner from '@/public/blogs-banner.png'
 import BgBackground2 from '@/public/above-gallery-bg-line.svg'
 import AboutUs from '@/public/AboutUs.png'
 import DotFranks from '@/components/ui/DotFranks'
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Cabinet Painting in Calgary | Bathroom & Kitchen Cabinet Painters',
+  description:
+    'Alberta Colour Painting offers expert cabinet painting in Calgary. Our skilled kitchen & bathroom cabinet painters in Calgary transform your space with precision and style.',
+  viewport: 'width=device-width, initial-scale=1.0',
+  keywords: [
+    'cabinet painting calgary',
+    'kitchen cabinet painting calgary',
+    'kitchen cabinet painters calgary',
+    'cabinet painters calgary',
+  ],
+  alternates: {
+    canonical:
+      'https://www.albertacolourpainting.com/services/cabinet-painting-calgary',
+  },
+  openGraph: {
+    title: 'Need Calgary Painters?',
+    description:
+      'Book your free estimate today with Alberta Colour Painting, the top-rated painting company in Calgary.',
+    images: [
+      {
+        url: 'https://res.cloudinary.com/alberta-colour-painting/image/upload/v1672799089/home/awards/best-of-the-best-award-homestars-winner-2022-white-version_psaofg.webp',
+      },
+    ],
+    url: 'https://www.albertacolourpainting.com/services/cabinet-painting-calgary',
+    siteName: 'Alberta Colour Painting',
+    type: 'website',
+  },
+}
 
 export default function cabinetPaintingPage() {
   return (

@@ -6,7 +6,31 @@ import blogsBanner from '@/public/blogs-banner.png'
 import BgBackground2 from '@/public/above-gallery-bg-line.svg'
 import AboutUs from '@/public/AboutUs.png'
 import DotFranks from '@/components/ui/DotFranks'
+import type { Metadata } from 'next'
 
+export const metadata: Metadata = {
+  title: 'Top Commercial Painters in Calgary | Best Painting Company',
+  description:
+    'Alberta Colour Painting is one of the leading commercial painting companies in Calgary. We provide expert commercial exterior & interior painting with professional results.',
+  viewport: 'width=device-width, initial-scale=1.0',
+  alternates: {
+    canonical:
+      'https://www.albertacolourpainting.com/services/commercial-painting-calgary',
+  },
+  openGraph: {
+    title: 'Need Calgary Painters?',
+    description:
+      'Book your free estimate today with Alberta Colour Painting, the top-rated painting company in Calgary.',
+    images: [
+      {
+        url: 'https://res.cloudinary.com/alberta-colour-painting/image/upload/v1672799089/home/awards/best-of-the-best-award-homestars-winner-2022-white-version_psaofg.webp',
+      },
+    ],
+    url: 'https://www.albertacolourpainting.com/services/commercial-painting-calgary',
+    siteName: 'Alberta Colour Painting',
+    type: 'website',
+  },
+}
 export default function commercialPaintingCalgary() {
   return (
     <>

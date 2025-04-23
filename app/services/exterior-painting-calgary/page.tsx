@@ -6,8 +6,33 @@ import blogsBanner from '@/public/blogs-banner.png'
 import BgBackground2 from '@/public/above-gallery-bg-line.svg'
 import AboutUs from '@/public/AboutUs.png'
 import DotFranks from '@/components/ui/DotFranks'
+import type { Metadata } from 'next'
 
-export default function interiorPaintingCalgary() {
+export const metadata: Metadata = {
+  title: 'Expert Exterior House Painters Calgary | Alberta Colour Painting',
+  description:
+    'Looking for best exterior house painting in Calgary? Alberta Colour Painting is one of the top Calgary exterior painting companies with skilled exterior painters ready to transform your home.',
+  viewport: 'width=device-width, initial-scale=1.0',
+  alternates: {
+    canonical:
+      'https://www.albertacolourpainting.com/services/exterior-painting-calgary',
+  },
+  openGraph: {
+    title: 'Need Calgary Painters?',
+    description:
+      'Book your free estimate today with Alberta Colour Painting, the top-rated painting company in Calgary.',
+    images: [
+      {
+        url: 'https://res.cloudinary.com/alberta-colour-painting/image/upload/v1672799089/home/awards/best-of-the-best-award-homestars-winner-2022-white-version_psaofg.webp',
+      },
+    ],
+    url: 'https://www.albertacolourpainting.com/services/exterior-painting-calgary',
+    siteName: 'Alberta Colour Painting',
+    type: 'website',
+  },
+}
+
+export default function exteriorPaintingCalgary() {
   return (
     <>
       <ServiceHero

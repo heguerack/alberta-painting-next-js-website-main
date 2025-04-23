@@ -5,7 +5,31 @@ import Image from 'next/image'
 import blogsBanner from '@/public/blogs-banner.png'
 import BgBackground2 from '@/public/above-gallery-bg-line.svg'
 import AboutUs from '@/public/AboutUs.png'
-import DotFranks from '@/components/ui/DotFranks'
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Garage Painting in Calgary | Garage Door & Floor Painters',
+  description:
+    'Alberta Colour Painting provides professional garage painting in Calgary, including garage floor paint and garage door painting services. Give your garage a fresh, durable finish with trusted experts in Calgary.',
+  viewport: 'width=device-width, initial-scale=1.0',
+  alternates: {
+    canonical:
+      'https://www.albertacolourpainting.com/services/garage-painting-calgary',
+  },
+  openGraph: {
+    title: 'Need Calgary Painters?',
+    description:
+      'Book your free estimate today with Alberta Colour Painting, the top-rated painting company in Calgary.',
+    images: [
+      {
+        url: 'https://res.cloudinary.com/alberta-colour-painting/image/upload/v1672799089/home/awards/best-of-the-best-award-homestars-winner-2022-white-version_psaofg.webp',
+      },
+    ],
+    url: 'https://www.albertacolourpainting.com/services/garage-painting-calgary',
+    siteName: 'Alberta Colour Painting',
+    type: 'website',
+  },
+}
 
 export default function garagePaintingPage() {
   return (

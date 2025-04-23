@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion'
 
 export default function ScrollingBanner() {
-  const bannerText = ` Special Discount 10% <<<<<<<< ${' '} `
+  const bannerText = ` Special Discount 10% ; Ofrer ends May 17th  <<<<<<<<`
   const repeatedText = bannerText.repeat(10)
 
   return (
@@ -11,7 +11,7 @@ export default function ScrollingBanner() {
       className='bg-[#0D378D] text-white py-1 overflow-hidden whitespace-nowrap'
       style={{ scrollBehavior: 'smooth' }}>
       <motion.div
-        className='flex gap-1'
+        className='flex gap-4'
         animate={{ x: ['0%', '-100%'] }}
         transition={{
           repeat: Infinity,
@@ -19,8 +19,10 @@ export default function ScrollingBanner() {
           duration: 20,
           ease: 'linear',
         }}>
-        <div className='inline-block'>{repeatedText}</div>
-        <div className='inline-block'>{repeatedText}</div>
+        <span className=' mx-4'>{repeatedText}</span>
+        <span className=' mx-4'>{repeatedText}</span>
+        <span className=' mx-4'>{repeatedText}</span>
+        <span className=' mx-4'>{repeatedText}</span>
       </motion.div>
     </div>
   )

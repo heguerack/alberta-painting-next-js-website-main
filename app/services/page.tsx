@@ -12,11 +12,33 @@ import Link from 'next/link'
 import ContactFormSection from '../../components/ContactFormSection'
 import HomeBanner from '@/components/HomeBanner/home-banner'
 import blogsBanner from '@/public/blogs-banner.png'
-
 import BgBackground2 from '@/public/above-gallery-bg-line.svg'
-
 import StandardHero from '@/components/heros/StandardHero'
 import { services } from '@/data/serviceData'
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Painting Services in Calgary | Alberta Colour Painting',
+  description:
+    'Explore top-quality residential and commercial painting services by Alberta Colour Painting. Interior, exterior, and custom painting solutions tailored to your needs.',
+  viewport: 'width=device-width, initial-scale=1.0',
+  alternates: {
+    canonical: 'https://www.albertacolourpainting.com/services',
+  },
+  openGraph: {
+    title: 'Need Calgary Painters?',
+    description:
+      'Book your free estimate today with Alberta Colour Painting, the top-rated painting company in Calgary.',
+    images: [
+      {
+        url: 'https://res.cloudinary.com/alberta-colour-painting/image/upload/v1672799089/home/awards/best-of-the-best-award-homestars-winner-2022-white-version_psaofg.webp',
+      },
+    ],
+    url: 'https://www.albertacolourpainting.com/services',
+    siteName: 'Alberta Colour Painting',
+    type: 'website',
+  },
+}
 
 export default function Services() {
   return (
