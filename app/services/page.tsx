@@ -57,13 +57,13 @@ export default function Services() {
                     {service.title}
                   </CardTitle>
                   <CardDescription className=' text-black text-[16px]'>
-                    {service.short_description.split('\n')[0]}
+                    {service.description.split('\n')[0]}
                   </CardDescription>
                 </CardHeader>
 
                 <CardFooter className='p-0 mt-[-20]'>
                   <Link
-                    href={'/service-detail/' + service?.slug}
+                    href={'/services/' + service?.slug}
                     className='bg-[#0D378D] text-white pl-5 pr-2 py-1.5   border-2 border-white rounded-full font-medium  flex items-center justify-center'>
                     {service.buttonText}
                     <span className='ml-2 bg-white rounded-full p-2'>

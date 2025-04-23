@@ -78,9 +78,9 @@ export default function OurServices() {
                     {activeService.title}
                   </h2>
                   <p className='text-gray-400 lg:text-[16px] text-[14px]'>
-                    {activeService.short_description}
+                    {activeService.description}
                   </p>
-                  <Link href={'/service-detail/' + activeService?.slug}>
+                  <Link href={'/services/' + activeService?.slug}>
                     {' '}
                     {/* Corrected to activeService.href */}
                     <button className='flex items-center gap-2 border-2 border-white rounded-full pl-5 pr-1.5 py-1 text-sm md:text-base font-medium bg-[#0D378D] cursor-pointer transition-colors'>
