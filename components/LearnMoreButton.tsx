@@ -1,8 +1,8 @@
 import Link from 'next/link'
 
-export default function ShowLearnMoreButton() {
+export default function LearnMoreButton({ href }: { href: string }) {
   return (
-    <Link href='/about' className='cursor-pointer z-30'>
+    <Link href={href} className='cursor-pointer z-30'>
       <button className='bg-blue-900  cursor-pointer text-white rounded-full w-fit pl-4 pr-1.5 py-1 flex items-center gap-2 '>
         Learn More
         <svg

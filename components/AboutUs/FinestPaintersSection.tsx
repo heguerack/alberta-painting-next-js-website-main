@@ -34,7 +34,7 @@ export default function FinestPaintersSection() {
 
       <div className='relative w-full lg:w-[80%] ml-auto aspect-square md:aspect-auto h-[570px] max-sm:h-[400px] lg:mb-[20px] overflow-hidden '>
         <Image
-          src={service1}
+          src={'/gallery-Page-3.png'}
           alt='Modern living room with wooden floors and fireplace'
           fill
           className='object-cover '

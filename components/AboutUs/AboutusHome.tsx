@@ -1,15 +1,10 @@
 import Image from 'next/image'
-import AboutUs from '@/public/AboutUs.png'
 import BgBackground from '@/public/about-background-vector-line.svg'
-
-// import PremiumIcon from './MaterialsIcon'
-
-import ShowLearnMoreButton from '../ShowLearnMoreButton'
 import WorkmanshipIcon from './WorkmanshipIcon'
 import TeamIcon from './TeamIcon'
 import FivestarIcon from './FivestarIcon'
 import LicensedIcon from './LicensedIcon'
-// import MaterialsIcon from './MaterialsIcon'
+import LearnMoreButton from '../LearnMoreButton'
 
 export default function AboutusHome() {
   return (
@@ -17,16 +12,14 @@ export default function AboutusHome() {
       <div className='absolute top-[-390px] z-[-1]'>
         <Image src={BgBackground} alt='bg-Image' />
       </div>
-      {/* Hero Section */}
       <div className=' flex flex-col lg:flex-row  lg:h-[38rem]'>
         {/* Left side with image */}
         <div className='relative w-full lg:w-[50%]'>
           <div className='absolute top-10 left-0 z-50 bg-blue-900 text-white py-3 px-4'>
             <p className='text-[16px] font-semibold'>10 Years of Experience</p>
           </div>
-          <div></div>
           <Image
-            src={AboutUs}
+            src={'/gallery7.png'}
             alt='Elegant interior with staircase'
             width={600}
             height={600}
@@ -58,7 +51,7 @@ export default function AboutusHome() {
             Calgary painting company is all about bringing your style to life
             and making a bold statement. `
           </p>
-          <ShowLearnMoreButton />
+          <LearnMoreButton href={'/about'} />
         </div>
       </div>
 
