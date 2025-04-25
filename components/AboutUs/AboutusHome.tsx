@@ -4,11 +4,12 @@ import WorkmanshipIcon from './WorkmanshipIcon'
 import TeamIcon from './TeamIcon'
 import FivestarIcon from './FivestarIcon'
 import LicensedIcon from './LicensedIcon'
-import LearnMoreButton from '../LearnMoreButton'
+import LearnMoreButton from '../ButtonBlue'
+import ButtonBlueWithBorder from '../ButtonBlueWithBorder'
 
 export default function AboutusHome() {
   return (
-    <div className='w-full lg:my-24 my-10 relative'>
+    <div className='w-full mb-0 lg:mt-24 my-10 relative'>
       <div className='absolute top-[-390px] z-[-1]'>
         <Image src={BgBackground} alt='bg-Image' />
       </div>
@@ -26,7 +27,6 @@ export default function AboutusHome() {
             className='w-full h-[400px] lg:h-[650px] max-sm:pr-[20px] object-cover lg:absolute z-10'
           />
         </div>
-
         {/* Right side with text */}
         <div className='w-full xl:max-w-2xl   bg-white lg:px-16 px-4 py-8 flex flex-col justify-center '>
           <p className='text-black text-[22px]  font-semibold mb-2'>About Us</p>
@@ -51,7 +51,7 @@ export default function AboutusHome() {
             Calgary painting company is all about bringing your style to life
             and making a bold statement. `
           </p>
-          <LearnMoreButton href={'/about'} />
+          <ButtonBlueWithBorder href={'/about'} linkText={'Learn More'} />
         </div>
       </div>
 

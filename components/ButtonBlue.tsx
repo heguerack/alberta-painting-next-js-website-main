@@ -1,10 +1,16 @@
 import Link from 'next/link'
 
-export default function LearnMoreButton({ href }: { href: string }) {
+export default function ButtonBlue({
+  href,
+  linkText,
+}: {
+  href: string
+  linkText: string
+}) {
   return (
     <Link href={href} className='cursor-pointer z-30'>
       <button className='bg-blue-900  cursor-pointer text-white rounded-full w-fit pl-4 pr-1.5 py-1 flex items-center gap-2 '>
-        Learn More
+        {linkText}
         <svg
           width='31'
           height='30'
