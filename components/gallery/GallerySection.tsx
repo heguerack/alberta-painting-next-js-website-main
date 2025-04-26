@@ -2,8 +2,8 @@ import './style.css'
 
 import ServiceSection from '../service-section'
 import OurGalleryContent from './OurGalleryContent'
-import SmallGallerySection from './SmallGallerySection'
 import BigGalleryAccordion from './BigGalleryAccordion'
+import SmallGalleryWrapper from './SmallGalleryWrapper'
 
 const GallerySection = () => {
   return (
@@ -16,7 +16,7 @@ const GallerySection = () => {
         />
       </div>
       <OurGalleryContent />
-      <SmallGallerySection />
+      <SmallGalleryWrapper />
       <BigGalleryAccordion />
     </section>
   )
