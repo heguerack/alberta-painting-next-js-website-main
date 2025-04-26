@@ -18,3 +18,4 @@ git reset --hard frank_dev
 ### Push main to GitHub
 
 git push origin main --force
+git checkout main
