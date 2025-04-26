@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion'
 
 export default function ScrollingBanner() {
-  const bannerText = ` Special Discount 10% ; Ofrer ends May 17th  <<<<<<<<`
+  const bannerText = ` Special Discount 10% ; Offer Ends May 17th  <<<<<<<<`
   const repeatedText = bannerText.repeat(10)
 
   return (

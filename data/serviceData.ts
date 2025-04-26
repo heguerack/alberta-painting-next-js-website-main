@@ -1,3 +1,12 @@
+import {
+  GaragePaintingImg,
+  PopcornCeilingRemovalImg,
+  ServicescabinetPaintingImg,
+  ServicesCommercialPaintingImg,
+  ServicesExteriorPaintingImg,
+  ServicesInteriorPaintingImg,
+} from './images'
+
 export const services = [
   {
     id: '1',
@@ -5,9 +14,8 @@ export const services = [
     slug: 'interior-painting-calgary',
     description:
       'Interior painting in Calgary can be a daunting task for many homeowners. It requires a significant amount of time, effort, and attention to detail to achieve a professional finish.',
-    coverImage: '/interior/PXL_20220622_192016887.jpg',
-    imageSrc: '/interior/PXL_20220629_211214730.jpg',
-    altText: 'Quality Calgary Interior Painting for Your Needs',
+    imageSrc: ServicesInteriorPaintingImg.src,
+    altText: ServicesInteriorPaintingImg.alt,
     buttonText: 'Learn More',
   },
   {
@@ -16,9 +24,8 @@ export const services = [
     slug: 'exterior-painting-calgary',
     description:
       'Exterior painting is a crucial step in maintaining and enhancing the appearance of your property. In Calgary, the harsh weather conditions can take a toll on your exteriors, making it essential to choose a durable and high-quality paint.',
-    coverImage: '/exterior/PXL_20230430_173645223.jpg',
-    imageSrc: '/exterior/PXL_20230605_193213526.jpg',
-    altText: 'Commercial Painting',
+    imageSrc: ServicesExteriorPaintingImg.src,
+    altText: ServicesExteriorPaintingImg.alt,
     buttonText: 'Learn More',
   },
   {
@@ -27,10 +34,8 @@ export const services = [
     slug: 'commercial-painting-calgary',
     description:
       'Expert Painting Service for commercial and residential spaces. Affordable Painting Services in Calgary focused on meeting the unique painting needs of your business.',
-    coverImage: '/commercial/commercial-painting-offices.jpg',
-    imageSrc:
-      '/commercial/commercial-painting-project-downtown-paint-finished.jpg',
-    altText: 'Commercial Painting',
+    imageSrc: ServicesCommercialPaintingImg.src,
+    altText: ServicesCommercialPaintingImg.alt,
     buttonText: 'Learn More',
   },
   {
@@ -39,9 +44,8 @@ export const services = [
     slug: 'popcorn-ceiling-removal-calgary',
     description:
       'Popcorn ceilings were popular in the 70s, but not anymore. We can transform your old, dated ceiling into one that fits the way you live your modern life.',
-    coverImage: '/Popcorn Ceiling Removal/20220605_151407_nzvz8d.jpg',
-    imageSrc: '/Popcorn Ceiling Removal/20220605_151419_z32cgm.jpg',
-    altText: 'Popcorn Ceiling Removal',
+    imageSrc: PopcornCeilingRemovalImg.src,
+    altText: PopcornCeilingRemovalImg.alt,
     buttonText: 'Learn More',
   },
   {
@@ -50,9 +54,9 @@ export const services = [
     slug: 'cabinet-painting-calgary',
     description:
       "Sick of looking at the same boring, outdated cabinets? It's time for a glow-up! Our cabinet painting in Calgary will give your kitchen, bathroom, or any cabinetry a fresh, modern vibe without the need for an expensive renovation.",
-    coverImage: '/cabinet painting/cabinet-painting-img9.jpg',
-    imageSrc: '/cabinet painting/cabinet-painting-img9.jpg',
-    altText: 'Drywall Mud & Tape',
+
+    imageSrc: ServicescabinetPaintingImg.src,
+    altText: ServicescabinetPaintingImg.alt,
     buttonText: 'Learn More',
   },
   {
@@ -61,9 +65,8 @@ export const services = [
     slug: 'garage-painting-calgary',
     description:
       'Just like your ride deserves the best care, it also needs a fresh, stylish space to call home! Whether you use it for storage, as a workshop, or simply as a space to keep your vehicles safe, a fresh coat of paint can make a huge difference.',
-    coverImage: '/garage/20201205_105326_lxmmlz.jpg',
-    imageSrc: '/garage/20201205_105341_l1hwp4.jpg',
-    altText: 'Ceiling Texturing',
+    imageSrc: GaragePaintingImg.src,
+    altText: GaragePaintingImg.alt,
     buttonText: 'Learn More',
   },
 ]

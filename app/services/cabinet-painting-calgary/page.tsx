@@ -7,6 +7,7 @@ import BgBackground2 from '@/public/above-gallery-bg-line.svg'
 import AboutUs from '@/public/AboutUs.png'
 import DotFranks from '@/components/ui/DotFranks'
 import type { Metadata } from 'next'
+import { cabinetPaintingServiceImg } from '@/data/images'
 
 export const metadata: Metadata = {
   title: 'Cabinet Painting in Calgary | Bathroom & Kitchen Cabinet Painters',
@@ -57,15 +58,15 @@ export default function cabinetPaintingPage() {
       <div className='max-w-7xl mx-auto px-4 py-8 mt-10'>
         <div className='mb-6'>
           <h2 className='text-[26px] font-medium text-[#0D378D]'>
-            Popcorn Ceiling Removal Calgary
+            Cabinet Painting Calgary
           </h2>
         </div>
 
         <div className='space-y-6 '>
           <div className='relative w-full h-[300px] sm:h-[400px] md:h-[450px] overflow-hidden'>
             <Image
-              src='/interior/PXL_20220622_192016887.jpg'
-              alt=''
+              src={cabinetPaintingServiceImg.src}
+              alt={cabinetPaintingServiceImg.alt}
               fill
               className='md:object-cover sm:object-contain'
               priority
@@ -121,12 +122,12 @@ export default function cabinetPaintingPage() {
         </div>
 
         {/* Right side with text */}
-        <div className='w-full lg:w-3/5 '>
+        <div className='w-full lg:w-3/5 text-[16px] text-black text-justify'>
           <h3 className='lg:text-[32px] text-[24px] font-bold text-[#0D378D] mb-4'>
             Cabinet Painting in Calgary
             <br />— A Local Touch That Makes All the Difference
           </h3>
-          <p className='text-black mb-6 text-[14px] lg:text-[16px] text-justify'>
+          <p className=' mb-6 '>
             HTransforming your kitchen or bathroom cabinets doesn't have to mean
             a full renovation. In Calgary's dynamic housing market, cabinet
             painting has become the smart, affordable way to refresh your space
@@ -134,24 +135,24 @@ export default function cabinetPaintingPage() {
             bungalow in Bridgeland, a modern condo downtown, or a family home,
             we understand the styles and finishes that resonate with Calgarians.
           </p>
-          <p className='text-black mb-6 text-[14px] lg:text-[16px] text-justify'>
+          <p className=' mb-6 '>
             From trendy two-toned cabinets to classic whites that brighten up
             our winter days, we tailor every project to fit your space, your
             taste, and our local vibe.
           </p>
-          <p className='text-black mb-6 text-[14px] lg:text-[16px] text-justify'>
+          <p className=' mb-6 '>
             And because we’re among the best cabinet painting companies in
             Calgary, you’re getting more than just a service — you're getting a
             team that knows the city, respects your home, and cares about
             delivering results that last through all four seasons.
           </p>
-          <div className='flex gap-4 '>
+          <div className='flex gap-4 w-8/9 text-[15px]'>
             <DotFranks />
-            <p className='text-black text-[13px] lg:text-[15px] font-normal'>
+            <p className=' '>
               <span className='font-bold text-[#0D378D] mr-1'>
                 Does your ceiling look like cottage cheese or popcorn kernels?
               </span>
-              <span className='text-black mb-3 text-[14px] lg:text-[16px] text-justify'>
+              <span className=' mb-3 '>
                 From preparation to cleanup, we handle every step of the
                 painting process with efficiency. We take the time to properly
                 prepare surfaces, ensuring a smooth and even application,
@@ -165,7 +166,7 @@ export default function cabinetPaintingPage() {
           <br />
 
           <br />
-          <p className='text-black mb-6 text-[14px] lg:text-[16px] text-justify'>
+          <p className=' mb-6 '>
             From a resale perspective, smooth ceilings improve aesthetics and
             increase your home’s resale value. Buyers see them as one less thing
             to update, giving you a competitive edge. Whether revamping your
@@ -180,7 +181,7 @@ export default function cabinetPaintingPage() {
             Cabinet Painting Services in Calgary
           </h3>
           <br />
-          <p className='text-black mb-6 text-[14px] lg:text-[16px] text-justify'>
+          <p className=' mb-6 '>
             From a resale perspective, smooth ceilings improve aesthetics and
             increase your home’s resale value. Buyers see them as one less thing
             to update, giving you a competitive edge. Whether revamping your
@@ -189,12 +190,10 @@ export default function cabinetPaintingPage() {
             adds lasting value.
           </p>
           <br />
-          <p className='text-black mb-6 text-[14px] lg:text-[16px] text-justify'>
-            Here’s why:
-          </p>
-          <div className='flex gap-4 '>
+          <p className=' mb-6 font-bold text-[#0D378D] '>Here’s why:</p>
+          <div className='flex gap-4 w-8/9 text-[15px]'>
             <DotFranks />
-            <p className='text-black text-[13px] lg:text-[15px] font-normal'>
+            <p className=' '>
               Painting your existing cabinets costs just a fraction of what
               you'd spend on a full kitchen remodel or cabinet replacement. At
               Alberta Colour Painting, our Calgary cabinet painters are highly
@@ -203,18 +202,18 @@ export default function cabinetPaintingPage() {
             </p>
           </div>
           <br />
-          <div className='flex gap-4 '>
+          <div className='flex gap-4 w-8/9 text-[15px]'>
             <DotFranks />
-            <p className='text-black text-[13px] lg:text-[15px] font-normal'>
+            <p className=' '>
               Now there is no need to wait weeks (or months) for custom
               cabinetry. Most of the projects we undertake are done in just a
               few days.
             </p>
           </div>
           <br />
-          <div className='flex gap-4 '>
+          <div className='flex gap-4 w-8/9 text-[15px]'>
             <DotFranks />
-            <p className='text-black text-[13px] lg:text-[15px] font-normal'>
+            <p className=' '>
               Our Calgary cabinet painting services offer style flexibility
               where you can pick from downtown minimalism to cozy suburban charm
               and update your home's look to match your lifestyle and your
@@ -223,9 +222,9 @@ export default function cabinetPaintingPage() {
           </div>
           <br />
 
-          <div className='flex gap-4 '>
+          <div className='flex gap-4 w-8/9 text-[15px]'>
             <DotFranks />
-            <p className='text-black text-[13px] lg:text-[15px] font-normal'>
+            <p className=' '>
               Whether you're planning to sell or just want to impress guests, a
               freshly painted cabinet instantly elevates the space. We offer a
               wide range of bathroom, vanity, closet, and kitchen cabinet

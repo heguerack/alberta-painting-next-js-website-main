@@ -100,7 +100,7 @@ export default function popcornCeilingRemovalPage() {
         </div>
       </div>
       <HomeBanner />
-      <div className='font-normal flex flex-col  lg:flex-row w-[90%] gap-16 mx-auto py-16 lg:items-center'>
+      <div className=' flex flex-col  lg:flex-row w-[90%] gap-16 mx-auto py-16 lg:items-center'>
         {/* Left side with image */}
         <div className='relative w-full  h-[50vw] lg:w-2/5'>
           <Image
@@ -112,25 +112,27 @@ export default function popcornCeilingRemovalPage() {
         </div>
 
         {/* Right side with text */}
-        <div className='w-full lg:w-3/5 '>
+        <div
+          className='w-full lg:w-3/5 text-[16px] font-normal text-justify
+'>
           <h3 className='lg:text-[32px] text-[24px] font-bold text-[#0D378D] mb-4'>
             A Quick Popcorn
             <br />
             Ceiling Self-Test
           </h3>
-          <p className='text-black mb-6 text-[14px] lg:text-[16px] text-justify'>
+          <p className='text-black mb-6  '>
             Here are a few questions for you to help you determine if it's time
             for popcorn ceiling removal services. This quick self-test is
             designed to help you decide when your ceilings are due for an
             upgrade
           </p>
-          <div className='flex gap-4 '>
+          <div className='flex gap-4 w-8/9 text-[15px]'>
             <DotFranks />
-            <p className='text-black text-[13px] lg:text-[15px] font-normal'>
+            <p className='text-black  '>
               <span className='font-bold text-[#0D378D] mr-1'>
                 Does your ceiling look like cottage cheese or popcorn kernels?
               </span>
-              <span className='text-black mb-3 text-[14px] lg:text-[16px] text-justify'>
+              <span className='text-black mb-3  '>
                 From preparation to cleanup, we handle every step of the
                 painting process with efficiency. We take the time to properly
                 prepare surfaces, ensuring a smooth and even application,
@@ -142,13 +144,13 @@ export default function popcornCeilingRemovalPage() {
             </p>
           </div>
           <br />
-          <div className='flex gap-4 '>
+          <div className='flex gap-4 w-8/9 text-[15px]'>
             <DotFranks />
-            <p className='text-black text-[13px] lg:text-[15px] font-normal'>
+            <p className='text-black  '>
               <span className='font-bold text-[#0D378D] mr-1'>
                 Do you notice discoloration, stains, or shadows?
               </span>
-              <span className='text-black mb-3 text-[14px] lg:text-[16px] text-justify'>
+              <span className='text-black mb-3  '>
                 Popcorn ceilings might have been a past trend, but they are
                 infamous for trapping dust and moisture. Look at your ceiling,
                 if you notice brown patches or yellow spots, it could mean
@@ -161,13 +163,13 @@ export default function popcornCeilingRemovalPage() {
           </div>
           <br />
 
-          <div className='flex gap-4 '>
+          <div className='flex gap-4 w-8/9 text-[15px]'>
             <DotFranks />
-            <p className='text-black text-[13px] lg:text-[15px] font-normal'>
+            <p className='text-black  '>
               <span className='font-bold text-[#0D378D] mr-1'>
                 Was your home built before 1990?
               </span>
-              <span className='text-black mb-3 text-[14px] lg:text-[16px] text-justify'>
+              <span className='text-black mb-3  '>
                 Many older ceilings used materials that contained asbestos—a
                 known health hazard. If your popcorn ceiling hasn’t been tested,
                 it’s not worth the risk to leave it unchecked. The best move?
@@ -178,13 +180,13 @@ export default function popcornCeilingRemovalPage() {
             </p>
           </div>
           <br />
-          <div className='flex gap-4 '>
+          <div className='flex gap-4 w-8/9 text-[15px]'>
             <DotFranks />
-            <p className='text-black text-[13px] lg:text-[15px] font-normal'>
+            <p className='text-black  '>
               <span className='font-bold text-[#0D378D] mr-1'>
                 Is your lighting dull or uneven?
               </span>
-              <span className='text-black mb-3 text-[14px] lg:text-[16px] text-justify'>
+              <span className='text-black mb-3  '>
                 Popcorn ceilings are notorious for weirdly scattering light and
                 absorbing the brightness of a room, creating shadows and dull
                 spots, making the room appear darker and smaller. The ceiling
@@ -196,13 +198,13 @@ export default function popcornCeilingRemovalPage() {
             </p>
           </div>
           <br />
-          <div className='flex gap-4 '>
+          <div className='flex gap-4 w-8/9 text-[15px]'>
             <DotFranks />
-            <p className='text-black text-[13px] lg:text-[15px] font-normal'>
+            <p className='text-black  '>
               <span className='font-bold text-[#0D378D] mr-1'>
                 Are you planning to sell or renovate?
               </span>
-              <span className='text-black mb-3 text-[14px] lg:text-[16px] text-justify'>
+              <span className='text-black mb-3  '>
                 Textured ceilings can instantly date a space and turn off
                 potential buyers or guests as today's market favors clean
                 finishes, and popcorn ceilings simply don't fit that look.
@@ -215,7 +217,7 @@ export default function popcornCeilingRemovalPage() {
             </p>
           </div>
           <br />
-          <p className='text-black mb-6 text-[14px] lg:text-[16px] text-justify'>
+          <p className='text-black mb-6  '>
             From a resale perspective, smooth ceilings improve aesthetics and
             increase your home’s resale value. Buyers see them as one less thing
             to update, giving you a competitive edge. Whether revamping your

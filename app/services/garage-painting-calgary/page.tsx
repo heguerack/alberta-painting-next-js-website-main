@@ -106,7 +106,7 @@ export default function garagePaintingPage() {
         </div>
 
         {/* Right side with text */}
-        <div className='w-full lg:w-3/5 '>
+        <div className='w-full lg:w-3/5 text-[16px] text-black text-justify'>
           <h3 className='lg:text-[32px] text-[24px] font-bold text-[#0D378D] mb-4'>
             Why Our
             <br />
@@ -114,7 +114,7 @@ export default function garagePaintingPage() {
             <br />
             Is Worth It
           </h3>
-          <p className='text-black mb-6 text-[14px] lg:text-[16px] text-justify'>
+          <p className='mb-6'>
             It’s no secret that the garage is one of the most overlooked spaces
             in any home. While your ride might be sleek and stylish, parking it
             in a dull, dusty, or outdated space can seriously take away from its
@@ -122,7 +122,7 @@ export default function garagePaintingPage() {
             matter, and a fresh, clean, and well-painted garage can make all the
             difference.
           </p>
-          <p className='text-black mb-6 text-[14px] lg:text-[16px] text-justify'>
+          <p className='mb-6'>
             At Alberta Colour Painting, we use high-quality, durable paints
             designed to withstand Calgary’s fluctuating temperatures, moisture,
             and daily wear. Painted garage walls and ceilings are easier to
@@ -133,14 +133,14 @@ export default function garagePaintingPage() {
             protective layer that can withstand oil spills, tire marks, and
             daily wear and tear.
           </p>
-          <p className='text-black mb-6 text-[14px] lg:text-[16px] text-justify'>
+          <p className='mb-6'>
             Whether you use your garage for parking, storage, or as a hobby
             space, a professionally painted floor gives it that crisp, finished
             look, almost like a showroom. It’s not just about aesthetics,
             either; it's about extending the life of your surfaces and creating
             a garage that feels as well cared for as the rest of your home.
           </p>
-          <p className='text-black mb-6 text-[14px] lg:text-[16px] text-justify'>
+          <p className='mb-6'>
             So whether you're going for a clean, showroom-style garage or just
             want to protect and refresh a hardworking space, we've got you
             covered. Alberta Colour Painting is your trusted partner for garage

@@ -110,33 +110,33 @@ export default function commercialPaintingCalgary() {
         </div>
 
         {/* Right side with text */}
-        <div className='w-full lg:w-3/5 '>
+        <div className='w-full text-[16px] text-justify lg:w-3/5 '>
           <h3 className='lg:text-[32px] text-[24px] font-bold text-[#0D378D] mb-4'>
             Colour Psychology,
             <br />
             for Commercial Spaces
           </h3>
 
-          <p className='text-black mb-4 text-[14px] lg:text-[16px] text-justify'>
+          <p className='text-black mb-4  text-justify'>
             If you’re a business owner, your office or commercial space is like
             your second home. It's where ideas grow, goals are set, and your
             team comes together every day. That's why taking care of your walls
             and overall environment is just as important as any other part of
             your business.
           </p>
-          <p className='text-black mb-4 text-[14px] lg:text-[16px] text-justify'>
+          <p className='text-black mb-4  text-justify'>
             Vibrant colours can boost mood, motivation, and set the tone for
             productivity. The right shades don’t just brighten walls, but they
             also energize the people working within them.
           </p>
-          <p className='text-black mb-4 text-[14px] lg:text-[16px] text-justify'>
+          <p className='text-black mb-4  text-justify'>
             Our commercial painters in Calgary have shared a few fun facts about
             how different colours can affect the vibe and energy of your space.
             Check them out below!
           </p>
           <div className='flex gap-4 '>
             <DotFranks />
-            <p className='text-black text-[13px] lg:text-[15px] font-normal'>
+            <p className='text-black text-[15px] w-8/9'>
               <span className='font-bold text-[#0D378D] mr-1'>
                 Blues and greens
               </span>
@@ -146,7 +146,7 @@ export default function commercialPaintingCalgary() {
           <br />
           <div className='flex gap-4 '>
             <DotFranks />
-            <p className='text-black text-[13px] lg:text-[15px] font-normal'>
+            <p className='text-black text-[15px] w-8/9'>
               <span className='font-bold text-[#0D378D] mr-1'>
                 Warm tones like reds and oranges
               </span>
@@ -156,7 +156,7 @@ export default function commercialPaintingCalgary() {
           <br />
           <div className='flex gap-4 '>
             <DotFranks />
-            <p className='text-black text-[13px] lg:text-[15px] font-normal'>
+            <p className='text-black text-[15px]  w-8/9 '>
               <span className='font-bold text-[#0D378D] mr-1'>
                 Neutral palettes
               </span>
@@ -166,7 +166,7 @@ export default function commercialPaintingCalgary() {
           <br />
           <div className='flex gap-4 '>
             <DotFranks />
-            <p className='text-black text-[13px] lg:text-[15px] font-normal'>
+            <p className='text-black text-[15px] w-8/9'>
               <span className='font-bold text-[#0D378D] mr-1'>
                 Accent walls
               </span>
@@ -176,12 +176,12 @@ export default function commercialPaintingCalgary() {
           </div>
           <br />
 
-          <p className='text-black mb-4 text-[14px] lg:text-[16px] text-justify'>
+          <p className='text-black mb-4  text-justify'>
             If you’re looking to add a touch of luxury with a cozy, welcoming
             vibe to your commercial space but want something unique, we’ve got
             you
           </p>
-          <p className='text-black mb-4 text-[14px] lg:text-[16px] text-justify'>
+          <p className='text-black mb-4  text-justify'>
             Get in touch with our commercial painting company in Calgary, and
             we’ll take the time to understand your vision. Our experts will
             assess your space, listen to your needs, and recommend creative,

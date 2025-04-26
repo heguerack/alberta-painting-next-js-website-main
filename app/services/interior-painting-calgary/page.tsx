@@ -6,6 +6,7 @@ import blogsBanner from '@/public/blogs-banner.png'
 import BgBackground2 from '@/public/above-gallery-bg-line.svg'
 import AboutUs from '@/public/AboutUs.png'
 import type { Metadata } from 'next'
+import { InteriorPaintingServiceImg } from '@/data/images'
 
 export const metadata: Metadata = {
   title: "Calgary's Top Interior Painters: Interior House Painting Services",
@@ -57,8 +58,8 @@ export default function interiorPaintingCalgary() {
         <div className='space-y-6'>
           <div className='relative w-full h-[300px] sm:h-[400px] md:h-[450px] overflow-hidden'>
             <Image
-              src='/interior/PXL_20220622_192016887.jpg'
-              alt=''
+              src={InteriorPaintingServiceImg.src}
+              alt={InteriorPaintingServiceImg.alt}
               fill
               className='md:object-cover sm:object-contain'
               priority
@@ -112,14 +113,14 @@ export default function interiorPaintingCalgary() {
         </div>
 
         {/* Right side with text */}
-        <div className='w-full lg:w-3/5 '>
+        <div className='w-full lg:w-3/5 text-[16px] '>
           <h3 className='lg:text-[32px] text-[24px] font-bold text-[#0D378D] mb-4'>
             Beyond Just Paint,
             <br />
             We Elevate Your Space
           </h3>
 
-          <p className='text-black mb-4 text-[14px] lg:text-[16px] text-justify'>
+          <p className='text-black mb-4  text-justify'>
             At our painting company in Calgary, interior painting is more than
             just changing the shade or color of a space; it's about transforming
             the entire atmosphere and creating a feeling of comfort and style. A
@@ -127,7 +128,7 @@ export default function interiorPaintingCalgary() {
             more inviting, spacious, or even more sophisticated, depending on
             the colors and finishes chosen.
           </p>
-          <p className='text-black mb-4 text-[14px] lg:text-[16px] text-justify'>
+          <p className='text-black mb-4  text-justify'>
             We understand that choosing the right colors and finishes can be a
             bit of a task, which is why we’re here to make it easy for you.
             Whether you want to refresh your cozy living room that's been the
@@ -141,7 +142,7 @@ export default function interiorPaintingCalgary() {
             every brushstroke adds beauty, warmth, and personality to your space
             just the way you want it.
           </p>
-          <p className='text-black mb-4 text-[14px] lg:text-[16px] text-justify'>
+          <p className='text-black mb-4  text-justify'>
             From preparation to cleanup, we handle every step of the painting
             process with efficiency. We take the time to properly prepare
             surfaces, ensuring a smooth and even application, leaving your space

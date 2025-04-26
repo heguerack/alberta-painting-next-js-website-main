@@ -113,23 +113,23 @@ export default function exteriorPaintingCalgary() {
         </div>
 
         {/* Right side with text */}
-        <div className='w-full lg:w-3/5 '>
+        <div className='w-full lg:w-3/5 text-[16px] text-black text-justify'>
           <h3 className='lg:text-[32px] text-[24px] font-bold text-[#0D378D] mb-4'>
             Beyond Just Paint,
             <br />
             We Elevate Your Space
           </h3>
 
-          <p className='text-black mb-6 text-[14px] lg:text-[16px] text-justify'>
+          <p className=' mb-6   '>
             When it comes to exterior painting, there are a few clear indicators
             that it's time for a refresh. Ignoring these early warnings can lead
             to costly repairs and even long-term damage
           </p>
-          <p className='text-black mb-6 text-[14px] lg:text-[16px] text-justify'>
+          <p className=' mb-6   '>
             Here are a few key signs that your home might be due for exterior
             painting services:
           </p>
-          <p className='text-black mb-3 text-[14px] lg:text-[16px] text-justify'>
+          <p className=' mb-3   '>
             From preparation to cleanup, we handle every step of the painting
             process with efficiency. We take the time to properly prepare
             surfaces, ensuring a smooth and even application, leaving your space
@@ -137,9 +137,10 @@ export default function exteriorPaintingCalgary() {
             expectations but to exceed them, providing you with an interior that
             feels perfectly tailored to your style.
           </p>
-          <div className='flex gap-4 '>
+          <br />
+          <div className='flex gap-4 w-8/9 text-[15px]'>
             <DotFranks />
-            <p className='text-black text-[13px] lg:text-[15px] font-normal'>
+            <p className='  '>
               <span className='font-bold text-[#0D378D] mr-1'>
                 Faded or Discolored Paint
               </span>
@@ -153,14 +154,15 @@ export default function exteriorPaintingCalgary() {
           </div>
           <br />
           <br />
-          <p className='text-black mb-4 text-[14px] lg:text-[16px] text-justify'>
+          <p className=' mb-4   '>
             Our exterior painters in Calgary know just the right techniques and
             methods to help address this issue, using the finest products and
             repairing any damage in a timely manner.
           </p>
-          <div className='flex gap-4 w-[80%] text-justify'>
+          <br />
+          <div className='flex gap-4 w-8/9 text-[15px]'>
             <DotFranks />
-            <p className='text-black text-[13px] lg:text-[15px] font-normal '>
+            <p className='   '>
               <span className='font-bold text-[#0D378D] mr-1'>
                 Peeling, Cracking, or Bubbling
               </span>
@@ -175,16 +177,17 @@ export default function exteriorPaintingCalgary() {
           </div>
           <br />
           <br />
-          <p className='text-black mb-3 text-[14px] lg:text-[16px] text-justify'>
+          <p className=' mb-3 '>
             Our exterior painters in Calgary know how to handle these problems
             the right way. We start by checking for any damage, then fix it
             before applying high-quality paint that can beat these conditions
             effectively.
           </p>
-          <div className='flex gap-4 w-[80%] text-justify'>
+          <br />
+          <div className='flex gap-4 w-8/9 text-[15px]'>
             <DotFranks />
 
-            <p className='text-black text-[13px] lg:text-[15px] font-normal'>
+            <p className='  '>
               <span className='font-bold text-[#0D378D] mr-1'>
                 It’s Been More than 5 Years
               </span>
@@ -197,9 +200,9 @@ export default function exteriorPaintingCalgary() {
           </div>
           <br />
 
-          <div className='flex gap-4'>
+          <div className='flex gap-4 w-8/9 text-[15px]'>
             <DotFranks />
-            <p className='text-black text-[13px] lg:text-[15px] font-normal'>
+            <p className=' '>
               <span className='font-bold text-[#0D378D] mr-1'>
                 Chalky Residue
               </span>
@@ -211,14 +214,15 @@ export default function exteriorPaintingCalgary() {
           </div>
           <br />
           <br />
-          <p className='text-black mb-3 text-[14px] lg:text-[16px] text-justify'>
+          <p className=' mb-3 '>
             If you have been noticing the same chalky/powdery residue on your
             home's exterior walls, it's time to get in touch with the best
             exterior painters in Calgary.
           </p>
-          <div className='flex gap-4'>
+          <br />
+          <div className='flex gap-4 w-8/9 text-[15px]'>
             <DotFranks />
-            <p className='text-black text-[13px] lg:text-[15px] font-normal'>
+            <p className=' '>
               <span className='font-bold text-[#0D378D] mr-1'>
                 Exposed Wood or Bare Patches
               </span>

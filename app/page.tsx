@@ -13,8 +13,9 @@ import SpecialOffer from '@/components/SpecialOffer/page'
 import ReviewsCarousel from '@/components/ReviewsCarousel'
 import HomeHero from '@/components/heros/HomeHero'
 import { ReviewsGoogleType } from '@/types/review'
-import GallerySection from '@/components/gallery/GallerySection'
+
 import AboutusHome from '@/components/AboutUs/AboutusHome'
+import GallerySection from '@/components/gallery/GallerySection'
 
 export const metadata: Metadata = {
   title:

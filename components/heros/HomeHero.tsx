@@ -5,6 +5,7 @@ import Image from 'next/image'
 
 import './hero.css'
 import HeroCallToAction from './HeroCallToAction'
+import { HeroHomeImg } from '@/data/images'
 
 const HomeHero = () => {
   return (
@@ -13,8 +14,8 @@ const HomeHero = () => {
         <HeroPhoneMobile />
         <div className='relative h-[calc(100vh-50px)]'>
           <Image
-            src={'/galleryHome-5.png'}
-            alt={'Dark blue siding just pained'}
+            src={HeroHomeImg.src}
+            alt={HeroHomeImg.alt}
             fill
             className='object-cover brightness-75 w-full h-full'
             priority
