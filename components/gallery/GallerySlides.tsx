@@ -1,20 +1,9 @@
 import { GalleryHomeImages } from '@/data/images'
 import Image from 'next/image'
 
-interface GallerySlidesProps {
-  scrollRef: React.RefObject<HTMLDivElement | null>
-  handleScroll: () => void
-}
-
-export default function SmallGallerySection({
-  scrollRef,
-  handleScroll,
-}: GallerySlidesProps) {
+export default function GallerySlides() {
   return (
-    <div
-      ref={scrollRef}
-      onScroll={handleScroll}
-      className='overflow-x-auto flex snap-x snap-mandatory scroll-smooth lg:hidden cursor-grab active:cursor-grabbing'>
+    <>
       {GalleryHomeImages.map((slide, i) => (
         <div
           key={i}
@@ -28,6 +17,6 @@ export default function SmallGallerySection({
           />
         </div>
       ))}
-    </div>
+    </>
   )
 }

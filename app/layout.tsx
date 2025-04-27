@@ -130,7 +130,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <main>
-          <ScrollingBanner />
+          {/* <ScrollingBanner /> */}
           <Navbar />
           {children}
           {/* It's better to place the script tag at the bottom of the body for performance */}

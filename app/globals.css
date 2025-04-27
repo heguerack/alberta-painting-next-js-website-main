@@ -46,3 +46,6 @@ body {
   color: white;
   padding: 0 4px;
 }
+.embla__slide.is-selected {
+  opacity: 1 !important;
+}

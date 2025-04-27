@@ -4,8 +4,8 @@ import WorkmanshipIcon from './WorkmanshipIcon'
 import TeamIcon from './TeamIcon'
 import FivestarIcon from './FivestarIcon'
 import LicensedIcon from './LicensedIcon'
-import LearnMoreButton from '../ButtonBlue'
 import ButtonBlueWithBorder from '../ButtonBlueWithBorder'
+import { AboutUsImg } from '@/data/images'
 
 export default function AboutusHome() {
   return (
@@ -20,8 +20,8 @@ export default function AboutusHome() {
             <p className='text-[16px] font-semibold'>10 Years of Experience</p>
           </div>
           <Image
-            src={'/gallery7.png'}
-            alt='Elegant interior with staircase'
+            src={AboutUsImg.src}
+            alt={AboutUsImg.alt}
             width={600}
             height={600}
             className='w-full h-[400px] lg:h-[650px] max-sm:pr-[20px] object-cover lg:absolute z-10'

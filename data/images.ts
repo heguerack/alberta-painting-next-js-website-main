@@ -48,7 +48,7 @@ export const HeroHomeImg = {
   alt: 'hero showcase image - house painting calgary',
 }
 
-// GalleryHome Images
+// GallerySection Images
 export const GalleryHomeImages = [
   {
     src: '/galleryNew-1.png',
@@ -71,8 +71,17 @@ export const GalleryHomeImages = [
     alt: 'home painting calgary',
   },
 ]
-//  {GalleryHomeImages.map((slide, i) => (
-//               <div key={i} className='gallery-slide'>
-//                 <Image src={slide.src} className='img-fluid' alt={slide.alt} />
-//               </div>
-//             ))}
+
+export const AboutUsImg = {
+  src: '/AboutUs.png',
+  alt: 'calgary painters',
+}
+export const galleryImg = {
+  src: '/gallery-image.png',
+  alt: 'painters in calgary alberta​',
+}
+
+export const gallery1Img = {
+  src: '/gallery1.png',
+  alt: 'painting contractors calgary',
+}

@@ -1,13 +1,19 @@
 'use client'
 
-import { useRef, useState } from 'react'
-import SmallGallerySection from './SmallGallerySection'
+import React, { useRef, useState, ReactNode } from 'react'
+import { GalleryHomeImages } from '@/data/images'
 
-export default function SmallGalleryWrapper() {
+interface SmallGalleryWrapperProps {
+  children: ReactNode
+}
+
+export default function SmallGalleryWrapper({
+  children,
+}: SmallGalleryWrapperProps) {
   const scrollRef = useRef<HTMLDivElement>(null)
   const [currentStep, setCurrentStep] = useState(0)
 
-  const numberOfImages = 5 // You can keep it hardcoded for now, or pass it dynamically later
+  const numberOfImages = GalleryHomeImages.length
 
   const handleScroll = () => {
     const container = scrollRef.current
@@ -29,11 +35,17 @@ export default function SmallGalleryWrapper() {
 
   return (
     <div className='relative'>
-      <SmallGallerySection scrollRef={scrollRef} handleScroll={handleScroll} />
+      {/* Images directly rendered */}
+      <div
+        ref={scrollRef}
+        onScroll={handleScroll}
+        className='overflow-x-auto flex snap-x snap-mandatory scroll-smooth lg:hidden cursor-grab active:cursor-grabbing'>
+        {children}
+      </div>
 
-      {/* Fixed slices for progress */}
+      {/* Progress Bar */}
       <div className='absolute bottom-0 left-0 w-full h-2 sm:h-3 flex mt-2 overflow-hidden'>
-        {Array.from({ length: numberOfImages }).map((_, index) => (
+        {Array.from({ length: 5 }).map((_, index) => (
           <div
             key={index}
             className={`h-full flex-1 transition-colors duration-300 ${
