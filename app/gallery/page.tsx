@@ -2,9 +2,9 @@ import ProjectCard from './ProjectCard'
 
 const projects = [
   {
-    title: 'Cabinet Painting in Calgary',
+    title: 'Cabinet Painting: Oak To Off-White',
     imageSrc: '/services/cabinet-painting-oak-to white-and-teal-colour.jpg',
-    location: 'Calgary, AB',
+    location: 'Mckenzie Towne, Calgary, AB',
     href: '/gallery/cabinet-painting-project-mapple-to-offwhite',
   },
   // later you will add more projects here

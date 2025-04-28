@@ -6,7 +6,7 @@ export default function BackIconTop() {
   return (
     <div className=''>
       <Link href='/gallery'>
-        <button className='p-2 rounded-full bg-gray-700 hover:bg-gray-600 text-white'>
+        <button className='p-2 rounded-full bg-[#0D378D] hover:bg-blue-800 text-white cursor-pointer'>
           <svg
             xmlns='http://www.w3.org/2000/svg'
             fill='none'

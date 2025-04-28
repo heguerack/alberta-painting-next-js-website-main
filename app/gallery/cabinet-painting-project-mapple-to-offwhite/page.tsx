@@ -11,10 +11,18 @@ const imagesForCabinetPainting = [
   GalleryHomeImages[1],
   GalleryHomeImages[3],
   GalleryHomeImages[4],
+  GalleryHomeImages[0],
+  GalleryHomeImages[1],
+  GalleryHomeImages[3],
+  GalleryHomeImages[4],
+  GalleryHomeImages[0],
+  GalleryHomeImages[1],
+  GalleryHomeImages[3],
+  GalleryHomeImages[4],
 ]
 export default function CabinetPaintingCalgaryPage() {
   return (
-    <section className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12'>
+    <section className='max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12'>
       {/* Tiny top back icon */}
       <BackIconTop />
 
