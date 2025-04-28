@@ -44,7 +44,7 @@ export default function SmallGalleryWrapper({
       </div>
 
       {/* Progress Bar */}
-      <div className='absolute bottom-0 left-0 w-full h-2 sm:h-3 flex mt-2 overflow-hidden'>
+      <div className='absolute bottom-0 left-0 w-full lg:hidden h-2 sm:h-3 flex mt-2 overflow-hidden'>
         {Array.from({ length: 5 }).map((_, index) => (
           <div
             key={index}

@@ -7,7 +7,60 @@ const projects = [
     location: 'Mckenzie Towne, Calgary, AB',
     href: '/gallery/cabinet-painting-project-mapple-to-offwhite',
   },
-  // later you will add more projects here
+  {
+    title: 'Cabinet Painting: Oak To Off-White',
+    imageSrc: '/services/cabinet-painting-oak-to white-and-teal-colour.jpg',
+    location: 'Mckenzie Towne, Calgary, AB',
+    href: '/gallery/cabinet-painting-project-mapple-to-offwhite',
+  },
+  {
+    title: 'Cabinet Painting: Oak To Off-White',
+    imageSrc: '/services/cabinet-painting-oak-to white-and-teal-colour.jpg',
+    location: 'Mckenzie Towne, Calgary, AB',
+    href: '/gallery/cabinet-painting-project-mapple-to-offwhite',
+  },
+  {
+    title: 'Cabinet Painting: Oak To Off-White',
+    imageSrc: '/services/cabinet-painting-oak-to white-and-teal-colour.jpg',
+    location: 'Mckenzie Towne, Calgary, AB',
+    href: '/gallery/cabinet-painting-project-mapple-to-offwhite',
+  },
+  {
+    title: 'Cabinet Painting: Oak To Off-White',
+    imageSrc: '/services/cabinet-painting-oak-to white-and-teal-colour.jpg',
+    location: 'Mckenzie Towne, Calgary, AB',
+    href: '/gallery/cabinet-painting-project-mapple-to-offwhite',
+  },
+  {
+    title: 'Cabinet Painting: Oak To Off-White',
+    imageSrc: '/services/cabinet-painting-oak-to white-and-teal-colour.jpg',
+    location: 'Mckenzie Towne, Calgary, AB',
+    href: '/gallery/cabinet-painting-project-mapple-to-offwhite',
+  },
+  {
+    title: 'Cabinet Painting: Oak To Off-White',
+    imageSrc: '/services/cabinet-painting-oak-to white-and-teal-colour.jpg',
+    location: 'Mckenzie Towne, Calgary, AB',
+    href: '/gallery/cabinet-painting-project-mapple-to-offwhite',
+  },
+  {
+    title: 'Cabinet Painting: Oak To Off-White',
+    imageSrc: '/services/cabinet-painting-oak-to white-and-teal-colour.jpg',
+    location: 'Mckenzie Towne, Calgary, AB',
+    href: '/gallery/cabinet-painting-project-mapple-to-offwhite',
+  },
+  {
+    title: 'Cabinet Painting: Oak To Off-White',
+    imageSrc: '/services/cabinet-painting-oak-to white-and-teal-colour.jpg',
+    location: 'Mckenzie Towne, Calgary, AB',
+    href: '/gallery/cabinet-painting-project-mapple-to-offwhite',
+  },
+  {
+    title: 'Cabinet Painting: Oak To Off-White',
+    imageSrc: '/services/cabinet-painting-oak-to white-and-teal-colour.jpg',
+    location: 'Mckenzie Towne, Calgary, AB',
+    href: '/gallery/cabinet-painting-project-mapple-to-offwhite',
+  },
 ]
 
 export default function ProjectGalleryPage() {

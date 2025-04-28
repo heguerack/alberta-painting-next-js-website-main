@@ -17,5 +17,5 @@ git reset --hard frank_dev
 
 ### Push main to GitHub
 
-git push origin main --force
-git checkout frank_dev
+git checkout main
+git reset --hard frank_dev
