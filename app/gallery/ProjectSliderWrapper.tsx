@@ -1,7 +1,19 @@
 'use client'
 
 import { useRef, useState, useEffect, ReactNode } from 'react'
-import BackToGalleryButton from './BackToGalleryButton'
+import {
+  ArrowLeft,
+  ArrowLeftCircle,
+  ArrowRightCircle,
+  PauseCircle,
+  PlayCircle,
+} from 'lucide-react'
+import {
+  PlayIcon,
+  PauseIcon,
+  ArrowLeftIcon,
+  ArrowRightIcon,
+} from '@heroicons/react/24/solid'
 
 interface ProjectSliderWrapperProps {
   children: ReactNode[]
@@ -151,23 +163,39 @@ export default function ProjectSliderWrapper({
           {/* DESKTOP CONTROLS */}
           <div className=''>
             <div className='flex justify-center gap-4 mt-6'>
-              <button
-                onClick={handlePrev}
-                className='px-4 py-2 bg-gray-800 text-white rounded hover:bg-gray-700'>
-                Prev
-              </button>
-              <button
-                onClick={togglePlay}
-                className='px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-500'>
-                {isPlaying ? 'Pause' : 'Play'}
-              </button>
-              <button
-                onClick={handleNext}
-                className='px-4 py-2 bg-gray-800 text-white rounded hover:bg-gray-700'>
-                Next
-              </button>
+              <ArrowLeftIcon className='w-10 h-10 text-[#0D378D] hover:text-blue-800 cursor-pointer' />
+              {isPlaying ? (
+                <PauseIcon className='mx-6 w-10 h-10 text-[#0D378D] hover:text-blue-800 cursor-pointer' />
+              ) : (
+                <PlayIcon className='mx-6 w-10 h-10 text-[#0D378D] hover:text-blue-800 cursor-pointer' />
+              )}
+              <ArrowRightIcon className='w-10 h-10 text-[#0D378D] hover:text-blue-800 cursor-pointer' />
             </div>
           </div>
+
+          {/* <div className=''>
+            <div className='flex justify-center gap-4 mt-6'>
+              <ArrowLeftCircle
+                className='w-8 h-8  hover:text-blue-800 cursor-pointer'
+                color='#0D378D'
+              />
+              {isPlaying ? (
+                <PauseCircle
+                  className='w-8 h-8 text- hover:text-blue-800 cursor-pointer'
+                  color='#0D378D'
+                />
+              ) : (
+                <PlayCircle
+                  className='w-8 h-8  hover:text-blue-800 cursor-pointer'
+                  color='#0D378D'
+                />
+              )}
+              <ArrowRightCircle
+                className='w-8 h-8 text-[#0D378D] hover:text-blue-800 cursor-pointer'
+                // color='#0D378D'
+              />
+            </div>
+          </div> */}
         </>
       )}
     </div>

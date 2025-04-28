@@ -38,7 +38,7 @@ export default function ProjectCard({
         </div>
 
         {/* View Project mini button */}
-        <div className='flex items-center gap-2 text-blue-600 font-medium group-hover:underline'>
+        <div className='flex items-center gap-2 text-[#0D378D] font-medium group-hover:underline'>
           <svg
             xmlns='http://www.w3.org/2000/svg'
             fill='none'
