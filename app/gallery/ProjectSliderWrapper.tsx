@@ -163,13 +163,25 @@ export default function ProjectSliderWrapper({
           {/* DESKTOP CONTROLS */}
           <div className=''>
             <div className='flex justify-center gap-4 mt-6'>
-              <ArrowLeftIcon className='w-10 h-10 text-[#0D378D] hover:text-blue-800 cursor-pointer' />
+              <ArrowLeftIcon
+                onClick={handlePrev}
+                className='w-10 h-10 text-[#0D378D] hover:text-blue-800 cursor-pointer'
+              />
               {isPlaying ? (
-                <PauseIcon className='mx-6 w-10 h-10 text-[#0D378D] hover:text-blue-800 cursor-pointer' />
+                <PauseIcon
+                  onClick={togglePlay}
+                  className='mx-6 w-10 h-10 text-[#0D378D] hover:text-blue-800 cursor-pointer'
+                />
               ) : (
-                <PlayIcon className='mx-6 w-10 h-10 text-[#0D378D] hover:text-blue-800 cursor-pointer' />
+                <PlayIcon
+                  onClick={togglePlay}
+                  className='mx-6 w-10 h-10 text-[#0D378D] hover:text-blue-800 cursor-pointer'
+                />
               )}
-              <ArrowRightIcon className='w-10 h-10 text-[#0D378D] hover:text-blue-800 cursor-pointer' />
+              <ArrowRightIcon
+                onClick={handleNext}
+                className='w-10 h-10 text-[#0D378D] hover:text-blue-800 cursor-pointer'
+              />
             </div>
           </div>
 
