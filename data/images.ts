@@ -4,9 +4,25 @@ export const cabinetPaintingServiceImg = {
   src: '/cabinet-painting/cabinet-painting-showcase.jpg',
   alt: 'Cabinet Painting Calgary',
 }
+export const ExterioPaintingServiceImg = {
+  src: '/exterior/PXL_20230430_173645223.jpg',
+  alt: 'Exterior Painting Service in Calgary',
+}
 export const InteriorPaintingServiceImg = {
   src: '/interior/PXL_20220622_192016887.jpg',
   alt: 'Interior Painting Calgary',
+}
+export const CommercialPaintingServiceImg = {
+  src: '/commercial/commercial-painting-offices-calgary.jpg',
+  alt: 'Commercial Painting Service in Calgary',
+}
+export const PopcornRemvalServiceImg = {
+  src: '/Popcorn Ceiling Removal/20220605_151407_nzvz8d.jpg',
+  alt: 'Popcorn Ceiling Removal Service in Calgary',
+}
+export const GaragePaintingServiceImg = {
+  src: '/garage/20201205_105326_lxmmlz.jpg',
+  alt: 'Garage Painting Service in Calgary',
 }
 
 // SERVICES PAGE IMAGES

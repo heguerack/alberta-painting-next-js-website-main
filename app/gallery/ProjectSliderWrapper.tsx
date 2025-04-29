@@ -1,13 +1,7 @@
 'use client'
 
 import { useRef, useState, useEffect, ReactNode } from 'react'
-import {
-  ArrowLeft,
-  ArrowLeftCircle,
-  ArrowRightCircle,
-  PauseCircle,
-  PlayCircle,
-} from 'lucide-react'
+
 import {
   PlayIcon,
   PauseIcon,

@@ -9,13 +9,16 @@ import { getBlogPosts } from '@/lib/blog-data'
 import BlogGrid from '@/components/blog-grid'
 import HomeBanner from '@/components/HomeBanner/home-banner'
 import Link from 'next/link'
-import SpecialOffer from '@/components/SpecialOffer/page'
+
 import ReviewsCarousel from '@/components/ReviewsCarousel'
 import HomeHero from '@/components/heros/HomeHero'
 import { ReviewsGoogleType } from '@/types/review'
 
 import AboutusHome from '@/components/AboutUs/AboutusHome'
 import GallerySection from '@/components/gallery/GallerySection'
+import SpecialOffer from '@/components/SpecialOfferWrapper'
+import SpecilaOfferContent from '@/components/SpecilaOfferContent'
+import SpecialOfferWrapper from '@/components/SpecialOfferWrapper'
 
 export const metadata: Metadata = {
   title:
@@ -75,7 +78,10 @@ export default async function Home() {
           </div>
           <HomeBanner />
         </div>
-        <SpecialOffer />
+        {/* <SpecialOfferWrapper>
+          <SpecilaOfferContent />
+        </SpecialOfferWrapper> */}
+        <SpecialOfferWrapper />
         <GallerySection />
         <CalgaryPainting />
         {/* Google Reviews Section */}

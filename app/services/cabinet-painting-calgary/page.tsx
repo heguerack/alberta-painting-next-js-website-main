@@ -7,7 +7,10 @@ import BgBackground2 from '@/public/above-gallery-bg-line.svg'
 import AboutUs from '@/public/AboutUs.png'
 import DotFranks from '@/components/ui/DotFranks'
 import type { Metadata } from 'next'
-import { cabinetPaintingServiceImg } from '@/data/images'
+import {
+  cabinetPaintingServiceImg,
+  ServicescabinetPaintingImg,
+} from '@/data/images'
 
 export const metadata: Metadata = {
   title: 'Cabinet Painting in Calgary | Bathroom & Kitchen Cabinet Painters',
@@ -65,8 +68,8 @@ export default function cabinetPaintingPage() {
         <div className='space-y-6 '>
           <div className='relative w-full h-[300px] sm:h-[400px] md:h-[450px] overflow-hidden'>
             <Image
-              src={cabinetPaintingServiceImg.src}
-              alt={cabinetPaintingServiceImg.alt}
+              src={ServicescabinetPaintingImg.src}
+              alt={ServicescabinetPaintingImg.alt}
               fill
               className='md:object-cover sm:object-contain'
               priority

@@ -7,6 +7,7 @@ import BgBackground2 from '@/public/above-gallery-bg-line.svg'
 import AboutUs from '@/public/AboutUs.png'
 import DotFranks from '@/components/ui/DotFranks'
 import type { Metadata } from 'next'
+import { PopcornRemvalServiceImg } from '@/data/images'
 
 export const metadata: Metadata = {
   title: 'Calgary Popcorn Ceiling Removal and Repair: Professional Services',
@@ -59,8 +60,8 @@ export default function popcornCeilingRemovalPage() {
         <div className='space-y-6 '>
           <div className='relative w-full h-[300px] sm:h-[400px] md:h-[450px] overflow-hidden'>
             <Image
-              src='/interior/PXL_20220622_192016887.jpg'
-              alt=''
+              src={PopcornRemvalServiceImg.src}
+              alt={PopcornRemvalServiceImg.alt}
               fill
               className='md:object-cover sm:object-contain'
               priority

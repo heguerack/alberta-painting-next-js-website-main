@@ -6,6 +6,7 @@ import blogsBanner from '@/public/blogs-banner.png'
 import BgBackground2 from '@/public/above-gallery-bg-line.svg'
 import AboutUs from '@/public/AboutUs.png'
 import type { Metadata } from 'next'
+import { GaragePaintingServiceImg } from '@/data/images'
 
 export const metadata: Metadata = {
   title: 'Garage Painting in Calgary | Garage Door & Floor Painters',
@@ -57,8 +58,8 @@ export default function garagePaintingPage() {
         <div className='space-y-6 '>
           <div className='relative w-full h-[300px] sm:h-[400px] md:h-[450px] overflow-hidden'>
             <Image
-              src='/interior/PXL_20220622_192016887.jpg'
-              alt=''
+              src={GaragePaintingServiceImg.src}
+              alt={GaragePaintingServiceImg.alt}
               fill
               className='md:object-cover sm:object-contain'
               priority
