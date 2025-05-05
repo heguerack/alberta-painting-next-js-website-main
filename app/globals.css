@@ -36,6 +36,9 @@ body {
     background-size: 100% 100%;
   }
 }
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
 
 .bg-reveal {
   background-image: linear-gradient(to right, #0d378d, #0d378d);

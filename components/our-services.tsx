@@ -32,17 +32,38 @@ export default function OurServices() {
       />
 
       <Tabs defaultValue='interior' className='w-full pt-12'>
-        <TabsList className='flex flex-wrap gap-2 mb-6 px-2'>
+        <TabsList
+          className='
+      flex 
+    flex-wrap 
+    gap-2 
+    px-2 
+    mb-32 md:mb-16 lg:mb-8
+    w-full 
+    justify-center 
+    whitespace-nowrap
+  '
+          style={{ scrollBehavior: 'smooth', scrollSnapType: 'none' }}>
           {categories.map((cat) => (
             <TabsTrigger
               key={cat.value}
               value={cat.value}
-              className='text-black data-[state=active]:text-white data-[state=active]:bg-[#0D378D] inline cursor-pointer '>
+              className='
+        flex-shrink-0
+        px-3 py-1
+        text-sm text-black
+        rounded-md
+        cursor-pointer
+        bg-white
+        data-[state=active]:bg-[#0D378D]
+        data-[state=active]:text-white
+      '>
               {cat.label}
             </TabsTrigger>
           ))}
         </TabsList>
 
+        {/* Cards */}
         {categories.map((cat) => (
           <TabsContent key={cat.value} value={cat.value}>
             <div className='w-full flex justify-center'>
@@ -51,7 +72,7 @@ export default function OurServices() {
                 .map((service) => (
                   <Card
                     key={service.id}
-                    className='w-full md:w-1/2 bg-[#f9f9f9] border-none rounded-lg shadow-sm pt-0'>
+                    className='w-full md:w-2/3 xl:w-1/3  bg-[#f9f9f9] border-none rounded-lg shadow-sm pt-0'>
                     <CardHeader className='p-0 relative h-56 sm:h-72 md:h-80'>
                       <Image
                         src={service.imageSrc}
@@ -62,7 +83,7 @@ export default function OurServices() {
                     </CardHeader>
                     <CardContent className='p-4'>
                       <CardTitle className='text-lg'>{service.title}</CardTitle>
-                      <p className='text-sm text-muted-foreground'>
+                      <p className='text-sm text-muted-foreground leading-relaxed'>
                         {service.description}
                       </p>
                     </CardContent>
