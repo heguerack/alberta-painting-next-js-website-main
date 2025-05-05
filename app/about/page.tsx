@@ -20,7 +20,7 @@ import CommitmentQualitySection from '@/components/AboutUs/CommitmentQualitySect
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Cabinet Painting in Calgary | Bathroom & Kitchen Cabinet Painters',
+  title: 'Learn More About Alberta Colour Painting: Your Trusted Calgary Painting Company',
   description:
     'Our team of experienced painters is dedicated to delivering top-quality results for your home or business. From interior and exterior painting to wallpaper removal and more, we have the skills and expertise to handle all of your painting needs. Contact us today to learn more about our services and to schedule a consultation.',
   viewport: 'width=device-width, initial-scale=1.0',

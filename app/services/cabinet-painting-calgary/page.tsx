@@ -131,7 +131,7 @@ export default function cabinetPaintingPage() {
             <br />— A Local Touch That Makes All the Difference
           </h3>
           <p className=' mb-6 '>
-            HTransforming your kitchen or bathroom cabinets doesn't have to mean
+            Transforming your kitchen or bathroom cabinets doesn't have to mean
             a full renovation. In Calgary's dynamic housing market, cabinet
             painting has become the smart, affordable way to refresh your space
             while adding real value to your home. Whether you live in a cozy
@@ -149,7 +149,7 @@ export default function cabinetPaintingPage() {
             team that knows the city, respects your home, and cares about
             delivering results that last through all four seasons.
           </p>
-          <div className='flex gap-4 w-8/9 text-[15px]'>
+          {/* <div className='flex gap-4 w-8/9 text-[15px]'>
             <DotFranks />
             <p className=' '>
               <span className='font-bold text-[#0D378D] mr-1'>
@@ -165,10 +165,7 @@ export default function cabinetPaintingPage() {
                 style.
               </span>
             </p>
-          </div>
-          <br />
-
-          <br />
+          </div> */}
           <p className=' mb-6 '>
             From a resale perspective, smooth ceilings improve aesthetics and
             increase your home’s resale value. Buyers see them as one less thing
@@ -185,12 +182,7 @@ export default function cabinetPaintingPage() {
           </h3>
           <br />
           <p className=' mb-6 '>
-            From a resale perspective, smooth ceilings improve aesthetics and
-            increase your home’s resale value. Buyers see them as one less thing
-            to update, giving you a competitive edge. Whether revamping your
-            forever home or getting ready to list, our popcorn ceiling removal
-            service in Calgary ensures a clean, modern finish that aligns and
-            adds lasting value.
+          In a city where the cost of living keeps rising and full renovations can break the bank, our cabinet painting in Calgary is the budget-friendly solution.
           </p>
           <br />
           <p className=' mb-6 font-bold text-[#0D378D] '>Here’s why:</p>

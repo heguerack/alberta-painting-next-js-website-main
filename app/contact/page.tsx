@@ -89,7 +89,7 @@ export default function contactPage() {
                   </svg>
                 </div>
               </div>
-              <h3 className=' text-lg font-semibold text-[#0D378D] mb-3 '>
+              <h3 className='text-lg font-semibold text-[#0D378D] mb-3'>
                 Quality Workmanship
               </h3>
               <p className='text-sm text-black'>

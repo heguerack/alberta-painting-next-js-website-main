@@ -54,7 +54,7 @@ export default function Footer() {
             </Link>
             {/* </div> */}
             <p className='text-sm text-white leading-relaxed mt-10'>
-              {`The Alberta Global Painting logo represents the essence of quality
+              {`Alberta Colour Painting represents the essence of quality
               work and exceptional service. Our brand features a clean, modern
               brushstroke aesthetic, showcasing the company's commitment to
               precision and detail.`}
