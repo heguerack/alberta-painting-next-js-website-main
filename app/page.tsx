@@ -16,8 +16,6 @@ import { ReviewsGoogleType } from '@/types/review'
 
 import AboutusHome from '@/components/AboutUs/AboutusHome'
 import GallerySection from '@/components/gallery/GallerySection'
-import SpecialOffer from '@/components/SpecialOfferWrapper'
-import SpecilaOfferContent from '@/components/SpecilaOfferContent'
 import SpecialOfferWrapper from '@/components/SpecialOfferWrapper'
 
 export const metadata: Metadata = {
@@ -78,10 +76,9 @@ export default async function Home() {
           </div>
           <HomeBanner />
         </div>
-        {/* <SpecialOfferWrapper>
-          <SpecilaOfferContent />
-        </SpecialOfferWrapper> */}
         <SpecialOfferWrapper />
+
+        {/* <SpecialOfferWrapper /> */}
         <GallerySection />
         <CalgaryPainting />
         {/* Google Reviews Section */}

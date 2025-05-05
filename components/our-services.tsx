@@ -1,148 +1,86 @@
-import { Card, CardContent } from '@/components/ui/card'
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from '@/components/ui/carousel'
-
-import { services } from '@/data/serviceData'
-import Image from 'next/image'
 import ServiceSection from './service-section'
-import ButtonBlueWithBorder from './ButtonBlueWithBorder'
+import Image from 'next/image'
+import Link from 'next/link'
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
+import {
+  Card,
+  CardContent,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from '@/components/ui/card'
+import { Button } from '@/components/ui/button'
+import { services } from '@/data/serviceData'
 
 export default function OurServices() {
+  const categories = [
+    { label: 'Interior Painting', value: 'interior' },
+    { label: 'Exterior Painting', value: 'exterior' },
+    { label: 'Commercial Painting', value: 'commercial' },
+    { label: 'Popcorn Ceiling Removal', value: 'popcorn' },
+    { label: 'Cabinet Painting', value: 'cabinet' },
+    { label: 'Garage Painting', value: 'garage' },
+  ]
+
   return (
-    <section className=' pt-12 '>
+    <section className='py-12 text-black overflow-visible'>
       <ServiceSection
         title='Our Services'
         description='Transform Your Space  <br />with Our Expert Painting Services'
         buttonText='Explore Our Services'
         href='/services'
       />
-      {/* <div className='pt-12 px-6 w-full  mx-auto   flex items-center justify-center  '> */}
-      <Carousel
-        opts={{
-          align: 'center',
-        }}
-        orientation='horizontal'
-        className='w-[70%] lg:w-[40%] m-auto  flex items-center justify-center '>
-        <CarouselContent className=''>
-          {services.map((service, i) => (
-            <CarouselItem key={i} className='pl-4   my-16 '>
-              <Card className='bg-[#0D378D]   md:px-8 '>
-                <CardContent className='flex flex-col grow p-2'>
-                  <div className='flex flex-col space-y-4 grow'>
-                    <div className='relative w-full h-[8rem] sm:h-[12rem] md:h-[16rem] overflow-hidden'>
+
+      <Tabs defaultValue='interior' className='w-full pt-12'>
+        <TabsList className='flex flex-wrap gap-2 mb-6 px-2'>
+          {categories.map((cat) => (
+            <TabsTrigger
+              key={cat.value}
+              value={cat.value}
+              className='text-black data-[state=active]:text-white data-[state=active]:bg-[#0D378D] inline cursor-pointer '>
+              {cat.label}
+            </TabsTrigger>
+          ))}
+        </TabsList>
+
+        {categories.map((cat) => (
+          <TabsContent key={cat.value} value={cat.value}>
+            <div className='w-full flex justify-center'>
+              {services
+                .filter((s) => s.type === cat.value)
+                .map((service) => (
+                  <Card
+                    key={service.id}
+                    className='w-full md:w-1/2 bg-[#f9f9f9] border-none rounded-lg shadow-sm pt-0'>
+                    <CardHeader className='p-0 relative h-56 sm:h-72 md:h-80'>
                       <Image
                         src={service.imageSrc}
-                        alt='Service-specific image'
+                        alt={service.altText}
                         fill
-                        className='object-cover absolute'
+                        className='object-cover rounded-t-lg'
                       />
-                    </div>
-                    <div className='space-y-4 w-full mt-auto'>
-                      <h2 className='lg:text-[20px] font-semibold'>
-                        {service.title}
-                      </h2>
-                      <p className='text-gray-400 lg:text-[16px] text-[14px]'>
+                    </CardHeader>
+                    <CardContent className='p-4'>
+                      <CardTitle className='text-lg'>{service.title}</CardTitle>
+                      <p className='text-sm text-muted-foreground'>
                         {service.description}
                       </p>
-                      <ButtonBlueWithBorder
-                        linkText='Learn More'
-                        href={`/services/${service.slug}`}
-                      />
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-            </CarouselItem>
-          ))}
-        </CarouselContent>
-        <CarouselPrevious className='cursor-pointer bg-[#0D378D] text-white w-8 h-8' />
-        <CarouselNext className='cursor-pointer  bg-[#0D378D] text-white w-8 h-8' />
-      </Carousel>
-      {/* </div> */}
+                    </CardContent>
+                    <CardFooter className='p-4'>
+                      <Link href={`/services/${service.slug}`}>
+                        <Button
+                          variant='outline'
+                          className='cursor-pointer hover:bg-[#0D378D] hover:text-white'>
+                          {service.buttonText}
+                        </Button>
+                      </Link>
+                    </CardFooter>
+                  </Card>
+                ))}
+            </div>
+          </TabsContent>
+        ))}
+      </Tabs>
     </section>
   )
 }
-
-// import { Card, CardContent } from '@/components/ui/card'
-// import {
-//   Carousel,
-//   CarouselContent,
-//   CarouselItem,
-//   CarouselNext,
-//   CarouselPrevious,
-// } from '@/components/ui/carousel'
-
-// import ServiceSection from './service-section'
-// import Link from 'next/link'
-// import { services } from '@/data/serviceData'
-// import Image from 'next/image'
-
-// export default function OurServices() {
-//   return (
-//     <div className='flex justify-center'>
-//       <Carousel className='w-full max-w-xl sm:max-w-sm'>
-//         <CarouselContent>
-//           {services.map((service, i) => (
-//             <CarouselItem key={i}>
-//               <Card className='bg-[#24262b]'>
-//                 <CardContent className='flex aspect-square items-center justify-center p-6'>
-//                   {/* <span>{service.title}</span> */}
-//                   <div className='flex flex-col space-y-4'>
-//                     <div className='relative w-full h-64 md:h-80 overflow-hidden'>
-//                       <Image
-//                         src={service.imageSrc}
-//                         alt='Service-specific image'
-//                         fill
-//                         className='object-cover'
-//                         sizes='(max-width: 200px) 100vw, 10vw'
-//                       />
-//                     </div>
-//                     <div className='space-y-4 w-full'>
-//                       <h2 className='lg:text-[20px] font-semibold'>
-//                         {service.title}
-//                       </h2>
-//                       <p className='text-gray-400 lg:text-[16px] text-[14px]'>
-//                         {service.description}
-//                       </p>
-//                       <Link href={'/services/' + service?.slug}>
-//                         {/* Corrected to activeService.href */}
-//                         <button className='flex items-center gap-2 border-2 border-white rounded-full pl-5 pr-1.5 py-1 text-sm md:text-base font-medium bg-[#0D378D] cursor-pointer transition-colors'>
-//                           Learn More
-//                           <svg
-//                             width='32'
-//                             height='30'
-//                             viewBox='0 0 32 30'
-//                             fill='none'
-//                             xmlns='http://www.w3.org/2000/svg'>
-//                             <rect
-//                               x='0.5'
-//                               width='31'
-//                               height='30'
-//                               rx='15'
-//                               fill='white'
-//                             />
-//                             <path
-//                               d='M23 9C23 8.44771 22.5523 8 22 8L13 8C12.4477 8 12 8.44771 12 9C12 9.55228 12.4477 10 13 10L21 10L21 18C21 18.5523 21.4477 19 22 19C22.5523 19 23 18.5523 23 18L23 9ZM10.7071 21.7071L22.7071 9.70711L21.2929 8.29289L9.29289 20.2929L10.7071 21.7071Z'
-//                               fill='#0D378D'
-//                             />
-//                           </svg>
-//                         </button>
-//                       </Link>
-//                     </div>
-//                   </div>
-//                 </CardContent>
-//               </Card>
-//             </CarouselItem>
-//           ))}
-//         </CarouselContent>
-//         <CarouselPrevious className='bg-black' />
-//         <CarouselNext className='bg-black' />
-//       </Carousel>
-//     </div>
-//   )
-// }
