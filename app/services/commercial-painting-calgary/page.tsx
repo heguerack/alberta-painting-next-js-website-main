@@ -52,7 +52,7 @@ export default function commercialPaintingCalgary() {
       <div className='max-w-7xl mx-auto px-4 py-8 mt-10'>
         <header className='mb-6'>
           <h1 className='text-[26px] font-medium text-[#0D378D]'>
-          Commercial Painting in Calgary
+          Commercial Painting Calgary
           </h1>
         </header>
 
