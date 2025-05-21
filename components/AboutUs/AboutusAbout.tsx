@@ -35,17 +35,19 @@ export default function AboutusHome() {
         <div className='w-full xl:max-w-2xl   bg-white lg:px-16 px-4 py-8 flex flex-col justify-center '>
           <p className='text-black text-[22px]  font-semibold mb-2'>About Us</p>
           <p className='lg:text-[36px] text-[26px] font-bold text-[#0D378D] mb-4'>
-            EXPERTS IN COLOURING
+          EXPERT CALGARY PAINTERS
             <br />
-            YOUR WORLD
+            TRUSTED BY LOCALS
           </p>
           <p className='text-black mb-6 text-[14px] lg:text-[16px]'>
-            {`Anyone can paint walls, but only the finest painters understand that every single stroke of colour matters. At Alberta Colour Painting, thats exactly what we do. With years of expertise in creating stunning spaces, we are your trusted partners for professional interior and exterior painting services. Our team has the finest painters in Calgary, who ensure that every brushstroke makes your space look fresh, stylish, and downright amazing.`}
+            {`We started with a vision that something as simple as a paint job should be nothing short of extraordinary. Because the space you live or work in should reflect your vibe. And just "okay" doesn't cut it. Rookies can’t give you that same touch of perfection that only experience can bring. That's why, at Alberta Colour Painting, we take pride in our team of expert Calgary painters with years of hands-on experience handling projects of every size and style.`}
           </p>
 
           <p className='text-black mb-6 text-[14px] lg:text-[16px]'>
-            {`Whether you need an expert paint job for your home or a full-service team for elevating your commercial space, we've got you covered. Our Calgary painting company is all about bringing your style to life and making a bold statement.
-`}
+            {`Our mission is simple: We don’t treat walls like walls, we treat them like canvases. Every stroke we make is intentional, every colour choice is meaningful, and every result? A reflection of your style brought to life. With years of experience and expertise, we offer a wide range of painting services in Calgary for both interior and exterior spaces, turning them into eye-catching standouts.`}
+          </p>
+          <p className='text-black mb-6 text-[14px] lg:text-[16px]'>
+            {`Bonus? We're one of the few licensed and certified painting companies in Calgary. So when you hire us, you're not just getting paint, you’re getting pro results that make people say "Whoa, who did this? `}
           </p>
 
           {/* <button className="learn-more-button">Learn More</button> */}
@@ -75,7 +77,7 @@ export default function AboutusHome() {
               <h3 className=' lg:text-[24px]  text-[20px] font-semibold text-[#0D378D] mb-3 '>
                 Premium Materials
               </h3>
-              <p className=' lg:text-[16px] text-[14px] text-black text-justify'>
+              <p className=' lg:text-[16px] text-[14px] text-black'>
                 We use only high-quality paints and materials, combined with
                 skilled techniques, to ensure a stunning finish.
               </p>

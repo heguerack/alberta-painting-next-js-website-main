@@ -10,9 +10,9 @@ const HomeBanner = () => {
         relative'>
         <div className=' grid grid-cols-1 sm:grid-cols-3 gap-6 px-6 sm:px-12 z-20 relative'>
           <div className='text-white col-span-2 '>
-            <h1 className='text-3xl lg:text-[36px] sm:text-[16px] font-medium mb-4 uppercase'>
+            <h3 className='text-3xl lg:text-[36px] sm:text-[16px] font-medium mb-4 uppercase'>
               Ready to Transform Your Space?
-            </h1>
+            </h3>
             <p className=' font-extralight lg:text-[16px] sm:text-[12px]'>
               Get professional advice, a free quote, and a flawless finish for
               your space. Book a consultation with our expert painters in

@@ -1,73 +1,73 @@
-import ContactFormSection from '@/components/ContactFormSection'
-import ServiceHero from '@/components/heros/ServiceHero'
-import HomeBanner from '@/components/HomeBanner/home-banner'
-import Image from 'next/image'
-import blogsBanner from '@/public/blogs-banner.png'
-import BgBackground2 from '@/public/above-gallery-bg-line.svg'
-import AboutUs from '@/public/AboutUs.png'
-import DotFranks from '@/components/ui/DotFranks'
-import type { Metadata } from 'next'
-import { CommercialPaintingServiceImg } from '@/data/images'
+import ContactFormSection from "@/components/ContactFormSection";
+import ServiceHero from "@/components/heros/ServiceHero";
+import HomeBanner from "@/components/HomeBanner/home-banner";
+import Image from "next/image";
+import blogsBanner from "@/public/blogs-banner.png";
+import BgBackground2 from "@/public/above-gallery-bg-line.svg";
+import AboutUs from "@/public/AboutUs.png";
+import DotFranks from "@/components/ui/DotFranks";
+import type { Metadata } from "next";
+import { CommercialPaintingServiceImg } from "@/data/images";
 
 export const metadata: Metadata = {
-  title: 'Top Commercial Painters in Calgary | Best Painting Company',
+  title: "Top Commercial Painters in Calgary | Best Painting Company",
   description:
-    'Alberta Colour Painting is one of the leading commercial painting companies in Calgary. We provide expert commercial exterior & interior painting with professional results.',
-  viewport: 'width=device-width, initial-scale=1.0',
+    "Alberta Colour Painting is one of the leading commercial painting companies in Calgary. We provide expert commercial exterior & interior painting with professional results.",
+  viewport: "width=device-width, initial-scale=1.0",
   alternates: {
     canonical:
-      'https://www.albertacolourpainting.com/services/commercial-painting-calgary',
+      "https://www.albertacolourpainting.com/services/commercial-painting-calgary",
   },
   openGraph: {
-    title: 'Need Calgary Painters?',
+    title: "Need Calgary Painters?",
     description:
-      'Book your free estimate today with Alberta Colour Painting, the top-rated painting company in Calgary.',
+      "Book your free estimate today with Alberta Colour Painting, the top-rated painting company in Calgary.",
     images: [
       {
-        url: 'https://res.cloudinary.com/alberta-colour-painting/image/upload/v1672799089/home/awards/best-of-the-best-award-homestars-winner-2022-white-version_psaofg.webp',
+        url: "https://res.cloudinary.com/alberta-colour-painting/image/upload/v1672799089/home/awards/best-of-the-best-award-homestars-winner-2022-white-version_psaofg.webp",
       },
     ],
-    url: 'https://www.albertacolourpainting.com/services/commercial-painting-calgary',
-    siteName: 'Alberta Colour Painting',
-    type: 'website',
+    url: "https://www.albertacolourpainting.com/services/commercial-painting-calgary",
+    siteName: "Alberta Colour Painting",
+    type: "website",
   },
-}
+};
 export default function commercialPaintingCalgary() {
   return (
     <>
       <ServiceHero
-        title=''
-        title2='Commercial Painting in Calgary'
-        title3='for Office, and Retail Spaces
-'
+        title=""
+        title2="Commercial Painting in Calgary"
+        title3="for Office, Retail & Industrial Spaces
+"
         imageSrc={blogsBanner}
       />
       {/* Background Image Section */}
-      <div className='relative'>
-        <div className='absolute top-[-100px] z-[-2]'>
-          <Image src={BgBackground2} alt='bg-Image' />
+      <div className="relative">
+        <div className="absolute top-[-100px] z-[-2]">
+          <Image src={BgBackground2} alt="bg-Image" />
         </div>
       </div>
 
-      <div className='max-w-7xl mx-auto px-4 py-8 mt-10'>
-        <header className='mb-6'>
-          <h1 className='text-[26px] font-medium text-[#0D378D]'>
-            Interior Painting Calgary
+      <div className="max-w-7xl mx-auto px-4 py-8 mt-10">
+        <header className="mb-6">
+          <h1 className="text-[26px] font-semibold text-[#0D378D]">
+            Commercial Painting Calgary
           </h1>
         </header>
 
-        <div className='space-y-6'>
-          <div className='relative w-full h-[300px] sm:h-[400px] md:h-[450px] overflow-hidden'>
+        <div className="space-y-6">
+          <div className="relative w-full h-[300px] sm:h-[400px] md:h-[450px] overflow-hidden">
             <Image
               src={CommercialPaintingServiceImg.src}
               alt={CommercialPaintingServiceImg.alt}
               fill
-              className='md:object-cover sm:object-contain'
+              className="md:object-cover sm:object-contain"
               priority
             />
           </div>
 
-          <div className='space-y-4 text-[16px] text-black'>
+          <div className="space-y-4 text-[16px] text-black">
             <p>
               Did you know people judge your business by how your space looks?
               Just think about it! What gets your brand noticed and makes your
@@ -99,99 +99,156 @@ export default function commercialPaintingCalgary() {
         </div>
       </div>
       <HomeBanner />
-      <div className='font-normal flex flex-col  lg:flex-row w-[90%] gap-16 mx-auto py-16 lg:items-center'>
+      <div className="font-normal flex flex-col  lg:flex-row w-[90%] gap-16 mx-auto py-16 lg:items-center">
         {/* Left side with image */}
-        <div className='relative w-full  h-[50vw] lg:w-2/5'>
+        <div className="relative w-full  h-[50vw] lg:w-2/5">
           <Image
             src={AboutUs}
-            alt='Elegant interior with staircase'
+            alt="Elegant interior with staircase"
             fill
-            className='max-sm:pr-[20px] object-cover lg:absolute  '
+            className="max-sm:pr-[20px] object-cover lg:absolute  "
           />
         </div>
 
         {/* Right side with text */}
-        <div className='w-full text-[16px] text-justify lg:w-3/5 '>
-          <h3 className='lg:text-[32px] text-[24px] font-bold text-[#0D378D] mb-4'>
-            Colour Psychology,
-            <br />
-            for Commercial Spaces
+        <div className="w-full text-[16px]   lg:w-3/5 flex flex-col gap-3 ">
+          <h3 className="lg:text-[32px] text-[24px] font-bold text-[#0D378D]">
+            Colour Psychology, for Commercial Spaces
           </h3>
 
-          <p className='text-black mb-4  text-justify'>
+          <p className="text-black  ">
             If you’re a business owner, your office or commercial space is like
             your second home. It's where ideas grow, goals are set, and your
             team comes together every day. That's why taking care of your walls
             and overall environment is just as important as any other part of
             your business.
           </p>
-          <p className='text-black mb-4  text-justify'>
+          <p className="text-black  ">
             Vibrant colours can boost mood, motivation, and set the tone for
             productivity. The right shades don’t just brighten walls, but they
             also energize the people working within them.
           </p>
-          <p className='text-black mb-4  text-justify'>
+          <p className="text-black  ">
             Our commercial painters in Calgary have shared a few fun facts about
             how different colours can affect the vibe and energy of your space.
             Check them out below!
           </p>
-          <div className='flex gap-4 '>
+          <div className="flex gap-4 ">
             <DotFranks />
-            <p className='text-black text-[15px] w-8/9'>
-              <span className='font-bold text-[#0D378D] mr-1'>
-                Blues and greens
+            <p className="text-black text-[15px] w-8/9 max-sm:w-full">
+              <span className="font-bold text-[#0D378D] mr-1">
+                Blues and greens:
               </span>
-              - promote focus and calm—great for offices.
+              promote focus and calm — great for offices.
             </p>
           </div>
-          <br />
-          <div className='flex gap-4 '>
+
+          <div className="flex gap-4 ">
             <DotFranks />
-            <p className='text-black text-[15px] w-8/9'>
-              <span className='font-bold text-[#0D378D] mr-1'>
-                Warm tones like reds and oranges
+            <p className="text-black text-[15px] w-8/9 max-sm:w-full">
+              <span className="font-bold text-[#0D378D] mr-1">
+                Warm tones like reds and oranges:
               </span>
-              - can energize retail or dining spaces.
+              can energize retail or dining spaces.
             </p>
           </div>
-          <br />
-          <div className='flex gap-4 '>
+
+          <div className="flex gap-4 ">
             <DotFranks />
-            <p className='text-black text-[15px]  w-8/9 '>
-              <span className='font-bold text-[#0D378D] mr-1'>
-                Neutral palettes
+            <p className="text-black text-[15px]  w-8/9 max-sm:w-full ">
+              <span className="font-bold text-[#0D378D] mr-1">
+                Neutral palettes:
               </span>
-              - give a clean, professional feel in medical or legal settings.
+              give a clean, professional feel in medical or legal settings.
             </p>
           </div>
-          <br />
-          <div className='flex gap-4 '>
+
+          <div className="flex gap-4 ">
             <DotFranks />
-            <p className='text-black text-[15px] w-8/9'>
-              <span className='font-bold text-[#0D378D] mr-1'>
-                Accent walls
+            <p className="text-black text-[15px] w-8/9 max-sm:w-full">
+              <span className="font-bold text-[#0D378D] mr-1">
+                Accent walls:
               </span>
-              - can highlight branding or guide customer flow in showrooms or
+              can highlight branding or guide customer flow in showrooms or
               stores.
             </p>
           </div>
-          <br />
 
-          <p className='text-black mb-4  text-justify'>
+          <p className="text-black  ">
             If you’re looking to add a touch of luxury with a cozy, welcoming
             vibe to your commercial space but want something unique, we’ve got
             you
           </p>
-          <p className='text-black mb-4  text-justify'>
+          <p className="text-black  ">
             Get in touch with our commercial painting company in Calgary, and
             we’ll take the time to understand your vision. Our experts will
             assess your space, listen to your needs, and recommend creative,
             standout options that make your office pop while also boosting
             productivity in the long run.
           </p>
+          <h3 className="lg:text-[32px] text-[24px] font-bold text-[#0D378D]">
+            Our Minimal Disruption Promise!
+          </h3>
+
+          <p className="text-black   ">
+            We keep your business running while we get the job done. Now there’s
+            no need to wrap everything up and take days off so that you can get
+            your space revamped. We understand that time is money, especially
+            for businesses. That’s why our commercial painting services are
+            built around efficiency and flexibility, so you don't have to choose
+            between improving your space and staying operational.
+          </p>
+          <p className="text-black   ">
+            Our commercial painting services in Calgary offer:
+          </p>
+          <div className="flex gap-4 ">
+            <DotFranks />
+            <p className="text-black text-[15px] w-8/9 max-sm:w-full">
+              <span className="font-bold text-[#0D378D] mr-1">
+                Flexible Scheduling:
+              </span>
+              We offer evenings, weekends, and off-hours painting to avoid
+              interrupting your daily operations.
+            </p>
+          </div>
+
+          <div className="flex gap-4 ">
+            <DotFranks />
+            <p className="text-black text-[15px] w-8/9 max-sm:w-full">
+              <span className="font-bold text-[#0D378D] mr-1">
+                Fast, Clean Work:
+              </span>
+              Our crew works quickly and keeps the site clean—no mess, no
+              stress.
+            </p>
+          </div>
+
+          <div className="flex gap-4 ">
+            <DotFranks />
+            <p className="text-black text-[15px]  w-8/9 max-sm:w-full ">
+              <span className="font-bold text-[#0D378D] mr-1">
+                Discreet Service:
+              </span>
+              Need us to work in sections or maintain a quiet environment? No
+              problem. We adapt to your needs.
+            </p>
+          </div>
+
+          <p className="text-black   ">
+            Getting that dream space you’ve been putting off is easier than ever
+            with us. At Alberta Colour Painting, we take the time to understand
+            your needs and carefully plan a schedule that fits your routine so
+            your business can keep running smoothly without any disruptions.
+          </p>
+          <p className="text-black   ">
+            To learn more about our commercial painting services in Calgary,
+            reach out to our team of experts. We’ll recommend the best possible
+            solution tailored to your business and your vision.
+          </p>
         </div>
       </div>
+
       <ContactFormSection />
     </>
-  )
+  );
 }

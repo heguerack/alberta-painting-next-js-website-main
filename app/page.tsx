@@ -17,6 +17,7 @@ import { ReviewsGoogleType } from '@/types/review'
 import AboutusHome from '@/components/AboutUs/AboutusHome'
 import GallerySection from '@/components/gallery/GallerySection'
 import SpecialOfferWrapper from '@/components/SpecialOfferWrapper'
+import FaqSection from '@/components/Faq'
 
 export const metadata: Metadata = {
   title:
@@ -77,14 +78,10 @@ export default async function Home() {
           <HomeBanner />
         </div>
         <SpecialOfferWrapper />
-
-        {/* <SpecialOfferWrapper /> */}
         <GallerySection />
         <CalgaryPainting />
-        {/* Google Reviews Section */}
         <ReviewsCarousel newestGoogleReviews={newestGoogleReviews} />
-        <ContactFormSection />
-        {/* <SpecialOffer /> */}
+        <FaqSection/>
         <section className='container mx-auto px-4 py-8 '>
           <div className='text-center  mb-10'>
             <h4 className=' text-[22px] font-semibold text-black ont-medium'>
@@ -102,6 +99,7 @@ export default async function Home() {
             </Button>
           </div>
         </section>
+        <ContactFormSection />
       </div>
     </>
   )

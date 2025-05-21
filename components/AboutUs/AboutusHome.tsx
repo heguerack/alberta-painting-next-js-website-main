@@ -78,7 +78,7 @@ export default function AboutusHome() {
               <h3 className=' lg:text-[24px]  text-[20px] font-semibold text-[#0D378D] mb-3 '>
                 Quality Workmanship
               </h3>
-              <p className=' lg:text-[16px] text-[14px] text-black text-justify'>
+              <p className=' lg:text-[16px] text-[14px] text-black'>
                 Cutting corners? Not our style. Our Calgary painters are all
                 about the best quality with zero compromises.
               </p>

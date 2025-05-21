@@ -1,72 +1,72 @@
-import ContactFormSection from '@/components/ContactFormSection'
-import ServiceHero from '@/components/heros/ServiceHero'
-import HomeBanner from '@/components/HomeBanner/home-banner'
-import Image from 'next/image'
-import blogsBanner from '@/public/blogs-banner.png'
-import BgBackground2 from '@/public/above-gallery-bg-line.svg'
-import AboutUs from '@/public/AboutUs.png'
-import type { Metadata } from 'next'
-import { GaragePaintingServiceImg } from '@/data/images'
+import ContactFormSection from "@/components/ContactFormSection";
+import ServiceHero from "@/components/heros/ServiceHero";
+import HomeBanner from "@/components/HomeBanner/home-banner";
+import Image from "next/image";
+import blogsBanner from "@/public/blogs-banner.png";
+import BgBackground2 from "@/public/above-gallery-bg-line.svg";
+import AboutUs from "@/public/AboutUs.png";
+import type { Metadata } from "next";
+import { GaragePaintingServiceImg } from "@/data/images";
 
 export const metadata: Metadata = {
-  title: 'Garage Painting in Calgary | Garage Door & Floor Painters',
+  title: "Garage Painting in Calgary | Garage Door & Floor Painters",
   description:
-    'Alberta Colour Painting provides professional garage painting in Calgary, including garage floor paint and garage door painting services. Give your garage a fresh, durable finish with trusted experts in Calgary.',
-  viewport: 'width=device-width, initial-scale=1.0',
+    "Alberta Colour Painting provides professional garage painting in Calgary, including garage floor paint and garage door painting services. Give your garage a fresh, durable finish with trusted experts in Calgary.",
+  viewport: "width=device-width, initial-scale=1.0",
   alternates: {
     canonical:
-      'https://www.albertacolourpainting.com/services/garage-painting-calgary',
+      "https://www.albertacolourpainting.com/services/garage-painting-calgary",
   },
   openGraph: {
-    title: 'Need Calgary Painters?',
+    title: "Need Calgary Painters?",
     description:
-      'Book your free estimate today with Alberta Colour Painting, the top-rated painting company in Calgary.',
+      "Book your free estimate today with Alberta Colour Painting, the top-rated painting company in Calgary.",
     images: [
       {
-        url: 'https://res.cloudinary.com/alberta-colour-painting/image/upload/v1672799089/home/awards/best-of-the-best-award-homestars-winner-2022-white-version_psaofg.webp',
+        url: "https://res.cloudinary.com/alberta-colour-painting/image/upload/v1672799089/home/awards/best-of-the-best-award-homestars-winner-2022-white-version_psaofg.webp",
       },
     ],
-    url: 'https://www.albertacolourpainting.com/services/garage-painting-calgary',
-    siteName: 'Alberta Colour Painting',
-    type: 'website',
+    url: "https://www.albertacolourpainting.com/services/garage-painting-calgary",
+    siteName: "Alberta Colour Painting",
+    type: "website",
   },
-}
+};
 
 export default function garagePaintingPage() {
   return (
     <>
       <ServiceHero
-        title='Upgrade with Premium '
-        title2='Garage Painting In Calgary,'
-        title3='Your Car Deserves a Sleek Space Too!'
+        title="Your Car Deserves a Sleek Space Too!"
+        title2="Upgrade with Premium"
+        title3="Garage Painting In Calgary"
         imageSrc={blogsBanner}
       />
       {/* Background Image Section */}
-      <div className='relative'>
-        <div className='absolute top-[-100px] z-[-2]'>
-          <Image src={BgBackground2} alt='bg-Image' />
+      <div className="relative">
+        <div className="absolute top-[-100px] z-[-2]">
+          <Image src={BgBackground2} alt="bg-Image" />
         </div>
       </div>
 
-      <div className='max-w-7xl mx-auto px-4 py-8 mt-10'>
-        <div className='mb-6'>
-          <h2 className='text-[26px] font-medium text-[#0D378D]'>
+      <div className="max-w-7xl mx-auto px-4 py-8 mt-10">
+        <div className="mb-6">
+          <h1 className="text-[26px] font-semibold text-[#0D378D]">
             Garage Painting Calgary
-          </h2>
+          </h1>
         </div>
 
-        <div className='space-y-6 '>
-          <div className='relative w-full h-[300px] sm:h-[400px] md:h-[450px] overflow-hidden'>
+        <div className="space-y-6 ">
+          <div className="relative w-full h-[300px] sm:h-[400px] md:h-[450px] overflow-hidden">
             <Image
               src={GaragePaintingServiceImg.src}
               alt={GaragePaintingServiceImg.alt}
               fill
-              className='md:object-cover sm:object-contain'
+              className="md:object-cover sm:object-contain"
               priority
             />
           </div>
 
-          <div className='space-y-4 text-[16px] text-black'>
+          <div className="space-y-4 text-[16px] text-black">
             <p>
               Just like your ride deserves the best care, it also needs a fresh,
               stylish space to call home! Whether you use it for storage, as a
@@ -95,27 +95,23 @@ export default function garagePaintingPage() {
         </div>
       </div>
       <HomeBanner />
-      <div className='font-normal flex flex-col  lg:flex-row w-[90%] gap-16 mx-auto py-16 lg:items-center'>
+      <div className="font-normal flex flex-col  lg:flex-row w-[90%] gap-16 mx-auto py-16 lg:items-center">
         {/* Left side with image */}
-        <div className='relative w-full  h-[50vw] lg:w-2/5'>
+        <div className="relative w-full  h-[50vw] lg:w-2/5">
           <Image
             src={AboutUs}
-            alt='Elegant interior with staircase'
+            alt="Elegant interior with staircase"
             fill
-            className='max-sm:pr-[20px] object-cover lg:absolute  '
+            className="max-sm:pr-[20px] object-cover lg:absolute  "
           />
         </div>
 
         {/* Right side with text */}
-        <div className='w-full lg:w-3/5 text-[16px] text-black text-justify'>
-          <h3 className='lg:text-[32px] text-[24px] font-bold text-[#0D378D] mb-4'>
-            Why Our
-            <br />
-            Garage Painting in Calgary
-            <br />
-            Is Worth It
+        <div className="w-full lg:w-3/5 text-[16px] text-black  ">
+          <h3 className="lg:text-[32px] text-[24px] font-bold text-[#0D378D] mb-4">
+            Why Our Garage Painting in Calgary Is Worth It
           </h3>
-          <p className='mb-6'>
+          <p className="mb-6">
             It’s no secret that the garage is one of the most overlooked spaces
             in any home. While your ride might be sleek and stylish, parking it
             in a dull, dusty, or outdated space can seriously take away from its
@@ -123,7 +119,7 @@ export default function garagePaintingPage() {
             matter, and a fresh, clean, and well-painted garage can make all the
             difference.
           </p>
-          <p className='mb-6'>
+          <p className="mb-6">
             At Alberta Colour Painting, we use high-quality, durable paints
             designed to withstand Calgary’s fluctuating temperatures, moisture,
             and daily wear. Painted garage walls and ceilings are easier to
@@ -134,14 +130,14 @@ export default function garagePaintingPage() {
             protective layer that can withstand oil spills, tire marks, and
             daily wear and tear.
           </p>
-          <p className='mb-6'>
+          <p className="mb-6">
             Whether you use your garage for parking, storage, or as a hobby
             space, a professionally painted floor gives it that crisp, finished
             look, almost like a showroom. It’s not just about aesthetics,
             either; it's about extending the life of your surfaces and creating
             a garage that feels as well cared for as the rest of your home.
           </p>
-          <p className='mb-6'>
+          <p className="mb-6">
             So whether you're going for a clean, showroom-style garage or just
             want to protect and refresh a hardworking space, we've got you
             covered. Alberta Colour Painting is your trusted partner for garage
@@ -152,5 +148,5 @@ export default function garagePaintingPage() {
       </div>
       <ContactFormSection />
     </>
-  )
+  );
 }

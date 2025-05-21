@@ -1,74 +1,74 @@
-import ContactFormSection from '@/components/ContactFormSection'
-import ServiceHero from '@/components/heros/ServiceHero'
-import HomeBanner from '@/components/HomeBanner/home-banner'
-import Image from 'next/image'
-import blogsBanner from '@/public/blogs-banner.png'
-import BgBackground2 from '@/public/above-gallery-bg-line.svg'
-import AboutUs from '@/public/AboutUs.png'
-import DotFranks from '@/components/ui/DotFranks'
-import type { Metadata } from 'next'
-import { PopcornRemvalServiceImg } from '@/data/images'
+import ContactFormSection from "@/components/ContactFormSection";
+import ServiceHero from "@/components/heros/ServiceHero";
+import HomeBanner from "@/components/HomeBanner/home-banner";
+import Image from "next/image";
+import blogsBanner from "@/public/blogs-banner.png";
+import BgBackground2 from "@/public/above-gallery-bg-line.svg";
+import AboutUs from "@/public/AboutUs.png";
+import DotFranks from "@/components/ui/DotFranks";
+import type { Metadata } from "next";
+import { PopcornRemvalServiceImg } from "@/data/images";
 
 export const metadata: Metadata = {
-  title: 'Calgary Popcorn Ceiling Removal and Repair: Professional Services',
+  title: "Calgary Popcorn Ceiling Removal and Repair: Professional Services",
   description:
-    'Want ceiling popcorn removal services in Calgary? Look no further! Our team is here to transform or repair your popcorn ceilings into smooth & flat surfaces. Contact us today to schedule your consultation & get started on your home renovation project.',
-  viewport: 'width=device-width, initial-scale=1.0',
+    "Want ceiling popcorn removal services in Calgary? Look no further! Our team is here to transform or repair your popcorn ceilings into smooth & flat surfaces. Contact us today to schedule your consultation & get started on your home renovation project.",
+  viewport: "width=device-width, initial-scale=1.0",
   alternates: {
     canonical:
-      'https://www.albertacolourpainting.com/services/popcorn-ceiling-removal-calgary',
+      "https://www.albertacolourpainting.com/services/popcorn-ceiling-removal-calgary",
   },
   openGraph: {
-    title: 'Need Calgary Painters?',
+    title: "Need Calgary Painters?",
     description:
-      'Book your free estimate today with Alberta Colour Painting, the top-rated painting company in Calgary.',
+      "Book your free estimate today with Alberta Colour Painting, the top-rated painting company in Calgary.",
     images: [
       {
-        url: 'https://res.cloudinary.com/alberta-colour-painting/image/upload/v1672799089/home/awards/best-of-the-best-award-homestars-winner-2022-white-version_psaofg.webp',
+        url: "https://res.cloudinary.com/alberta-colour-painting/image/upload/v1672799089/home/awards/best-of-the-best-award-homestars-winner-2022-white-version_psaofg.webp",
       },
     ],
-    url: 'https://www.albertacolourpainting.com/services/popcorn-ceiling-removal-calgary',
-    siteName: 'Alberta Colour Painting',
-    type: 'website',
+    url: "https://www.albertacolourpainting.com/services/popcorn-ceiling-removal-calgary",
+    siteName: "Alberta Colour Painting",
+    type: "website",
   },
-}
+};
 
 export default function popcornCeilingRemovalPage() {
   return (
     <>
       <ServiceHero
-        title=''
-        title2='Popcorn Ceiling Removal in Calgary'
-        title3='Made Quick & Hassle-Free
-'
+        title=""
+        title2="Popcorn Ceiling Removal in Calgary"
+        title3="Made Quick & Hassle-Free
+"
         imageSrc={blogsBanner}
       />
       {/* Background Image Section */}
-      <div className='relative'>
-        <div className='absolute top-[-100px] z-[-2]'>
-          <Image src={BgBackground2} alt='bg-Image' />
+      <div className="relative">
+        <div className="absolute top-[-100px] z-[-2]">
+          <Image src={BgBackground2} alt="bg-Image" />
         </div>
       </div>
 
-      <div className='max-w-7xl mx-auto px-4 py-8 mt-10'>
-        <div className='mb-6'>
-          <h2 className='text-[26px] font-medium text-[#0D378D]'>
+      <div className="max-w-7xl mx-auto px-4 py-8 mt-10">
+        <div className="mb-6">
+          <h1 className="text-[26px] font-semibold text-[#0D378D]">
             Popcorn Ceiling Removal Calgary
-          </h2>
+          </h1>
         </div>
 
-        <div className='space-y-6 '>
-          <div className='relative w-full h-[300px] sm:h-[400px] md:h-[450px] overflow-hidden'>
+        <div className="space-y-6 ">
+          <div className="relative w-full h-[300px] sm:h-[400px] md:h-[450px] overflow-hidden">
             <Image
               src={PopcornRemvalServiceImg.src}
               alt={PopcornRemvalServiceImg.alt}
               fill
-              className='md:object-cover sm:object-contain'
+              className="md:object-cover sm:object-contain"
               priority
             />
           </div>
 
-          <div className='space-y-4 text-[16px] text-black'>
+          <div className="space-y-4 text-[16px] text-black">
             <p>
               Popcorn ceilings were once trendy, but let's be real, they're
               outdated, hard to clean, and can make your space feel old and
@@ -101,39 +101,38 @@ export default function popcornCeilingRemovalPage() {
         </div>
       </div>
       <HomeBanner />
-      <div className=' flex flex-col  lg:flex-row w-[90%] gap-16 mx-auto py-16 lg:items-center'>
+      <div className=" flex flex-col  lg:flex-row w-[90%] gap-16 mx-auto py-16 lg:items-center">
         {/* Left side with image */}
-        <div className='relative w-full  h-[50vw] lg:w-2/5'>
+        <div className="relative w-full  h-[50vw] lg:w-2/5">
           <Image
             src={AboutUs}
-            alt='Elegant interior with staircase'
+            alt="Elegant interior with staircase"
             fill
-            className='max-sm:pr-[20px] object-cover lg:absolute  '
+            className="max-sm:pr-[20px] object-cover lg:absolute  "
           />
         </div>
 
         {/* Right side with text */}
         <div
-          className='w-full lg:w-3/5 text-[16px] font-normal text-justify
-'>
-          <h3 className='lg:text-[32px] text-[24px] font-bold text-[#0D378D] mb-4'>
-            A Quick Popcorn
-            <br />
-            Ceiling Self-Test
+          className="w-full lg:w-3/5 text-[16px] font-normal  
+"
+        >
+          <h3 className="lg:text-[32px] text-[24px] font-bold text-[#0D378D] mb-4">
+            A Quick Popcorn Ceiling Self-Test
           </h3>
-          <p className='text-black mb-6  '>
+          <p className="text-black mb-6  ">
             Here are a few questions for you to help you determine if it's time
             for popcorn ceiling removal services. This quick self-test is
             designed to help you decide when your ceilings are due for an
             upgrade
           </p>
-          <div className='flex gap-4 w-8/9 text-[15px]'>
+          <div className="flex gap-4 w-8/9 text-[15px]">
             <DotFranks />
-            <p className='text-black  '>
-              <span className='font-bold text-[#0D378D] mr-1'>
+            <p className="text-black  ">
+              <span className="font-bold text-[#0D378D] mr-1">
                 Does your ceiling look like cottage cheese or popcorn kernels?
               </span>
-              <span className='text-black mb-3  '>
+              <span className="text-black mb-3  ">
                 From preparation to cleanup, we handle every step of the
                 painting process with efficiency. We take the time to properly
                 prepare surfaces, ensuring a smooth and even application,
@@ -145,13 +144,13 @@ export default function popcornCeilingRemovalPage() {
             </p>
           </div>
           <br />
-          <div className='flex gap-4 w-8/9 text-[15px]'>
+          <div className="flex gap-4 w-8/9 text-[15px]">
             <DotFranks />
-            <p className='text-black  '>
-              <span className='font-bold text-[#0D378D] mr-1'>
+            <p className="text-black  ">
+              <span className="font-bold text-[#0D378D] mr-1">
                 Do you notice discoloration, stains, or shadows?
               </span>
-              <span className='text-black mb-3  '>
+              <span className="text-black mb-3  ">
                 Popcorn ceilings might have been a past trend, but they are
                 infamous for trapping dust and moisture. Look at your ceiling,
                 if you notice brown patches or yellow spots, it could mean
@@ -164,13 +163,13 @@ export default function popcornCeilingRemovalPage() {
           </div>
           <br />
 
-          <div className='flex gap-4 w-8/9 text-[15px]'>
+          <div className="flex gap-4 w-8/9 text-[15px]">
             <DotFranks />
-            <p className='text-black  '>
-              <span className='font-bold text-[#0D378D] mr-1'>
+            <p className="text-black  ">
+              <span className="font-bold text-[#0D378D] mr-1">
                 Was your home built before 1990?
               </span>
-              <span className='text-black mb-3  '>
+              <span className="text-black mb-3  ">
                 Many older ceilings used materials that contained asbestos—a
                 known health hazard. If your popcorn ceiling hasn’t been tested,
                 it’s not worth the risk to leave it unchecked. The best move?
@@ -181,13 +180,13 @@ export default function popcornCeilingRemovalPage() {
             </p>
           </div>
           <br />
-          <div className='flex gap-4 w-8/9 text-[15px]'>
+          <div className="flex gap-4 w-8/9 text-[15px]">
             <DotFranks />
-            <p className='text-black  '>
-              <span className='font-bold text-[#0D378D] mr-1'>
+            <p className="text-black  ">
+              <span className="font-bold text-[#0D378D] mr-1">
                 Is your lighting dull or uneven?
               </span>
-              <span className='text-black mb-3  '>
+              <span className="text-black mb-3  ">
                 Popcorn ceilings are notorious for weirdly scattering light and
                 absorbing the brightness of a room, creating shadows and dull
                 spots, making the room appear darker and smaller. The ceiling
@@ -199,13 +198,13 @@ export default function popcornCeilingRemovalPage() {
             </p>
           </div>
           <br />
-          <div className='flex gap-4 w-8/9 text-[15px]'>
+          <div className="flex gap-4 w-8/9 text-[15px]">
             <DotFranks />
-            <p className='text-black  '>
-              <span className='font-bold text-[#0D378D] mr-1'>
+            <p className="text-black  ">
+              <span className="font-bold text-[#0D378D] mr-1">
                 Are you planning to sell or renovate?
               </span>
-              <span className='text-black mb-3  '>
+              <span className="text-black mb-3  ">
                 Textured ceilings can instantly date a space and turn off
                 potential buyers or guests as today's market favors clean
                 finishes, and popcorn ceilings simply don't fit that look.
@@ -218,7 +217,7 @@ export default function popcornCeilingRemovalPage() {
             </p>
           </div>
           <br />
-          <p className='text-black mb-6  '>
+          <p className="text-black mb-6  ">
             From a resale perspective, smooth ceilings improve aesthetics and
             increase your home’s resale value. Buyers see them as one less thing
             to update, giving you a competitive edge. Whether revamping your
@@ -230,5 +229,5 @@ export default function popcornCeilingRemovalPage() {
       </div>
       <ContactFormSection />
     </>
-  )
+  );
 }

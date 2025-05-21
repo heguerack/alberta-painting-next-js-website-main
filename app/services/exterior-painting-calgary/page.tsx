@@ -1,73 +1,73 @@
-import ContactFormSection from '@/components/ContactFormSection'
-import ServiceHero from '@/components/heros/ServiceHero'
-import HomeBanner from '@/components/HomeBanner/home-banner'
-import Image from 'next/image'
-import blogsBanner from '@/public/blogs-banner.png'
-import BgBackground2 from '@/public/above-gallery-bg-line.svg'
-import AboutUs from '@/public/AboutUs.png'
-import DotFranks from '@/components/ui/DotFranks'
-import type { Metadata } from 'next'
-import { ExterioPaintingServiceImg } from '@/data/images'
+import ContactFormSection from "@/components/ContactFormSection";
+import ServiceHero from "@/components/heros/ServiceHero";
+import HomeBanner from "@/components/HomeBanner/home-banner";
+import Image from "next/image";
+import blogsBanner from "@/public/blogs-banner.png";
+import BgBackground2 from "@/public/above-gallery-bg-line.svg";
+import AboutUs from "@/public/AboutUs.png";
+import DotFranks from "@/components/ui/DotFranks";
+import type { Metadata } from "next";
+import { ExterioPaintingServiceImg } from "@/data/images";
 
 export const metadata: Metadata = {
-  title: 'Expert Exterior House Painters Calgary | Alberta Colour Painting',
+  title: "Expert Exterior House Painters Calgary | Alberta Colour Painting",
   description:
-    'Looking for best exterior house painting in Calgary? Alberta Colour Painting is one of the top Calgary exterior painting companies with skilled exterior painters ready to transform your home.',
-  viewport: 'width=device-width, initial-scale=1.0',
+    "Looking for best exterior house painting in Calgary? Alberta Colour Painting is one of the top Calgary exterior painting companies with skilled exterior painters ready to transform your home.",
+  viewport: "width=device-width, initial-scale=1.0",
   alternates: {
     canonical:
-      'https://www.albertacolourpainting.com/services/exterior-painting-calgary',
+      "https://www.albertacolourpainting.com/services/exterior-painting-calgary",
   },
   openGraph: {
-    title: 'Need Calgary Painters?',
+    title: "Need Calgary Painters?",
     description:
-      'Book your free estimate today with Alberta Colour Painting, the top-rated painting company in Calgary.',
+      "Book your free estimate today with Alberta Colour Painting, the top-rated painting company in Calgary.",
     images: [
       {
-        url: 'https://res.cloudinary.com/alberta-colour-painting/image/upload/v1672799089/home/awards/best-of-the-best-award-homestars-winner-2022-white-version_psaofg.webp',
+        url: "https://res.cloudinary.com/alberta-colour-painting/image/upload/v1672799089/home/awards/best-of-the-best-award-homestars-winner-2022-white-version_psaofg.webp",
       },
     ],
-    url: 'https://www.albertacolourpainting.com/services/exterior-painting-calgary',
-    siteName: 'Alberta Colour Painting',
-    type: 'website',
+    url: "https://www.albertacolourpainting.com/services/exterior-painting-calgary",
+    siteName: "Alberta Colour Painting",
+    type: "website",
   },
-}
+};
 
 export default function exteriorPaintingCalgary() {
   return (
     <>
       <ServiceHero
-        title=''
-        title2='Exterior House Painting Services'
-        title3='Built for Calgary Weather'
+        title=""
+        title2="Exterior House Painting Services"
+        title3="Built for Calgary Weather"
         imageSrc={blogsBanner}
       />
       {/* Background Image Section */}
-      <div className='relative'>
-        <div className='absolute top-[-100px] z-[-2]'>
-          <Image src={BgBackground2} alt='bg-Image' />
+      <div className="relative">
+        <div className="absolute top-[-100px] z-[-2]">
+          <Image src={BgBackground2} alt="bg-Image" />
         </div>
       </div>
 
-      <div className='max-w-7xl mx-auto px-4 py-8 mt-10'>
-        <header className='mb-6'>
-          <h1 className='text-[26px] font-medium text-[#0D378D]'>
+      <div className="max-w-7xl mx-auto px-4 py-8 mt-10">
+        <header className="mb-6">
+          <h1 className="text-[26px] font-semibold text-[#0D378D]">
             Exterior Painting Calgary
           </h1>
         </header>
 
-        <div className='space-y-6 '>
-          <div className='relative w-full h-[300px] sm:h-[400px] md:h-[450px] overflow-hidden'>
+        <div className="space-y-6 ">
+          <div className="relative w-full h-[300px] sm:h-[400px] md:h-[450px] overflow-hidden">
             <Image
               src={ExterioPaintingServiceImg.src}
               alt={ExterioPaintingServiceImg.alt}
               fill
-              className='md:object-cover sm:object-contain'
+              className="md:object-cover sm:object-contain"
               priority
             />
           </div>
 
-          <div className='space-y-4 text-[16px] text-black'>
+          <div className="space-y-4 text-[16px] text-black">
             <p>
               Updating your home's exterior is more than just a cosmetic choice
               in Calgary's extreme climate. Frequent temperature swings and
@@ -102,47 +102,37 @@ export default function exteriorPaintingCalgary() {
         </div>
       </div>
       <HomeBanner />
-      <div className='font-normal flex flex-col  lg:flex-row w-[90%] gap-16 mx-auto py-16 lg:items-center'>
+      <div className="font-normal flex flex-col  lg:flex-row w-[90%] gap-16 mx-auto py-16 lg:items-center">
         {/* Left side with image */}
-        <div className='relative w-full  h-[50vw] lg:w-2/5'>
+        <div className="relative w-full  h-[50vw] lg:w-2/5">
           <Image
             src={AboutUs}
-            alt='Elegant interior with staircase'
+            alt="Elegant interior with staircase"
             fill
-            className='max-sm:pr-[20px] object-cover lg:absolute  '
+            className="max-sm:pr-[20px] object-cover lg:absolute  "
           />
         </div>
 
         {/* Right side with text */}
-        <div className='w-full lg:w-3/5 text-[16px] text-black text-justify'>
-          <h3 className='lg:text-[32px] text-[24px] font-bold text-[#0D378D] mb-4'>
-            Beyond Just Paint,
-            <br />
-            We Elevate Your Space
+        <div className="w-full lg:w-3/5 text-[16px] text-black   flex flex-col gap-5">
+          <h3 className="lg:text-[32px] text-[24px] font-bold text-[#0D378D]">
+            How to Know When It's Time to Repaint Your Home's Exterior in
+            Calgary?
           </h3>
 
-          <p className=' mb-6   '>
+          <p>
             When it comes to exterior painting, there are a few clear indicators
             that it's time for a refresh. Ignoring these early warnings can lead
             to costly repairs and even long-term damage
           </p>
-          <p className=' mb-6   '>
+          <p>
             Here are a few key signs that your home might be due for exterior
             painting services:
           </p>
-          <p className=' mb-3   '>
-            From preparation to cleanup, we handle every step of the painting
-            process with efficiency. We take the time to properly prepare
-            surfaces, ensuring a smooth and even application, leaving your space
-            spotless once the job is done. Our goal is not just to meet your
-            expectations but to exceed them, providing you with an interior that
-            feels perfectly tailored to your style.
-          </p>
-          <br />
-          <div className='flex gap-4 w-8/9 text-[15px]'>
+          <div className="flex gap-4 w-8/9 text-[15px]">
             <DotFranks />
-            <p className='  '>
-              <span className='font-bold text-[#0D378D] mr-1'>
+            <p className="  ">
+              <span className="font-bold text-[#0D378D] mr-1">
                 Faded or Discolored Paint
               </span>
               - One of the most common signs that your home requires an exterior
@@ -153,18 +143,15 @@ export default function exteriorPaintingCalgary() {
               causing more damage.
             </p>
           </div>
-          <br />
-          <br />
-          <p className=' mb-4   '>
+          <p>
             Our exterior painters in Calgary know just the right techniques and
             methods to help address this issue, using the finest products and
             repairing any damage in a timely manner.
           </p>
-          <br />
-          <div className='flex gap-4 w-8/9 text-[15px]'>
+          <div className="flex gap-4 w-8/9 text-[15px]">
             <DotFranks />
-            <p className='   '>
-              <span className='font-bold text-[#0D378D] mr-1'>
+            <p className="   ">
+              <span className="font-bold text-[#0D378D] mr-1">
                 Peeling, Cracking, or Bubbling
               </span>
               - This is one of the most obvious red flags. Extreme temperature
@@ -176,20 +163,17 @@ export default function exteriorPaintingCalgary() {
               more expensive to repair.
             </p>
           </div>
-          <br />
-          <br />
-          <p className=' mb-3 '>
+          <p>
             Our exterior painters in Calgary know how to handle these problems
             the right way. We start by checking for any damage, then fix it
             before applying high-quality paint that can beat these conditions
             effectively.
           </p>
-          <br />
-          <div className='flex gap-4 w-8/9 text-[15px]'>
+          <div className="flex gap-4 w-8/9 text-[15px]">
             <DotFranks />
 
-            <p className='  '>
-              <span className='font-bold text-[#0D378D] mr-1'>
+            <p className="  ">
+              <span className="font-bold text-[#0D378D] mr-1">
                 It’s Been More than 5 Years
               </span>
               - Let's be honest, even the best quality paint will not last a
@@ -199,12 +183,11 @@ export default function exteriorPaintingCalgary() {
               time to consider it before the damage sets in.
             </p>
           </div>
-          <br />
 
-          <div className='flex gap-4 w-8/9 text-[15px]'>
+          <div className="flex gap-4 w-8/9 text-[15px]">
             <DotFranks />
-            <p className=' '>
-              <span className='font-bold text-[#0D378D] mr-1'>
+            <p className=" ">
+              <span className="font-bold text-[#0D378D] mr-1">
                 Chalky Residue
               </span>
               - Run your hand along your home's siding. If you get a powdery
@@ -213,18 +196,15 @@ export default function exteriorPaintingCalgary() {
               Calgary and often goes unnoticed until it's too late.
             </p>
           </div>
-          <br />
-          <br />
-          <p className=' mb-3 '>
+          <p>
             If you have been noticing the same chalky/powdery residue on your
             home's exterior walls, it's time to get in touch with the best
             exterior painters in Calgary.
           </p>
-          <br />
-          <div className='flex gap-4 w-8/9 text-[15px]'>
+          <div className="flex gap-4 w-8/9 text-[15px]">
             <DotFranks />
-            <p className=' '>
-              <span className='font-bold text-[#0D378D] mr-1'>
+            <p className=" ">
+              <span className="font-bold text-[#0D378D] mr-1">
                 Exposed Wood or Bare Patches
               </span>
               - If areas of wood or siding are peeking through the paint, it's
@@ -237,5 +217,5 @@ export default function exteriorPaintingCalgary() {
       </div>
       <ContactFormSection />
     </>
-  )
+  );
 }
