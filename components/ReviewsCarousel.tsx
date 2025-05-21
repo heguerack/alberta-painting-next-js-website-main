@@ -1,29 +1,29 @@
-'use client'
-import React, { useState } from 'react'
-import 'swiper/css'
-import './ReviewsCarousel.css'
-import ServiceSection from './service-section'
-import ReviewsToggler from './ReviewsToggler'
-import ReviewsGoogle from './ReviewsGoogle'
-import { ReviewsGoogleType } from '@/types/review'
-import ReviewsHomestars from './ReviewsHomestars'
+"use client";
+import React, { useState } from "react";
+import "swiper/css";
+import "./ReviewsCarousel.css";
+import ServiceSection from "./service-section";
+import ReviewsToggler from "./ReviewsToggler";
+import ReviewsGoogle from "./ReviewsGoogle";
+import { ReviewsGoogleType } from "@/types/review";
+import ReviewsHomestars from "./ReviewsHomestars";
 
 const ReviewsCarousel = ({
   newestGoogleReviews,
 }: {
-  newestGoogleReviews: ReviewsGoogleType
+  newestGoogleReviews: ReviewsGoogleType;
 }) => {
-  const [activeTab, setActiveTab] = useState<'google' | 'homestars'>('google')
+  const [activeTab, setActiveTab] = useState<"google" | "homestars">("google");
 
   return (
-    <div className='lg:mb-20 lg:mt-20 mb-10 px-8 lg:px-24'>
+    <div className="lg:mb-20 lg:mt-20 mb-10 px-8 lg:px-24">
       <ServiceSection
-        title='What Our Clients Say'
-        description='Real Reviews from Satisfied <br /> Customers'
-        buttonText='Read More Reviews'
+        title="What Our Clients Say"
+        description="Reviews from Our Satisfied <br /> Customers"
+        buttonText="Read More Reviews"
         isButton={true}
       />
-      <p className='container max-w-7xl mx-auto px-4'>
+      <p className="container max-w-7xl mx-auto px-4 text-black py-5">
         See why Alberta Colour Painting is a trusted choice for professional
         painting in Calgary. Our happy customers share their experiences,
         praising our quality work and great service. From detailed interior
@@ -33,16 +33,16 @@ const ReviewsCarousel = ({
 
       <ReviewsToggler activeTab={activeTab} setActiveTab={setActiveTab} />
 
-      {activeTab === 'google' && (
+      {activeTab === "google" && (
         <ReviewsGoogle newestGoogleReviews={newestGoogleReviews} />
       )}
 
-      {activeTab === 'homestars' && <ReviewsHomestars />}
+      {activeTab === "homestars" && <ReviewsHomestars />}
     </div>
-  )
-}
+  );
+};
 
-export default ReviewsCarousel
+export default ReviewsCarousel;
 
 // const handleReviewsRequest = async () => {
 //   try {
