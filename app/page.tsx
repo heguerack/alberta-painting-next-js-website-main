@@ -5,7 +5,6 @@ import BgBackground from "@/public/about-background-vector-line.svg";
 import OurServices from "@/components/our-services";
 import { CalgaryPainting } from "@/components/calgary-painting";
 import ContactFormSection from "@/components/ContactFormSection";
-import { getBlogPosts } from "@/lib/blog-data";
 import BlogGrid from "@/components/blog-grid";
 import HomeBanner from "@/components/HomeBanner/home-banner";
 import Link from "next/link";
@@ -18,12 +17,12 @@ import AboutusHome from "@/components/AboutUs/AboutusHome";
 import GallerySection from "@/components/gallery/GallerySection";
 import SpecialOfferWrapper from "@/components/SpecialOfferWrapper";
 import FaqSection from "@/components/Faq";
+import { blogPosts } from "@/lib/blog-data";
 
 export const metadata: Metadata = {
-  title:
-    "Painting Company with Expert Calgary Painters for Exterior & Interior House Painting services",
+  title: "Painting Company with Expert Calgary Painters for House Painting",
   description:
-    "Looking for affordable Calgary painters? Our top-rated house painting company in Calgary offers professional interior and exterior painting services to meet all your needs.",
+    "Looking for affordable Calgary painters? Our top-rated painting contractors offer professional house painting services to meet all your needs.",
   viewport: "width=device-width, initial-scale=1.0",
   keywords: [
     "calgary painters",
@@ -53,8 +52,6 @@ export const metadata: Metadata = {
     type: "website",
   },
 };
-
-const posts = getBlogPosts();
 
 export default async function Home() {
   const res = await fetch(process.env.GOOGLE_REVIEWS_URL!, {
@@ -91,7 +88,7 @@ export default async function Home() {
               Expert Advice, Trends & DIY Tips
             </h2>
           </div>
-          <BlogGrid posts={posts?.slice(0, 3)} />
+          <BlogGrid posts={blogPosts?.slice(0, 3)} />
           <div className="flex justify-center my-7">
             <Button className="bg-[#0D378D] px-4 py-5 w-30 rounded-3xl cursor-pointer">
               {" "}

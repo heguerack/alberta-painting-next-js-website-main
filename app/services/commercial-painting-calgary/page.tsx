@@ -12,7 +12,7 @@ import { CommercialPaintingServiceImg } from "@/data/images";
 export const metadata: Metadata = {
   title: "Top Commercial Painters in Calgary | Best Painting Company",
   description:
-    "Alberta Colour Painting is one of the leading commercial painting companies in Calgary. We provide expert commercial exterior & interior painting with professional results.",
+    "Alberta Colour Painting is one of the leading commercial painting companies in Calgary, providing expert interior & exterior painting with the best results.",
   viewport: "width=device-width, initial-scale=1.0",
   alternates: {
     canonical:

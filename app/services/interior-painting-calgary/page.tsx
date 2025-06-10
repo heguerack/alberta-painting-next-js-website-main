@@ -11,7 +11,7 @@ import { InteriorPaintingServiceImg } from "@/data/images";
 export const metadata: Metadata = {
   title: "Calgary's Top Interior Painters: Interior House Painting Services",
   description:
-    "Looking for best exterior house painting in Calgary? Alberta Colour Painting is one of the top Calgary exterior painting companies with skilled exterior painters ready to transform your home.",
+    "Alberta Colour Painting is one of the leading commercial painting companies in Calgary, providing expert interior and exterior painting with the best results.",
   viewport: "width=device-width, initial-scale=1.0",
   alternates: {
     canonical:

@@ -9,14 +9,19 @@ import type { Metadata } from "next";
 import { GaragePaintingServiceImg } from "@/data/images";
 
 export const metadata: Metadata = {
-  title: "Garage Painting in Calgary | Garage Door & Floor Painters",
+  title: "Garage Painting in Calgary | Garage Door & Floor​ Painters",
   description:
-    "Alberta Colour Painting provides professional garage painting in Calgary, including garage floor paint and garage door painting services. Give your garage a fresh, durable finish with trusted experts in Calgary.",
+    "Alberta Colour Painting provides professional garage painting in Calgary, including garage floor paint and garage door painting services. Contact us today.",
   viewport: "width=device-width, initial-scale=1.0",
   alternates: {
     canonical:
       "https://www.albertacolourpainting.com/services/garage-painting-calgary",
   },
+  keywords: [
+    "Garage Painting Calgary",
+    "Garage floor paint calgary",
+    "Garage door painting calgary​",
+  ],
   openGraph: {
     title: "Need Calgary Painters?",
     description:

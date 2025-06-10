@@ -12,7 +12,7 @@ import { ExterioPaintingServiceImg } from "@/data/images";
 export const metadata: Metadata = {
   title: "Expert Exterior House Painters Calgary | Alberta Colour Painting",
   description:
-    "Looking for best exterior house painting in Calgary? Alberta Colour Painting is one of the top Calgary exterior painting companies with skilled exterior painters ready to transform your home.",
+    "Looking for the best exterior house painting in Calgary? We’re one of the top exterior painting companies, with skilled painters ready to transform your home.",
   viewport: "width=device-width, initial-scale=1.0",
   alternates: {
     canonical:

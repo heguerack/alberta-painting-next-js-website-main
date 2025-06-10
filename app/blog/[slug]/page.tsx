@@ -1,4 +1,4 @@
-import { getBlogPosts } from "@/lib/blog-data";
+import { blogPosts } from "@/lib/blog-data";
 
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -14,16 +14,17 @@ import { Navbar } from "@/components/Header";
 import BlogNestedHero from "@/components/BlogNestedHero";
 
 export function generateStaticParams() {
-  const posts = getBlogPosts();
-  return posts.map((post) => ({
-    slug: post.slug,
+  return blogPosts.map((post) => ({
+    slug: post?.slug,
   }));
 }
-
-export default function BlogPost({ params }: { params: { slug: string } }) {
-  const posts = getBlogPosts();
-  const post = posts.find((post) => post.slug === params.slug);
-
+export type paramsType = Promise<{ slug: string }>;
+export default async function BlogPost({ params }: { params: paramsType }) {
+  const slug = (await params)?.slug;
+  let post;
+  if (slug) {
+    post = blogPosts?.find((post) => post?.slug === slug);
+  }
   if (!post) {
     notFound();
   }
@@ -130,7 +131,7 @@ export default function BlogPost({ params }: { params: { slug: string } }) {
         </article>
       </main>
       <main className="container mx-auto px-4 py-8 lg:mb-20  ">
-        <BlogGrid posts={posts?.slice(0, 3)} />
+        <BlogGrid posts={blogPosts?.slice(0, 3)} />
       </main>
     </>
   );

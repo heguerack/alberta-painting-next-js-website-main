@@ -15,7 +15,7 @@ import {
 export const metadata: Metadata = {
   title: "Cabinet Painting in Calgary | Bathroom & Kitchen Cabinet Painters",
   description:
-    "Alberta Colour Painting offers expert cabinet painting in Calgary. Our skilled kitchen & bathroom cabinet painters in Calgary transform your space with precision and style.",
+    "Alberta Colour Painting offers expert cabinet painting in Calgary. Our skilled painters transform kitchen or bathroom cabinets with style and precision.",
   viewport: "width=device-width, initial-scale=1.0",
   keywords: [
     "cabinet painting calgary",

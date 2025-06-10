@@ -10,9 +10,9 @@ import type { Metadata } from "next";
 import { PopcornRemvalServiceImg } from "@/data/images";
 
 export const metadata: Metadata = {
-  title: "Calgary Popcorn Ceiling Removal and Repair: Professional Services",
+  title: "Calgary Popcorn Ceiling Removal and Repair Services",
   description:
-    "Want ceiling popcorn removal services in Calgary? Look no further! Our team is here to transform or repair your popcorn ceilings into smooth & flat surfaces. Contact us today to schedule your consultation & get started on your home renovation project.",
+    "Want ceiling popcorn removal services in Calgary? We transform popcorn ceilings into smooth surfaces. Contact us today to schedule your home renovation consultation!",
   viewport: "width=device-width, initial-scale=1.0",
   alternates: {
     canonical:
