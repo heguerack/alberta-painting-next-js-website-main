@@ -4,16 +4,18 @@ import HomeBanner from "@/components/HomeBanner/home-banner";
 import Image from "next/image";
 import blogsBanner from "@/public/blogs-banner.png";
 import BgBackground2 from "@/public/above-gallery-bg-line.svg";
-import AboutUs from "@/public/AboutUs.png";
+import AboutUs from "@/public/AboutUs.webp";
 import DotFranks from "@/components/ui/DotFranks";
-import type { Metadata } from "next";
 import { PopcornRemvalServiceImg } from "@/data/images";
-
+import type { Metadata, Viewport } from "next";
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1.0,
+};
 export const metadata: Metadata = {
   title: "Calgary Popcorn Ceiling Removal and Repair Services",
   description:
     "Want ceiling popcorn removal services in Calgary? We transform popcorn ceilings into smooth surfaces. Contact us today to schedule your home renovation consultation!",
-  viewport: "width=device-width, initial-scale=1.0",
   alternates: {
     canonical:
       "https://www.albertacolourpainting.com/services/popcorn-ceiling-removal-calgary",

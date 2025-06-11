@@ -8,14 +8,17 @@ import ContactFormSection from "@/components/ContactFormSection";
 import HomeBanner from "@/components/HomeBanner/home-banner";
 import Image from "next/image";
 import StandardHero from "@/components/heros/StandardHero";
-import type { Metadata } from "next";
 import { blogPosts } from "@/lib/blog-data";
+import type { Metadata, Viewport } from "next";
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1.0,
+};
 
 export const metadata: Metadata = {
   title: "Blogs | Alberta Colour Painting",
   description:
     "Looking for affordable Calgary painters? Our top-rated house painting company in Calgary offers professional interior and exterior painting services to meet all your needs.",
-  viewport: "width=device-width, initial-scale=1.0",
   keywords: [
     "calgary painters",
     "painting companies calgary",

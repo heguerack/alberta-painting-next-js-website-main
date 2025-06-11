@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import BgBackground from "@/public/about-background-vector-line.svg";
@@ -18,12 +18,14 @@ import GallerySection from "@/components/gallery/GallerySection";
 import SpecialOfferWrapper from "@/components/SpecialOfferWrapper";
 import FaqSection from "@/components/Faq";
 import { blogPosts } from "@/lib/blog-data";
-
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1.0,
+};
 export const metadata: Metadata = {
   title: "Painting Company with Expert Calgary Painters for House Painting",
   description:
     "Looking for affordable Calgary painters? Our top-rated painting contractors offer professional house painting services to meet all your needs.",
-  viewport: "width=device-width, initial-scale=1.0",
   keywords: [
     "calgary painters",
     "painting companies calgary",

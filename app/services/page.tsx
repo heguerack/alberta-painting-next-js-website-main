@@ -15,13 +15,16 @@ import blogsBanner from "@/public/blogs-banner.png";
 import BgBackground2 from "@/public/above-gallery-bg-line.svg";
 import StandardHero from "@/components/heros/StandardHero";
 import { services } from "@/data/serviceData";
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1.0,
+};
 
 export const metadata: Metadata = {
   title: " Painting Services in Calgary | Alberta Colour Painting",
   description:
     "Explore top-quality residential & commercial painting services with Alberta Colour Painting. Interior, exterior & custom solutions tailored to your unique needs.",
-  viewport: "width=device-width, initial-scale=1.0",
   alternates: {
     canonical: "https://www.albertacolourpainting.com/services",
   },
@@ -49,8 +52,6 @@ export default function Services() {
         subtitle="Transforming Homes & Businesses with Quality Painting"
         imageSrc={blogsBanner}
       />
-
-      {/* <PaintingCompany /> */}
 
       <div className="lg:mt-20 mx-4 mt-10">
         <div className="absolute ">

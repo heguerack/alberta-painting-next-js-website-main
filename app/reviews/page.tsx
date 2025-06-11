@@ -19,13 +19,16 @@ import Reviews3 from "@/public/Reviews3.png";
 
 import axios from "axios";
 import Cookies from "js-cookie";
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1.0,
+};
 
 export const metadata: Metadata = {
   title: " Customer Reviews | Alberta Colour Painting Testimonials",
   description:
     "See what our happy clients are saying! Read real reviews & testimonials about Alberta Colour Painting’s top-rated residential & commercial painting services.",
-  viewport: "width=device-width, initial-scale=1.0",
   alternates: {
     canonical: "https://www.albertacolourpainting.com/reviews",
   },

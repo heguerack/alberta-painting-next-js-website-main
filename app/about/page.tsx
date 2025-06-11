@@ -16,15 +16,16 @@ import SkillPainters from "@/components/AboutUs/SkillPaintersSection";
 
 import FinestPainters from "@/components/AboutUs/FinestPaintersSection";
 import CommitmentQualitySection from "@/components/AboutUs/CommitmentQualitySection";
-import type { Metadata } from "next";
 import { blogPosts } from "@/lib/blog-data";
-
+import type { Metadata, Viewport } from "next";
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1.0,
+};
 export const metadata: Metadata = {
   title: "About Alberta Colour Painting: Your Trusted Calgary Painting Company",
   description:
     "Our expert painters deliver top-quality interior, exterior & wallpaper removal services for your home or business. We've got all your painting needs covered.",
-  viewport: "width=device-width, initial-scale=1.0",
-
   alternates: {
     canonical: "https://www.albertacolourpainting.com/about",
   },

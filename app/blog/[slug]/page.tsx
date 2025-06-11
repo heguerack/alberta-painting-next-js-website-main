@@ -4,7 +4,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import Image from "next/image";
 import React from "react";
-import homeHero from "@/public/blog-banner.png";
+import homeHero from "@/public/blog-banner.webp";
 import BgBackground2 from "@/public/above-gallery-bg-line.svg";
 import BlogHero from "@/components/blog-hero";
 import BlogGrid from "@/components/blog-grid";
@@ -131,7 +131,13 @@ export default async function BlogPost({ params }: { params: paramsType }) {
         </article>
       </main>
       <main className="container mx-auto px-4 py-8 lg:mb-20  ">
-        <BlogGrid posts={blogPosts?.slice(0, 3)} />
+        <BlogGrid
+          posts={
+            blogPosts && blogPosts.length > 0
+              ? blogPosts.filter((post) => post?.slug !== slug).slice(0, 3)
+              : []
+          }
+        />
       </main>
     </>
   );

@@ -7,13 +7,16 @@ import blogsBanner from "@/public/blogs-banner.png";
 import BgBackground2 from "@/public/above-gallery-bg-line.svg";
 import { CalgaryPainting } from "@/components/calgary-painting";
 import StandardHero from "@/components/heros/StandardHero";
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1.0,
+};
 
 export const metadata: Metadata = {
   title: "Contact Alberta Colour Painting | Get a Free Painting Estimate",
   description:
     "Contact us today for a free painting estimate! Get expert interior, exterior, or commercial painting services tailored to your needs in Calgary.",
-  viewport: "width=device-width, initial-scale=1.0",
   alternates: {
     canonical: "https://www.albertacolourpainting.com/contact",
   },
