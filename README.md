@@ -19,3 +19,9 @@ git reset --hard frank_dev
 
 git push origin main
 git checkout frank_dev
+
+###
+
+this is when pulling updated main branch first
+git checkout main  
+git pull origin main

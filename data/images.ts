@@ -64,7 +64,25 @@ export const HeroHomeImg = {
   alt: 'hero showcase image - house painting calgary',
 }
 
+export const AboutUsImg = {
+  src: '/AboutUs.png',
+  alt: 'calgary painters',
+}
+
 // GallerySection Images
+// GallerySection Images
+// GallerySection Images
+
+export const galleryImg = {
+  src: '/gallery-image.png',
+  alt: 'painters in calgary alberta​',
+}
+
+export const gallery1Img = {
+  src: '/gallery1.png',
+  alt: 'painting contractors calgary',
+}
+
 export const GalleryHomeImages = [
   {
     src: '/galleryNew-1.webp',
@@ -88,16 +106,43 @@ export const GalleryHomeImages = [
   },
 ]
 
-export const AboutUsImg = {
-  src: '/AboutUs.webp',
-  alt: 'calgary painters',
-}
-export const galleryImg = {
-  src: '/gallery-image.png',
-  alt: 'painters in calgary alberta​',
-}
 
-export const gallery1Img = {
-  src: '/gallery1.png',
-  alt: 'painting contractors calgary',
-}
+export const interiorWallPainingBrownToOffWhite = [
+  {
+    src: '/painting-projects/interior-wall-painting-brown-to-off-white/img1.jpeg',
+    alt: 'Ensuite - wall colour light grey / off white, freshly painted',
+  },
+  {
+    src: '/painting-projects/interior-wall-painting-brown-to-off-white/A2218127_23.jpg',
+    alt: 'Ensuite - wall colour brown / grey to be painted light grey / off white',
+  },
+  {
+    src: '/painting-projects/interior-wall-painting-brown-to-off-white/WhatsApp Image 2025-06-06 at 6.26.15 AM.jpeg',
+    alt: 'home painting calgary',
+  },
+  {
+    src: '/painting-projects/interior-wall-painting-brown-to-off-white/A2218127_22.jpg',
+    alt: 'home painting calgary',
+  },
+  {
+    src: '/painting-projects/interior-wall-painting-brown-to-off-white/A2218127_2.jpg',
+    alt: 'home painting calgary',
+  },
+  {
+    src: '/painting-projects/interior-wall-painting-brown-to-off-white/A2218127_3.jpg',
+    alt: 'home painting calgary',
+  },
+  {
+    src: '/painting-projects/interior-wall-painting-brown-to-off-white/A2218127_6.jpg',
+    alt: 'home painting calgary',
+  },
+  {
+    src: '/painting-projects/interior-wall-painting-brown-to-off-white/A2218127_8.jpg',
+    alt: 'home painting calgary',
+  },
+  {
+    src: '/painting-projects/interior-wall-painting-brown-to-off-white/A2218127_23.jpg',
+    alt: 'home painting calgary',
+  },
+]
+
