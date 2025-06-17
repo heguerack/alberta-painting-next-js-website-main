@@ -4,19 +4,27 @@ import HomeBanner from "@/components/HomeBanner/home-banner";
 import Image from "next/image";
 import blogsBanner from "@/public/blogs-banner.png";
 import BgBackground2 from "@/public/above-gallery-bg-line.svg";
-import AboutUs from "@/public/AboutUs.png";
-import type { Metadata } from "next";
+import AboutUs from "@/public/AboutUs.webp";
 import { GaragePaintingServiceImg } from "@/data/images";
+import type { Metadata, Viewport } from "next";
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1.0,
+};
 
 export const metadata: Metadata = {
-  title: "Garage Painting in Calgary | Garage Door & Floor Painters",
+  title: "Garage Painting in Calgary | Garage Door & Floor​ Painters",
   description:
-    "Alberta Colour Painting provides professional garage painting in Calgary, including garage floor paint and garage door painting services. Give your garage a fresh, durable finish with trusted experts in Calgary.",
-  viewport: "width=device-width, initial-scale=1.0",
+    "Alberta Colour Painting provides professional garage painting in Calgary, including garage floor paint and garage door painting services. Contact us today.",
   alternates: {
     canonical:
       "https://www.albertacolourpainting.com/services/garage-painting-calgary",
   },
+  keywords: [
+    "Garage Painting Calgary",
+    "Garage floor paint calgary",
+    "Garage door painting calgary​",
+  ],
   openGraph: {
     title: "Need Calgary Painters?",
     description:

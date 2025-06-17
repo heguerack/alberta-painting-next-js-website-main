@@ -5,19 +5,19 @@ export const cabinetPaintingServiceImg = {
   alt: 'Cabinet Painting Calgary',
 }
 export const ExterioPaintingServiceImg = {
-  src: '/exterior/PXL_20230430_173645223.jpg',
+  src: '/exterior/PXL_20230430_173645223.webp',
   alt: 'Exterior Painting Service in Calgary',
 }
 export const InteriorPaintingServiceImg = {
-  src: '/interior/PXL_20220622_192016887.jpg',
+  src: '/interior/PXL_20220622_192016887.webp',
   alt: 'Interior Painting Calgary',
 }
 export const CommercialPaintingServiceImg = {
-  src: '/commercial/commercial-painting-offices-calgary.jpg',
+  src: '/commercial/commercial-painting-offices-calgary.webp',
   alt: 'Commercial Painting Service in Calgary',
 }
 export const PopcornRemvalServiceImg = {
-  src: '/Popcorn Ceiling Removal/20220605_151407_nzvz8d.jpg',
+  src: '/Popcorn Ceiling Removal/20220605_151407_nzvz8d.webp',
   alt: 'Popcorn Ceiling Removal Service in Calgary',
 }
 export const GaragePaintingServiceImg = {
@@ -29,31 +29,31 @@ export const GaragePaintingServiceImg = {
 // SERVICES PAGE IMAGES
 
 export const ServicesInteriorPaintingImg = {
-  src: '/interior/PXL_20220622_192016887.jpg',
+  src: '/interior/PXL_20220622_192016887.webp',
   alt: 'Interior Painting Calgary',
 }
 export const ServicescabinetPaintingImg = {
-  src: '/services/cabinet-painting-oak-to white-and-teal-colour.jpg',
+  src: '/services/cabinet-painting-oak-to white-and-teal-colour.webp',
   alt: 'Cabinet Painting Calgary',
 }
 
 export const ServicesExteriorPaintingImg = {
-  src: '/services/PXL_20230605_193213526.jpg',
+  src: '/services/PXL_20230605_193213526.webp',
   alt: 'painting companies calgary',
 }
 
 export const ServicesCommercialPaintingImg = {
-  src: '/services/commercial-painting-project-downtown-paint-finished.jpg',
+  src: '/services/commercial-painting-project-downtown-paint-finished.webp',
   alt: 'Commercial Painting Calgary',
 }
 
 export const PopcornCeilingRemovalImg = {
-  src: '/services/20220605_151419_z32cgm.jpg',
+  src: '/services/20220605_151419_z32cgm.webp',
   alt: 'Popcorn Ceiling Removal Calgary',
 }
 
 export const GaragePaintingImg = {
-  src: '/services/20201205_105341_l1hwp4.jpg',
+  src: '/services/20201205_105341_l1hwp4.webp',
   alt: 'Garage Painting Calgary',
 }
 
@@ -85,26 +85,27 @@ export const gallery1Img = {
 
 export const GalleryHomeImages = [
   {
-    src: '/galleryNew-1.png',
+    src: '/galleryNew-1.webp',
     alt: 'house painting calgary',
   },
   {
-    src: '/galleryHome-4.png',
+    src: '/galleryHome-4.webp',
     alt: 'painting contractors calgary',
   },
   {
-    src: '/galleryNew-2.png',
+    src: '/galleryNew-2.webp',
     alt: 'painting services calgary',
   },
   {
-    src: '/galleryNew-3.png',
+    src: '/galleryNew-3.webp',
     alt: 'calgary painting companies',
   },
   {
-    src: '/galleryHome-3.png',
+    src: '/galleryHome-3.webp',
     alt: 'home painting calgary',
   },
 ]
+
 
 export const interiorWallPainingBrownToOffWhite = [
   {
@@ -144,3 +145,4 @@ export const interiorWallPainingBrownToOffWhite = [
     alt: 'home painting calgary',
   },
 ]
+

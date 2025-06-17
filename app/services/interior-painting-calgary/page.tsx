@@ -4,15 +4,17 @@ import HomeBanner from "@/components/HomeBanner/home-banner";
 import Image from "next/image";
 import blogsBanner from "@/public/blogs-banner.png";
 import BgBackground2 from "@/public/above-gallery-bg-line.svg";
-import AboutUs from "@/public/AboutUs.png";
-import type { Metadata } from "next";
+import AboutUs from "@/public/AboutUs.webp";
 import { InteriorPaintingServiceImg } from "@/data/images";
-
+import type { Metadata, Viewport } from "next";
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1.0,
+};
 export const metadata: Metadata = {
   title: "Calgary's Top Interior Painters: Interior House Painting Services",
   description:
-    "Looking for best exterior house painting in Calgary? Alberta Colour Painting is one of the top Calgary exterior painting companies with skilled exterior painters ready to transform your home.",
-  viewport: "width=device-width, initial-scale=1.0",
+    "Alberta Colour Painting is one of the leading commercial painting companies in Calgary, providing expert interior and exterior painting with the best results.",
   alternates: {
     canonical:
       "https://www.albertacolourpainting.com/services/interior-painting-calgary",

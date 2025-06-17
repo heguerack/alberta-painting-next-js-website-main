@@ -1,6 +1,11 @@
+
 import ProjectCard from './ProjectCard'
 import type { Metadata } from 'next'
 
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1.0,
+};
 export const metadata: Metadata = {
   title: 'Gallery | Alberta Colour Painting',
   description:
