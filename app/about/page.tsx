@@ -3,9 +3,8 @@ import { CalgaryPainting } from "@/components/calgary-painting";
 import ContactFormSection from "../../components/ContactFormSection";
 import HomeBanner from "@/components/HomeBanner/home-banner";
 import BlogGrid from "@/components/blog-grid";
-import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import blogsBanner from "@/public/blogs-banner.png";
+import blogsBanner from "@/public/blogs-banner.webp";
 import BgBackground from "@/public/about-background-vector-line.svg";
 import BgBackground2 from "@/public/above-gallery-bg-line.svg";
 import StandardHero from "@/components/heros/StandardHero";
@@ -86,9 +85,9 @@ export default function page() {
         <BlogGrid posts={blogPosts?.slice(0, 3)} />
 
         <div className="flex justify-center my-7">
-          <Button className="bg-[#0D378D] px-4 py-5 w-30 rounded-3xl cursor-pointer">
+          <div className="bg-[#0D378D] px-2 py-2 w-30 text-center rounded-3xl cursor-pointer">
             <Link href="/blogs">View All</Link>
-          </Button>
+          </div>
         </div>
       </section>
     </main>

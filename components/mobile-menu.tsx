@@ -165,9 +165,9 @@ export default function MobileMenu() {
             <Link
               onClick={() => setIsOpen(false)}
               href="/booking"
-              className="bg-[#0D378D] text-white mb-5 border-4 border-[#CADBFF] text-center px-8 py-1 rounded-4xl font-medium hover:bg-[#0D378D] transition-colors cursor-pointer"
+              className="bg-[#0D378D] cursor-pointer text-white mb-5 border-4 border-[#CADBFF] text-center px-8 py-1 rounded-4xl font-medium hover:bg-[#0D378D] transition-colors"
             >
-              <Button className="cursor-pointer">Book Now</Button>
+              Book Now
             </Link>
           </div>
         </div>

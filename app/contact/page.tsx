@@ -3,7 +3,7 @@ import React from "react";
 import ContactForm from "./ContactForm";
 import GoogleMap from "./GoogleMap";
 import DiscussSection from "./DiscussSection";
-import blogsBanner from "@/public/blogs-banner.png";
+import blogsBanner from "@/public/blogs-banner.webp";
 import BgBackground2 from "@/public/above-gallery-bg-line.svg";
 import { CalgaryPainting } from "@/components/calgary-painting";
 import StandardHero from "@/components/heros/StandardHero";
@@ -60,7 +60,6 @@ export default function contactPage() {
 
       <GoogleMap />
       <div className="">
-        {/* <main className=""> */}
         <CalgaryPainting />
       </div>
       <div className="relative">

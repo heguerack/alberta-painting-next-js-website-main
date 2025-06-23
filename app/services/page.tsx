@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { Button } from "@/components/ui/button";
 import {
   Card,
   CardDescription,
@@ -11,7 +10,7 @@ import {
 import Link from "next/link";
 import ContactFormSection from "../../components/ContactFormSection";
 import HomeBanner from "@/components/HomeBanner/home-banner";
-import blogsBanner from "@/public/blogs-banner.png";
+import blogsBanner from "@/public/blogs-banner.webp";
 import BgBackground2 from "@/public/above-gallery-bg-line.svg";
 import StandardHero from "@/components/heros/StandardHero";
 import { services } from "@/data/serviceData";

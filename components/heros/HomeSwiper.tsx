@@ -1,10 +1,10 @@
 "use client";
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
-import homeHero from "@/public/home-hero.png";
-import homeHero2 from "@/public/galleryHome-2.png";
+import homeHero from "@/public/home-hero.webp";
+import homeHero2 from "@/public/galleryHome-2.webp";
 import homeHero3 from "@/public/galleryHome-3.webp";
-import homeHero4 from "@/public/galleryHome-5.png";
+import homeHero4 from "@/public/galleryHome-5.webp";
 import {
   Keyboard,
   Scrollbar,

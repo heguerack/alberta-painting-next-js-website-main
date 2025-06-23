@@ -8,7 +8,6 @@ import homeHero from "@/public/blog-banner.webp";
 import BgBackground2 from "@/public/above-gallery-bg-line.svg";
 import BlogHero from "@/components/blog-hero";
 import BlogGrid from "@/components/blog-grid";
-import { Button } from "@/components/ui/button";
 import Footer from "@/components/Footer";
 import { Navbar } from "@/components/Header";
 import BlogNestedHero from "@/components/BlogNestedHero";

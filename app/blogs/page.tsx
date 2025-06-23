@@ -1,5 +1,5 @@
 import BlogGrid from "@/components/blog-grid";
-import blogsBanner from "@/public/blogs-banner.png";
+import blogsBanner from "@/public/blogs-banner.webp";
 
 // import BgBackground2 from '@/public/above-gallery-bg-line.svg'  // you are just providing the local path, Next image does not work well with imports! we are not suposed to do this :) instead as follows or right in the Image
 const BgBackground2 = "/above-gallery-bg-line.svg";

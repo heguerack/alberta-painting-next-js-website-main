@@ -1,6 +1,4 @@
-import service1 from "@/public/service1.png";
 import Image from "next/image";
-import { Dot } from "lucide-react";
 import BgLines from "../ui/BgLines";
 
 export default function FinestPaintersSection() {

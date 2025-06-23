@@ -1,5 +1,4 @@
 import type { Metadata, Viewport } from "next";
-import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import BgBackground from "@/public/about-background-vector-line.svg";
 import OurServices from "@/components/our-services";
@@ -83,19 +82,18 @@ export default async function Home() {
         <FaqSection />
         <section className="container mx-auto px-4 py-8 ">
           <div className="text-center  mb-10">
-            <h4 className="text-[22px] font-semibold text-black ont-medium">
+            <h2 className="text-[22px] font-semibold text-black ont-medium">
               Our Blog
-            </h4>
-            <h2 className="text-[#0D378D] lg:text-[36px]  text-[26px] font-medium">
-              Expert Advice, Trends & DIY Tips
             </h2>
+            <h3 className="text-[#0D378D] lg:text-[36px]  text-[26px] font-medium">
+              Expert Advice, Trends & DIY Tips
+            </h3>
           </div>
           <BlogGrid posts={blogPosts?.slice(0, 3)} />
           <div className="flex justify-center my-7">
-            <Button className="bg-[#0D378D] px-4 py-5 w-30 rounded-3xl cursor-pointer">
-              {" "}
+            <div className="bg-[#0D378D] px-2 py-2 w-30 text-center rounded-3xl cursor-pointer">
               <Link href="/blogs">View All</Link>
-            </Button>
+            </div>
           </div>
         </section>
         <ContactFormSection />
