@@ -12,7 +12,15 @@ const nextConfig: NextConfig = {
     ],
   },
 
- 
+  async redirects() {
+    return [
+      {
+        source: '/:path*\\.html',
+        destination: '/:path*',
+        permanent: true,
+      },
+    ]
+  },
   eslint: { ignoreDuringBuilds: true }, 
   
   typescript: {

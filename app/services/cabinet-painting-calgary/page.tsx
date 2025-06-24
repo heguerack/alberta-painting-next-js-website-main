@@ -2,21 +2,24 @@ import ContactFormSection from "@/components/ContactFormSection";
 import ServiceHero from "@/components/heros/ServiceHero";
 import HomeBanner from "@/components/HomeBanner/home-banner";
 import Image from "next/image";
-import blogsBanner from "@/public/blogs-banner.png";
+import blogsBanner from "@/public/blogs-banner.webp";
 import BgBackground2 from "@/public/above-gallery-bg-line.svg";
-import AboutUs from "@/public/AboutUs.png";
+import AboutUs from "@/public/AboutUs.webp";
 import DotFranks from "@/components/ui/DotFranks";
-import type { Metadata } from "next";
 import {
   cabinetPaintingServiceImg,
   ServicescabinetPaintingImg,
 } from "@/data/images";
+import type { Metadata, Viewport } from "next";
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1.0,
+};
 
 export const metadata: Metadata = {
   title: "Cabinet Painting in Calgary | Bathroom & Kitchen Cabinet Painters",
   description:
-    "Alberta Colour Painting offers expert cabinet painting in Calgary. Our skilled kitchen & bathroom cabinet painters in Calgary transform your space with precision and style.",
-  viewport: "width=device-width, initial-scale=1.0",
+    "Alberta Colour Painting offers expert cabinet painting in Calgary. Our skilled painters transform kitchen or bathroom cabinets with style and precision.",
   keywords: [
     "cabinet painting calgary",
     "kitchen cabinet painting calgary",

@@ -2,18 +2,21 @@ import ContactFormSection from "@/components/ContactFormSection";
 import ServiceHero from "@/components/heros/ServiceHero";
 import HomeBanner from "@/components/HomeBanner/home-banner";
 import Image from "next/image";
-import blogsBanner from "@/public/blogs-banner.png";
+import blogsBanner from "@/public/blogs-banner.webp";
 import BgBackground2 from "@/public/above-gallery-bg-line.svg";
-import AboutUs from "@/public/AboutUs.png";
+import AboutUs from "@/public/AboutUs.webp";
 import DotFranks from "@/components/ui/DotFranks";
-import type { Metadata } from "next";
 import { ExterioPaintingServiceImg } from "@/data/images";
+import type { Metadata, Viewport } from "next";
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1.0,
+};
 
 export const metadata: Metadata = {
   title: "Expert Exterior House Painters Calgary | Alberta Colour Painting",
   description:
-    "Looking for best exterior house painting in Calgary? Alberta Colour Painting is one of the top Calgary exterior painting companies with skilled exterior painters ready to transform your home.",
-  viewport: "width=device-width, initial-scale=1.0",
+    "Looking for the best exterior house painting in Calgary? We’re one of the top exterior painting companies, with skilled painters ready to transform your home.",
   alternates: {
     canonical:
       "https://www.albertacolourpainting.com/services/exterior-painting-calgary",

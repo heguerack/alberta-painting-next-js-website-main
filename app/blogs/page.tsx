@@ -1,6 +1,5 @@
 import BlogGrid from "@/components/blog-grid";
-import { getBlogPosts } from "@/lib/blog-data";
-import blogsBanner from "@/public/blogs-banner.png";
+import blogsBanner from "@/public/blogs-banner.webp";
 
 // import BgBackground2 from '@/public/above-gallery-bg-line.svg'  // you are just providing the local path, Next image does not work well with imports! we are not suposed to do this :) instead as follows or right in the Image
 const BgBackground2 = "/above-gallery-bg-line.svg";
@@ -9,13 +8,17 @@ import ContactFormSection from "@/components/ContactFormSection";
 import HomeBanner from "@/components/HomeBanner/home-banner";
 import Image from "next/image";
 import StandardHero from "@/components/heros/StandardHero";
-import type { Metadata } from "next";
+import { blogPosts } from "@/lib/blog-data";
+import type { Metadata, Viewport } from "next";
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1.0,
+};
 
 export const metadata: Metadata = {
   title: "Blogs | Alberta Colour Painting",
   description:
     "Looking for affordable Calgary painters? Our top-rated house painting company in Calgary offers professional interior and exterior painting services to meet all your needs.",
-  viewport: "width=device-width, initial-scale=1.0",
   keywords: [
     "calgary painters",
     "painting companies calgary",
@@ -28,7 +31,7 @@ export const metadata: Metadata = {
     "alberta painting contractors calgary",
   ],
   alternates: {
-    canonical: "https://www.albertacolourpainting.com",
+    canonical: "https://www.albertacolourpainting.com/blogs",
   },
   openGraph: {
     title: "Need Calgary Painters?",
@@ -45,8 +48,6 @@ export const metadata: Metadata = {
   },
 };
 export default function blogs() {
-  const posts = getBlogPosts();
-
   return (
     <>
       <StandardHero
@@ -56,7 +57,7 @@ export default function blogs() {
         imageSrc={blogsBanner}
       />
       <div className="container mx-auto px-4 py-8 lg:mt-20 mt-10">
-        <BlogGrid posts={posts} />
+        <BlogGrid posts={blogPosts} />
         <div className=" lg:mt-30 mt-10">
           <HomeBanner />
         </div>

@@ -3,16 +3,14 @@
 import Image from "next/image";
 import { ChevronLeft, ChevronRight, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import slider1 from "@/public/slider1.png"; // Ensure you are importing the image correctly.
+import slider1 from "@/public/slider1.webp"; // Ensure you are importing the image correctly.
 import React, { useRef, useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Navigation } from "swiper/modules";
 // Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/pagination';
-
-
+import "swiper/css";
+import "swiper/css/pagination";
 
 export default function PromotionalSlider() {
   const [currentSlide, setCurrentSlide] = useState(0);

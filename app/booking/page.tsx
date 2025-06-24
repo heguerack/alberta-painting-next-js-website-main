@@ -1,11 +1,13 @@
 import Calendly from "@/components/calendly";
-import type { Metadata } from "next";
-
+import type { Metadata, Viewport } from "next";
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1.0,
+};
 export const metadata: Metadata = {
   title: "Booking | Alberta Colour Painting",
   description:
     "Looking for affordable Calgary painters? Our top-rated house painting company in Calgary offers professional interior and exterior painting services to meet all your needs.",
-  viewport: "width=device-width, initial-scale=1.0",
   keywords: [
     "calgary painters",
     "painting companies calgary",
@@ -18,7 +20,7 @@ export const metadata: Metadata = {
     "alberta painting contractors calgary",
   ],
   alternates: {
-    canonical: "https://www.albertacolourpainting.com",
+    canonical: "https://www.albertacolourpainting.com/booking",
   },
   openGraph: {
     title: "Need Calgary Painters?",

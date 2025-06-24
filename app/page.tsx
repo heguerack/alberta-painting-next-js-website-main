@@ -1,11 +1,9 @@
-import type { Metadata } from "next";
-import { Button } from "@/components/ui/button";
+import type { Metadata, Viewport } from "next";
 import Image from "next/image";
 import BgBackground from "@/public/about-background-vector-line.svg";
 import OurServices from "@/components/our-services";
 import { CalgaryPainting } from "@/components/calgary-painting";
 import ContactFormSection from "@/components/ContactFormSection";
-import { getBlogPosts } from "@/lib/blog-data";
 import BlogGrid from "@/components/blog-grid";
 import HomeBanner from "@/components/HomeBanner/home-banner";
 import Link from "next/link";
@@ -18,13 +16,15 @@ import AboutusHome from "@/components/AboutUs/AboutusHome";
 import GallerySection from "@/components/gallery/GallerySection";
 import SpecialOfferWrapper from "@/components/SpecialOfferWrapper";
 import FaqSection from "@/components/Faq";
-
+import { blogPosts } from "@/lib/blog-data";
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1.0,
+};
 export const metadata: Metadata = {
-  title:
-    "Painting Company with Expert Calgary Painters for Exterior & Interior House Painting services",
+  title: "Painting Company with Expert Calgary Painters for House Painting",
   description:
-    "Looking for affordable Calgary painters? Our top-rated house painting company in Calgary offers professional interior and exterior painting services to meet all your needs.",
-  viewport: "width=device-width, initial-scale=1.0",
+    "Looking for affordable Calgary painters? Our top-rated painting contractors offer professional house painting services to meet all your needs.",
   keywords: [
     "calgary painters",
     "painting companies calgary",
@@ -54,8 +54,6 @@ export const metadata: Metadata = {
   },
 };
 
-const posts = getBlogPosts();
-
 export default async function Home() {
   const res = await fetch(process.env.GOOGLE_REVIEWS_URL!, {
     next: { revalidate: 604800 }, //Oncde a week week <==
@@ -84,19 +82,18 @@ export default async function Home() {
         <FaqSection />
         <section className="container mx-auto px-4 py-8 ">
           <div className="text-center  mb-10">
-            <h4 className="text-[22px] font-semibold text-black ont-medium">
+            <h2 className="text-[22px] font-semibold text-black ont-medium">
               Our Blog
-            </h4>
-            <h2 className="text-[#0D378D] lg:text-[36px]  text-[26px] font-medium">
-              Expert Advice, Trends & DIY Tips
             </h2>
+            <h3 className="text-[#0D378D] lg:text-[36px]  text-[26px] font-medium">
+              Expert Advice, Trends & DIY Tips
+            </h3>
           </div>
-          <BlogGrid posts={posts?.slice(0, 3)} />
+          <BlogGrid posts={blogPosts?.slice(0, 3)} />
           <div className="flex justify-center my-7">
-            <Button className="bg-[#0D378D] px-4 py-5 w-30 rounded-3xl cursor-pointer">
-              {" "}
+            <div className="bg-[#0D378D] px-2 py-2 w-30 text-center rounded-3xl cursor-pointer">
               <Link href="/blogs">View All</Link>
-            </Button>
+            </div>
           </div>
         </section>
         <ContactFormSection />
