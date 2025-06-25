@@ -16,7 +16,13 @@ export default function ReviewsGoogle({
   return (
     <div className="rounded-0 lg:px-10 mx-auto px-2 relative">
       <Swiper
+        modules={[Autoplay]}
         spaceBetween={20}
+        autoplay={{
+          delay: 3000,
+          disableOnInteraction: false,
+        }}
+        loop={true}
         breakpoints={{
           640: {
             slidesPerView: 1,
