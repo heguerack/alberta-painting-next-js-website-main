@@ -39,6 +39,10 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://www.albertacolourpainting.com",
   },
+  robots: {
+    index: false,
+    follow: true,
+  },
   openGraph: {
     title: "Need Calgary Painters?",
     description:

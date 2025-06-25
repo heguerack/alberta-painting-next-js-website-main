@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     "alberta painting contractors calgary",
   ],
   alternates: {
-    canonical: "https://www.albertacolourpainting.com",
+    canonical: "https://www.albertacolourpainting.com/gallery",
   },
   openGraph: {
     title: "Need Calgary Painters?",
