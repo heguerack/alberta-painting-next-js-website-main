@@ -27,6 +27,7 @@ export function Navbar() {
               <Image
                 src="/logo.svg"
                 alt="Alberta Color Painting"
+                title="Alberta Color Painting"
                 width={150}
                 height={40}
                 className="h-auto"

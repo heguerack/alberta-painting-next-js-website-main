@@ -60,18 +60,20 @@ const DiscussSection = () => {
 
         <div className="text-center sm:mb-4 mb-6">
           {" "}
-          {/* Margin for small screens */}
-          <div className="icon mb-4">
-            <Image
-              src={DirectionLogo}
-              alt="Get Directions"
-              style={{ margin: "auto" }}
-              className="w-24 h-24 sm:w-20 sm:h-20 md:w-20 md:h-20 cursor-pointer" // Adjust size for different screens
-            />
-          </div>
-          <h3 className="text-[#000000] md:text-4xl sm:text-[20px] font-medium cursor-pointer ">
-            GET DIRECTIONS
-          </h3>
+          <Link target="_blank" href="https://g.co/kgs/Wm9YRbr">
+            {/* Margin for small screens */}
+            <div className="icon mb-4">
+              <Image
+                src={DirectionLogo}
+                alt="Get Directions"
+                style={{ margin: "auto" }}
+                className="w-24 h-24 sm:w-20 sm:h-20 md:w-20 md:h-20 cursor-pointer" // Adjust size for different screens
+              />
+            </div>
+            <h3 className="text-[#000000] md:text-4xl sm:text-[20px] font-medium cursor-pointer ">
+              GET DIRECTIONS
+            </h3>
+          </Link>
         </div>
       </div>
     </section>

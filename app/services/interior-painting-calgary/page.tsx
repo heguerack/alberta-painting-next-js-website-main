@@ -14,7 +14,7 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   title: "Calgary's Top Interior Painters: Interior House Painting Services",
   description:
-    "Alberta Colour Painting is one of the leading commercial painting companies in Calgary, providing expert interior and exterior painting with the best results.",
+    "Looking for expert interior painting in Calgary? We offer professional interior house painting in Calgary for flawless home transformations.",
   alternates: {
     canonical:
       "https://www.albertacolourpainting.com/services/interior-painting-calgary",
