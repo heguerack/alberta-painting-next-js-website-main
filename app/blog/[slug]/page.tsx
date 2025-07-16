@@ -4,13 +4,13 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import Image from "next/image";
 import React from "react";
-import homeHero from "@/public/blog-banner.webp";
+
 import BgBackground2 from "@/public/above-gallery-bg-line.svg";
-import BlogHero from "@/components/blog-hero";
+
 import BlogGrid from "@/components/blog-grid";
-import Footer from "@/components/Footer";
-import { Navbar } from "@/components/Header";
+
 import BlogNestedHero from "@/components/BlogNestedHero";
+import { Metadata } from "next";
 
 export function generateStaticParams() {
   return blogPosts.map((post) => ({
@@ -18,6 +18,26 @@ export function generateStaticParams() {
   }));
 }
 export type paramsType = Promise<{ slug: string }>;
+
+type Props = {
+  params: { slug: string };
+};
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const slug = params.slug;
+
+  return {
+    title: `${slug
+      .replace(/-/g, " ")
+      .replace(/\b\w/g, (c) => c.toUpperCase())}`,
+    description:
+      "If you're in Alberta, you already know how dramatic the weather can be. Winters bring harsh temperatures that often dip well below freezing, while summers hit hard with intense sun and the occasional hailstorm. These extreme conditions can seriously affect your home's exterior...",
+    alternates: {
+      canonical: `https://www.yoursite.com/blog/${slug}`,
+    },
+  };
+}
+
 export default async function BlogPost({ params }: { params: paramsType }) {
   const slug = (await params)?.slug;
   let post;
@@ -30,10 +50,7 @@ export default async function BlogPost({ params }: { params: paramsType }) {
 
   return (
     <>
-      <BlogNestedHero
-        title="7 Tips For Choosing The Right Interior Paint Colour!"
-        imageSrc={homeHero}
-      />
+      <BlogNestedHero title={post.title} imageSrc={post.thumb} />
       <div className="relative">
         <div className="absolute  z-[-2]">
           <Image src={BgBackground2} alt="bg-Image" />
@@ -65,66 +82,35 @@ export default async function BlogPost({ params }: { params: paramsType }) {
               <p className="text-black text-sm mb-4">{post.excerpt}</p>
 
               <h2 className="text-xl font-semibold mt-6 mb-3 text-black">
-                Why Color Matters
+                {post.heading}
               </h2>
-              <p className="text-black mb-4">
-                {`The colors you choose for your home can significantly impact your mood, the perceived size of your rooms,
-              and even your energy levels. Selecting the right interior paint color is one of the most important
-              decisions you'll make during your home renovation project.`}
-              </p>
+
+              <div
+                className="text-black mb-4"
+                dangerouslySetInnerHTML={{ __html: post.description }}
+              />
+
+              <div className="my-12">
+                <Image src={post.imageUrl} alt={post.alt} />
+              </div>
 
               <h2 className="text-xl font-semibold mt-6 mb-3 text-[#0D378D]">
-                Our 7 Tips for Choosing the Perfect Paint Color
+                {post.subHeading}
               </h2>
 
-              <ol className="list-decimal pl-5 space-y-4 mt-4">
-                <li className="text-black">
-                  <strong>Consider the room purpose:</strong> Different rooms
-                  serve different functions and may require different color
-                  schemes. Bedrooms often benefit from calming colors, while
-                  living areas might use more vibrant tones.
-                </li>
-                <li className="text-black">
-                  <strong>Think about lighting:</strong> Natural and artificial
-                  lighting can dramatically affect how a paint color appears.
-                  Test colors under different lighting conditions before making
-                  a final decision.
-                </li>
-                <li className="text-black">
-                  <strong>Start with color theory:</strong> Understanding basic
-                  color theory can help you create harmonious color schemes that
-                  flow well throughout your home.
-                </li>
-                <li className="text-black">
-                  <strong>Use the 60-30-10 rule:</strong> In any space, consider
-                  using 60% of a dominant color, 30% of a secondary color, and
-                  10% of an accent color for balance.
-                </li>
-                <li className="text-black">
-                  <strong>Test before committing:</strong> Always test paint
-                  samples on your walls before painting the entire room. Colors
-                  can look different on your walls than they do on paint chips.
-                </li>
-                <li className="text-black">
-                  <strong>Consider the existing elements:</strong> Take into
-                  account your flooring, furniture, and fixtures when selecting
-                  paint colors.
-                </li>
-                <li className="text-black">
-                  <strong>{`Don't rush the decision:`}</strong>{" "}
-                  {`Take your time with color selection. It's better to spend
-                extra time choosing the right color than to repaint later.`}
-                </li>
-              </ol>
+              <div
+                className="text-black mb-4"
+                dangerouslySetInnerHTML={{ __html: post.subDescription }}
+              />
 
               <h2 className="text-xl font-semibold mt-6 mb-3 text-black">
-                Conclusion
+                {post.conclusion}
               </h2>
-              <p className="text-black">
-                {`Choosing the right interior paint color doesn't have to be overwhelming. By following these seven tips and
-              taking your time with the decision, you can select colors that will make your home both beautiful and
-              comfortable for years to come.`}
-              </p>
+
+              <div
+                className="text-black mb-4"
+                dangerouslySetInnerHTML={{ __html: post.conclusionDescription }}
+              />
             </div>
           </div>
         </article>
