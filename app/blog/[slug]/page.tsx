@@ -31,9 +31,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       .replace(/-/g, " ")
       .replace(/\b\w/g, (c) => c.toUpperCase())}`,
     description:
-      "If you're in Alberta, you already know how dramatic the weather can be. Winters bring harsh temperatures that often dip well below freezing, while summers hit hard with intense sun and the occasional hailstorm. These extreme conditions can seriously affect your home's exterior...",
+      "Alberta Colour Painting offers professional, reliable, and weather-smart exterior painting services for both homes and businesses.",
     alternates: {
-      canonical: `https://www.yoursite.com/blog/${slug}`,
+      canonical: `https://www.albertacolourpainting.com/blog/${slug}`,
     },
   };
 }
