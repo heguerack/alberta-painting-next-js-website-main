@@ -44,7 +44,25 @@ const projects = [
     imageSrc:
       "/painting-projects/interior-wall-painting-brown-to-off-white/A2218127_6.webp",
     location: "Mckenzie Towne, Calgary, AB",
-    href: "/gallery//interior-wall-paining-brown-to-off-white",
+    href: "/gallery/interior-wall-paining-brown-to-off-white",
+  },
+  {
+    title: "Ceiling & Interior Revamp Experts — Clean Lines, Modern Spaces",
+    imageSrc: "/painting-projects/ceiling-interior-revamp-experts/16.webp",
+    // location: "Mckenzie Towne, Calgary, AB",
+    href: "/gallery/ceiling-interior-revamp-experts",
+  },
+  {
+    title: "Modern Garage Refresh: Clean Neutrals for a Brighter Space",
+    imageSrc: "/painting-projects/modern-garage-refresh/2.webp",
+    // location: "Mckenzie Towne, Calgary, AB",
+    href: "/gallery/modern-garage-refresh",
+  },
+  {
+    title: "Dramatic Exterior Transformation: From Prep to Bold Blue Finish",
+    imageSrc: "/painting-projects/dramatic-exterior-transformation/3.webp",
+    // location: "Mckenzie Towne, Calgary, AB",
+    href: "/gallery/dramatic-exterior-transformation",
   },
 ];
 
@@ -69,7 +87,7 @@ export default function ProjectGalleryPage() {
             key={index}
             title={project.title}
             imageSrc={project.imageSrc}
-            location={project.location}
+            location={project.location ?? ""}
             href={project.href}
           />
         ))}

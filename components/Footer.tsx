@@ -59,10 +59,7 @@ export default function Footer() {
               </Link>
               {/* </div> */}
               <p className="text-sm text-white leading-relaxed mt-10">
-                {`Alberta Colour Painting represents the essence of quality
-              work and exceptional service. Our brand features a clean, modern
-              brushstroke aesthetic, showcasing the company's commitment to
-              precision and detail.`}
+                {`We offer professional painting and renovation services across Alberta. From interior and exterior painting to full-scale home upgrades, we bring quality craftsmanship, attention to detail, and reliable service to every project.`}
               </p>
             </div>
 
@@ -173,7 +170,7 @@ export default function Footer() {
                       </svg>
                     </div>
 
-                    <span className="font-[600]">
+                    <span className="font-[500]">
                       370 Brightmotive Green SE, Calgary, AB T2Z 0H1, Canada
                     </span>
                   </div>

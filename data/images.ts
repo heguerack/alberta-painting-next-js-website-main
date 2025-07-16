@@ -144,3 +144,96 @@ export const interiorWallPainingBrownToOffWhite = [
     alt: "home painting calgary",
   },
 ];
+
+export const ceilinginteriorrevampexperts = [
+  {
+    src: "/painting-projects/ceiling-interior-revamp-experts/1.webp",
+    alt: "Ceiling & Interior Revamp Experts — Clean Lines, Modern Spaces",
+  },
+  {
+    src: "/painting-projects/ceiling-interior-revamp-experts/3.webp",
+    alt: "Ceiling & Interior Revamp Experts — Clean Lines, Modern Spaces",
+  },
+  {
+    src: "/painting-projects/ceiling-interior-revamp-experts/4.webp",
+    alt: "Ceiling & Interior Revamp Experts — Clean Lines, Modern Spaces",
+  },
+  {
+    src: "/painting-projects/ceiling-interior-revamp-experts/2.webp",
+    alt: "Ceiling & Interior Revamp Experts — Clean Lines, Modern Spaces",
+  },
+  {
+    src: "/painting-projects/ceiling-interior-revamp-experts/5.webp",
+    alt: "Ceiling & Interior Revamp Experts — Clean Lines, Modern Spaces",
+  },
+  {
+    src: "/painting-projects/ceiling-interior-revamp-experts/9.webp",
+    alt: "Ceiling & Interior Revamp Experts — Clean Lines, Modern Spaces",
+  },
+  {
+    src: "/painting-projects/ceiling-interior-revamp-experts/10.webp",
+    alt: "Ceiling & Interior Revamp Experts — Clean Lines, Modern Spaces",
+  },
+  {
+    src: "/painting-projects/ceiling-interior-revamp-experts/11.webp",
+    alt: "Ceiling & Interior Revamp Experts — Clean Lines, Modern Spaces",
+  },
+  {
+    src: "/painting-projects/ceiling-interior-revamp-experts/12.webp",
+    alt: "Ceiling & Interior Revamp Experts — Clean Lines, Modern Spaces",
+  },
+  {
+    src: "/painting-projects/ceiling-interior-revamp-experts/13.webp",
+    alt: "Ceiling & Interior Revamp Experts — Clean Lines, Modern Spaces",
+  },
+  {
+    src: "/painting-projects/ceiling-interior-revamp-experts/14.webp",
+    alt: "Ceiling & Interior Revamp Experts — Clean Lines, Modern Spaces",
+  },
+  {
+    src: "/painting-projects/ceiling-interior-revamp-experts/15.webp",
+    alt: "Ceiling & Interior Revamp Experts — Clean Lines, Modern Spaces",
+  },
+  {
+    src: "/painting-projects/ceiling-interior-revamp-experts/16.webp",
+    alt: "Ceiling & Interior Revamp Experts — Clean Lines, Modern Spaces",
+  },
+  {
+    src: "/painting-projects/ceiling-interior-revamp-experts/17.webp",
+    alt: "Ceiling & Interior Revamp Experts — Clean Lines, Modern Spaces",
+  },
+  {
+    src: "/painting-projects/ceiling-interior-revamp-experts/18.webp",
+    alt: "Ceiling & Interior Revamp Experts — Clean Lines, Modern Spaces",
+  },
+];
+
+export const moderngaragerefresh = [
+  {
+    src: "/painting-projects/modern-garage-refresh/1.webp",
+    alt: "Ceiling & Interior Revamp Experts — Clean Lines, Modern Spaces",
+  },
+  {
+    src: "/painting-projects/modern-garage-refresh/2.webp",
+    alt: "Ceiling & Interior Revamp Experts — Clean Lines, Modern Spaces",
+  },
+  {
+    src: "/painting-projects/modern-garage-refresh/3.webp",
+    alt: "Ceiling & Interior Revamp Experts — Clean Lines, Modern Spaces",
+  },
+];
+
+export const dramaticexteriortransformation = [
+  {
+    src: "/painting-projects/dramatic-exterior-transformation/1.webp",
+    alt: "Ceiling & Interior Revamp Experts — Clean Lines, Modern Spaces",
+  },
+  {
+    src: "/painting-projects/dramatic-exterior-transformation/2.webp",
+    alt: "Ceiling & Interior Revamp Experts — Clean Lines, Modern Spaces",
+  },
+  {
+    src: "/painting-projects/dramatic-exterior-transformation/3.webp",
+    alt: "Ceiling & Interior Revamp Experts — Clean Lines, Modern Spaces",
+  },
+];
