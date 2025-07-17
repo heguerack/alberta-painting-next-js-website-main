@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     canonical: "https://www.albertacolourpainting.com",
   },
   robots: {
-    index: false,
+    index: true,
     follow: true,
   },
   openGraph: {
