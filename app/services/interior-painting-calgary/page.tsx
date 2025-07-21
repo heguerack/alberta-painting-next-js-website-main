@@ -106,7 +106,7 @@ export default function interiorPaintingCalgary() {
       <HomeBanner />
       <div className="font-normal flex flex-col  lg:flex-row w-[90%] gap-16 mx-auto py-16 lg:items-center">
         {/* Left side with image */}
-        <div className="relative w-full  h-[50vw] lg:w-2/5">
+        <div className="relative w-full  h-[28vw] lg:w-2/5">
           <Image
             src={AboutUs}
             alt="Elegant interior with staircase"
