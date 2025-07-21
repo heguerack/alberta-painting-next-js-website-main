@@ -4,7 +4,7 @@ import HomeBanner from "@/components/HomeBanner/home-banner";
 import Image from "next/image";
 import blogsBanner from "@/public/blogs-banner.webp";
 import BgBackground2 from "@/public/above-gallery-bg-line.svg";
-import AboutUs from "@/public/AboutUs.webp";
+import AboutUs from "@/public/services/popcornAbout.webp";
 import DotFranks from "@/components/ui/DotFranks";
 import { PopcornRemvalServiceImg } from "@/data/images";
 import type { Metadata, Viewport } from "next";
@@ -105,7 +105,7 @@ export default function popcornCeilingRemovalPage() {
       <HomeBanner />
       <div className=" flex flex-col  lg:flex-row w-[90%] gap-16 mx-auto py-16 lg:items-center">
         {/* Left side with image */}
-        <div className="relative w-full  h-[50vw] lg:w-2/5">
+        <div className="relative w-full  h-[45vw] lg:w-2/5">
           <Image
             src={AboutUs}
             alt="Elegant interior with staircase"

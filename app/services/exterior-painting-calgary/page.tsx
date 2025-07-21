@@ -4,7 +4,7 @@ import HomeBanner from "@/components/HomeBanner/home-banner";
 import Image from "next/image";
 import blogsBanner from "@/public/blogs-banner.webp";
 import BgBackground2 from "@/public/above-gallery-bg-line.svg";
-import AboutUs from "@/public/AboutUs.webp";
+import AboutUs from "@/public/services/exteriorAbout.webp";
 import DotFranks from "@/components/ui/DotFranks";
 import { ExterioPaintingServiceImg } from "@/data/images";
 import type { Metadata, Viewport } from "next";
