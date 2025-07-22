@@ -39,17 +39,17 @@ export const ServicescabinetPaintingImg = {
 
 export const ServicesExteriorPaintingImg = {
   src: "/services/PXL_20230605_193213526.webp",
-  alt: "painting companies calgary",
+  alt: "exterior painters calgary",
 };
 
 export const ServicesCommercialPaintingImg = {
   src: "/services/commercial-painting-project-downtown-paint-finished.webp",
-  alt: "Commercial Painting Calgary",
+  alt: "kitchen cabinet painting calgary",
 };
 
 export const PopcornCeilingRemovalImg = {
   src: "/services/20220605_151419_z32cgm.webp",
-  alt: "Popcorn Ceiling Removal Calgary",
+  alt: "popcorn ceiling repair calgary",
 };
 
 export const GaragePaintingImg = {

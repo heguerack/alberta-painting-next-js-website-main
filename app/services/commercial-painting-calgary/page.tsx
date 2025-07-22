@@ -107,7 +107,7 @@ export default function commercialPaintingCalgary() {
         <div className="relative w-full  h-[50vw] lg:w-2/5">
           <Image
             src={AboutUs}
-            alt="Elegant interior with staircase"
+            alt="commercial painting companies"
             fill
             className="max-sm:pr-[20px] object-cover lg:absolute  "
           />
