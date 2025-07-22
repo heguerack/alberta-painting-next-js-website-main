@@ -108,7 +108,7 @@ export default function popcornCeilingRemovalPage() {
         <div className="relative w-full  h-[45vw] lg:w-2/5">
           <Image
             src={AboutUs}
-            alt="Elegant interior with staircase"
+            alt="popcorn ceiling removal calgary"
             fill
             className="max-sm:pr-[20px] object-cover lg:absolute  "
           />

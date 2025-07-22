@@ -4,6 +4,9 @@ export default function Document() {
   return (
     <Html>
       <Head>
+        {/* Meta robots tag */}
+        <meta name="robots" content="index, follow" />
+
         {/* GTM in <head> */}
         <script
           dangerouslySetInnerHTML={{

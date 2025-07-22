@@ -109,7 +109,7 @@ export default function interiorPaintingCalgary() {
         <div className="relative w-full  h-[28vw] lg:w-2/5">
           <Image
             src={AboutUs}
-            alt="Elegant interior with staircase"
+            alt="interior painter calgary"
             fill
             className="max-sm:pr-[20px] object-cover lg:absolute  "
           />
