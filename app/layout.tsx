@@ -137,6 +137,8 @@ export default function RootLayout({
           content="FPojVs3HSBJsLE3Sh7FzP_jczlilyjePuAJEo7VeAo4"
         />
 
+        <meta name="robots" content="index, follow" />
+
         <link
           rel="stylesheet"
           href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
