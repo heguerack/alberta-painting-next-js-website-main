@@ -34,9 +34,7 @@ export default function FullWidthCarousel() {
                 />
                 <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-70 p-6">
                   <p className="text-sm font-medium">
-                    Offer starts Oct 27, 2024
-                    <br />
-                    and ends Feb 28, 2025.
+                    Offer Starts from Oct 30, 2025
                     <br />
                     You must call for this offer.
                   </p>

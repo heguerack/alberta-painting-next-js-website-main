@@ -1,9 +1,15 @@
-"use client"
+"use client";
 
-import Image from "next/image"
-import { Button } from "@/components/ui/button"
-import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel"
-import { HelpCircle } from "lucide-react"
+import Image from "next/image";
+import { Button } from "@/components/ui/button";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
+import { HelpCircle } from "lucide-react";
 
 export default function AlbertaCarousel() {
   return (
@@ -28,9 +34,7 @@ export default function AlbertaCarousel() {
                 />
                 <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-70 p-4">
                   <p className="text-sm font-medium">
-                    Offer starts Oct 27, 2024
-                    <br />
-                    and ends Feb 28, 2025.
+                    Offer Starts from Oct 30, 2025
                     <br />
                     You must call for this offer.
                   </p>
@@ -62,13 +66,13 @@ export default function AlbertaCarousel() {
                 />
                 <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-70 p-4">
                   <p className="text-sm font-medium">
-                    Offer starts Oct 27, 2024
-                    <br />
-                    and ends Feb 28, 2025.
+                    Offer Starts from Oct 30, 2025
                     <br />
                     You must call for this offer.
                   </p>
-                  <p className="mt-2 text-sm font-bold">10% OFF - Interior Painting</p>
+                  <p className="mt-2 text-sm font-bold">
+                    10% OFF - Interior Painting
+                  </p>
                 </div>
               </div>
             </div>
@@ -79,14 +83,17 @@ export default function AlbertaCarousel() {
             <div className="flex flex-col md:flex-row bg-black text-white rounded-lg overflow-hidden">
               <div className="w-full p-6 md:p-8">
                 <h2 className="text-2xl font-bold mb-4">
-                  For a limited time, Alberta Colour Painting is offering exclusive discounts to help you refresh your
-                  space at an unbeatable price!
+                  For a limited time, Alberta Colour Painting is offering
+                  exclusive discounts to help you refresh your space at an
+                  unbeatable price!
                 </h2>
                 <p className="mb-6">
-                  Discover a variety of discounts and special deals at Alberta Colour Painting, tailored to help you
-                  save on your Calgary house painting projects throughout the year. Explore our ongoing promotions for
-                  both standard and specialty wall painting services, and ensure you get the best value by visiting our
-                  offers page.
+                  Discover a variety of discounts and special deals at Alberta
+                  Colour Painting, tailored to help you save on your Calgary
+                  house painting projects throughout the year. Explore our
+                  ongoing promotions for both standard and specialty wall
+                  painting services, and ensure you get the best value by
+                  visiting our offers page.
                 </p>
                 <Button className="bg-blue-600 hover:bg-blue-700 text-white rounded-full px-6">
                   Explore Discounts <HelpCircle className="ml-2 h-5 w-5" />
@@ -104,6 +111,5 @@ export default function AlbertaCarousel() {
         </div>
       </Carousel>
     </div>
-  )
+  );
 }
-
