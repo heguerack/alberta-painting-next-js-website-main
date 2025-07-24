@@ -31,7 +31,7 @@
 //                     </div>
 //                     <div className=" absolute bottom-6 left-0 right-0 ">
 //                       <h6 className="text-white bg-[rgba(13,55,141,0.24)] backdrop-blur-[7.85px] p-4">
-//                         Offer starts Oct 27, 2024 and ends Feb 28, 2025. You
+//                         Offer Starts from Oct 30, 2025. You
 //                         must call for this offer.
 //                       </h6>
 //                       <p className="text-white p-4">
@@ -54,7 +54,7 @@
 //                     </div>
 //                     <div className="offer-card-content absolute bottom-0 left-0 right-0  ">
 //                       <h6 className="text-white bg-[rgba(13,55,141,0.24)] backdrop-blur-[7.85px] p-4">
-//                         Offer starts Oct 27, 2024 and ends Feb 28, 2025. You
+//                         Offer Starts from Oct 30, 2025. You
 //                         must call for this offer.
 //                       </h6>
 //                       <p className="text-white">
@@ -77,7 +77,7 @@
 //                     </div>
 //                     <div className=" absolute bottom-6 left-0 right-0 ">
 //                       <h6 className="text-white bg-[rgba(13,55,141,0.24)] backdrop-blur-[7.85px] p-4">
-//                         Offer starts Oct 27, 2024 and ends Feb 28, 2025. You
+//                         Offer Starts from Oct 30, 2025. You
 //                         must call for this offer.
 //                       </h6>
 //                       <p className="text-white p-4">
@@ -100,7 +100,7 @@
 //                     </div>
 //                     <div className="offer-card-content absolute bottom-0 left-0 right-0 ">
 //                       <h6 className="text-white bg-[rgba(13,55,141,0.24)] backdrop-blur-[7.85px] p-4">
-//                         Offer starts Oct 27, 2024 and ends Feb 28, 2025. You
+//                         Offer Starts from Oct 30, 2025. You
 //                         must call for this offer.
 //                       </h6>
 //                       <p className="text-white">
