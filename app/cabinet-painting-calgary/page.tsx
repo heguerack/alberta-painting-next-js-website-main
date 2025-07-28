@@ -28,9 +28,6 @@ export const metadata: Metadata = {
     "kitchen cabinet painters calgary",
     "cabinet painters calgary",
   ],
-  alternates: {
-    canonical: "https://www.albertacolourpainting.com/cabinet-painting-calgary",
-  },
   openGraph: {
     title: "Need Calgary Painters?",
     description:
