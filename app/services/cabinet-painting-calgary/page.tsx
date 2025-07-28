@@ -11,6 +11,8 @@ import {
   ServicescabinetPaintingImg,
 } from "@/data/images";
 import type { Metadata, Viewport } from "next";
+import Link from "next/link";
+import Head from "next/head";
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1.0,
@@ -48,6 +50,12 @@ export const metadata: Metadata = {
 export default function cabinetPaintingPage() {
   return (
     <>
+      <Head>
+        <Link
+          rel="canonical"
+          href="https://www.albertacolourpainting.com/cabinet-painting-calgary"
+        />
+      </Head>
       <ServiceHero
         title=""
         title2="Give Your Space a New Life with"
