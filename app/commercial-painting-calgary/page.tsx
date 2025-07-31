@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     "Alberta Colour Painting is one of the leading commercial painting companies in Calgary, providing expert interior & exterior painting with the best results.",
   alternates: {
     canonical:
-      "https://www.albertacolourpainting.com/services/commercial-painting-calgary",
+      "https://www.albertacolourpainting.com/commercial-painting-calgary",
   },
   openGraph: {
     title: "Need Calgary Painters?",
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
         url: "https://res.cloudinary.com/alberta-colour-painting/image/upload/v1672799089/home/awards/best-of-the-best-award-homestars-winner-2022-white-version_psaofg.webp",
       },
     ],
-    url: "https://www.albertacolourpainting.com/services/commercial-painting-calgary",
+    url: "https://www.albertacolourpainting.com/commercial-painting-calgary",
     siteName: "Alberta Colour Painting",
     type: "website",
   },

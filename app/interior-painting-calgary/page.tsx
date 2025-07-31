@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     "Looking for expert interior painting in Calgary? We offer professional interior house painting in Calgary for flawless home transformations.",
   alternates: {
     canonical:
-      "https://www.albertacolourpainting.com/services/interior-painting-calgary",
+      "https://www.albertacolourpainting.com/interior-painting-calgary",
   },
   openGraph: {
     title: "Need Calgary Painters?",
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
         url: "https://res.cloudinary.com/alberta-colour-painting/image/upload/v1672799089/home/awards/best-of-the-best-award-homestars-winner-2022-white-version_psaofg.webp",
       },
     ],
-    url: "https://www.albertacolourpainting.com/services/interior-painting-calgary",
+    url: "https://www.albertacolourpainting.com/interior-painting-calgary",
     siteName: "Alberta Colour Painting",
     type: "website",
   },

@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     "Want ceiling popcorn removal services in Calgary? We transform popcorn ceilings into smooth surfaces. Contact us today to schedule your home renovation consultation!",
   alternates: {
     canonical:
-      "https://www.albertacolourpainting.com/services/popcorn-ceiling-removal-calgary",
+      "https://www.albertacolourpainting.com/popcorn-ceiling-removal-calgary",
   },
   openGraph: {
     title: "Need Calgary Painters?",
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
         url: "https://res.cloudinary.com/alberta-colour-painting/image/upload/v1672799089/home/awards/best-of-the-best-award-homestars-winner-2022-white-version_psaofg.webp",
       },
     ],
-    url: "https://www.albertacolourpainting.com/services/popcorn-ceiling-removal-calgary",
+    url: "https://www.albertacolourpainting.com/popcorn-ceiling-removal-calgary",
     siteName: "Alberta Colour Painting",
     type: "website",
   },

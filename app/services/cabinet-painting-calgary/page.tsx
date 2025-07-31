@@ -13,10 +13,13 @@ import {
 import type { Metadata, Viewport } from "next";
 import Link from "next/link";
 import Head from "next/head";
+import { useEffect } from "react";
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1.0,
 };
+
+import { redirect, RedirectType } from "next/navigation";
 
 export const metadata: Metadata = {
   title: "Cabinet Painting in Calgary | Bathroom & Kitchen Cabinet Painters",
@@ -47,6 +50,10 @@ export const metadata: Metadata = {
 };
 
 export default function cabinetPaintingPage() {
+  useEffect(() => {
+    redirect("/cabinet-painting-calgary", RedirectType.replace);
+  }, []);
+
   return (
     <>
       <Head>
