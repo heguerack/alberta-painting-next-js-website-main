@@ -29,8 +29,7 @@ export const metadata: Metadata = {
     "cabinet painters calgary",
   ],
   alternates: {
-    canonical:
-      "https://www.albertacolourpainting.com/services/cabinet-painting-calgary",
+    canonical: "https://www.albertacolourpainting.com/cabinet-painting-calgary",
   },
   openGraph: {
     title: "Need Calgary Painters?",
@@ -41,7 +40,7 @@ export const metadata: Metadata = {
         url: "https://res.cloudinary.com/alberta-colour-painting/image/upload/v1672799089/home/awards/best-of-the-best-award-homestars-winner-2022-white-version_psaofg.webp",
       },
     ],
-    url: "https://www.albertacolourpainting.com/services/cabinet-painting-calgary",
+    url: "https://www.albertacolourpainting.com/cabinet-painting-calgary",
     siteName: "Alberta Colour Painting",
     type: "website",
   },
