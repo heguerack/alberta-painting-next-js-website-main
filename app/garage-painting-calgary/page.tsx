@@ -17,8 +17,7 @@ export const metadata: Metadata = {
   description:
     "Alberta Colour Painting provides professional garage painting in Calgary, including garage floor paint and garage door painting services. Contact us today.",
   alternates: {
-    canonical:
-      "https://www.albertacolourpainting.com/services/garage-painting-calgary",
+    canonical: "https://www.albertacolourpainting.com/garage-painting-calgary",
   },
   keywords: [
     "Garage Painting Calgary",
@@ -34,7 +33,7 @@ export const metadata: Metadata = {
         url: "https://res.cloudinary.com/alberta-colour-painting/image/upload/v1672799089/home/awards/best-of-the-best-award-homestars-winner-2022-white-version_psaofg.webp",
       },
     ],
-    url: "https://www.albertacolourpainting.com/services/garage-painting-calgary",
+    url: "https://www.albertacolourpainting.com/garage-painting-calgary",
     siteName: "Alberta Colour Painting",
     type: "website",
   },

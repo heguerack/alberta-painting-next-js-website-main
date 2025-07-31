@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     "Looking for the best exterior house painting in Calgary? We’re one of the top exterior painting companies, with skilled painters ready to transform your home.",
   alternates: {
     canonical:
-      "https://www.albertacolourpainting.com/services/exterior-painting-calgary",
+      "https://www.albertacolourpainting.com/exterior-painting-calgary",
   },
   openGraph: {
     title: "Need Calgary Painters?",
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
         url: "https://res.cloudinary.com/alberta-colour-painting/image/upload/v1672799089/home/awards/best-of-the-best-award-homestars-winner-2022-white-version_psaofg.webp",
       },
     ],
-    url: "https://www.albertacolourpainting.com/services/exterior-painting-calgary",
+    url: "https://www.albertacolourpainting.com/exterior-painting-calgary",
     siteName: "Alberta Colour Painting",
     type: "website",
   },

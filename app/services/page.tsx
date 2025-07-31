@@ -128,30 +128,3 @@ export default function Services() {
     </>
   );
 }
-{
-  /* CTA Banner */
-}
-{
-  /* <div className="relative w-full  h-[300px] mb-10 rounded-lg overflow-hidden">
-        <div className="absolute inset-0 bg-black/70">
-          <Image
-            src={PaintingServices}
-            alt="Transform Your Space"
-            fill
-            className="object-cover mix-blend-overlay"
-          />
-        </div>
-        <div className="relative z-10 h-full flex flex-col items-center justify-center text-white p-6 text-center">
-          <h2 className="text-2xl font-bold uppercase mb-2">
-            Ready to transform your space?
-          </h2>
-          <p className="mb-4 max-w-xl">
-           {` Whether you're looking to refresh your home or update your business
-            space, our team is ready to help you create the perfect environment.`}
-          </p>
-          <Button className="bg-primary hover:bg-primary/90 text-white rounded-full">
-            Schedule a Consultation
-          </Button>
-        </div>
-      </div> */
-}
