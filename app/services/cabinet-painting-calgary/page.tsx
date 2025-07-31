@@ -56,6 +56,12 @@ export default function cabinetPaintingPage() {
 
   return (
     <>
+      <Head>
+        <Link
+          rel="canonical"
+          href="https://www.albertacolourpainting.com/cabinet-painting-calgary"
+        />
+      </Head>
       <ServiceHero
         title=""
         title2="Give Your Space a New Life with"
