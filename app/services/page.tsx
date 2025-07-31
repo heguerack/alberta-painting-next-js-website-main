@@ -86,7 +86,7 @@ export default function Services() {
 
                 <CardFooter className="p-0 mt-[-20]">
                   <Link
-                    href={"/services/" + service?.slug}
+                    href={"/" + service?.slug}
                     className="bg-[#0D378D] text-white pl-5 pr-2 py-1.5   border-2 border-white rounded-full font-medium  flex items-center justify-center"
                   >
                     {service.buttonText}
