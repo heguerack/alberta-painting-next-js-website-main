@@ -64,33 +64,6 @@ export default function blogs() {
 
         <ContactFormSection />
       </div>
-
-      {/* /////////////////////// */}
-      {/* /////////////////////// */}
-      {/* /////////////////////// */}
-      {/* What is this code doign? I coudnt figure it out :( */}
-      {/* <div className='relative'>
-        <div className='absolute top-[-2800px] z-[-2]'>
-          <Image src={BgBackground2} alt='bg-Image' width={30} height={30} />
-        </div>
-      </div>
-      <div className='relative'>
-        <div className='absolute top-[-2000px] z-[-2]'>
-          <Image src={BgBackground2} alt='bg-Image' width={3} height={3} />
-        </div>
-      </div>
-
-      <div className='relative'>
-        <div className='absolute top-[-1600px] z-[-2]'>
-          <Image src={BgBackground2} alt='bg-Image' width={3} height={3} />
-        </div>
-      </div>
-
-      <div className='relative'>
-        <div className='absolute top-[-800px] z-[-2]'>
-          <Image src={BgBackground2} alt='bg-Image' width={3} height={3} />
-        </div>
-      </div> */}
     </>
   );
 }
