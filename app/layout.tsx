@@ -29,24 +29,23 @@ export default function RootLayout({
 }>) {
   const jsonLd = {
     "@context": "https://schema.org",
-    "@type": "HousePainter",
-    name: "Alberta colour Painting",
-    image: "https://www.albertacolourpainting.com/logo.svg",
-    "@id": "",
-    url: "https://www.albertacolourpainting.com/",
-    telephone: "+1 587-966-6547",
+    "@type": "LocalBusiness",
+    image: [
+      "https://www.albertacolourpainting.com/images/best-of-the-best-homestars-award-winner-2024-white-version.png",
+      "https://www.albertacolourpainting.com/images/bbb-A+-alberta-colour-painting.webp",
+      "https://www.albertacolourpainting.com/images/google-reviews-4.9-rating.png",
+    ],
+    "@id": "https://www.albertacolourpainting.com/",
+    name: "Alberta Colour Painting Ltd",
+    hasMap:
+      "https://www.google.com/maps/place/Alberta+Colour+Painting+Ltd./@50.9240786-113.9508035,15z/data=!4m6!3m5!1s0x5371773f98224b4f:0xb012918acd574a36!8m2!3d50.9240786!4d-113.9508035!16s%2Fg%2F11h1dpzfmw?hl=en&entry=ttu",
     address: {
       "@type": "PostalAddress",
-      streetAddress: "370 Brightmotive Green SE",
+      streetAddress: "370 Brightonstone Green SE",
       addressLocality: "Calgary",
       addressRegion: "AB",
       postalCode: "T2Z 0H1",
-      addressCountry: "CA",
-    },
-    geo: {
-      "@type": "GeoCoordinates",
-      latitude: 50.9240786,
-      longitude: -113.9533784,
+      addressCountry: "Canada",
     },
     openingHoursSpecification: [
       {
@@ -64,19 +63,30 @@ export default function RootLayout({
       },
       {
         "@type": "OpeningHoursSpecification",
-        dayOfWeek: "Sunday",
-        opens: "09:00",
+        dayOfWeek: ["Sunday"],
+        opens: "10:00",
         closes: "16:00",
       },
     ],
+    url: "https://www.albertacolourpainting.com/",
+    aggregateRating: {
+      "@type": "AggregateRating",
+      ratingValue: "4.9",
+      reviewCount: "122",
+    },
     sameAs: [
-      "https://www.facebook.com/albertacolourpainting",
-      "https://www.instagram.com/albertacolourpainting/",
+      "https://www.instagram.com/albertacolourpaintingltd/?hl=en",
       "https://www.youtube.com/@albertacolourpainting",
-      "https://ca.linkedin.com/in/albertacolourpainting",
+      "https://www.facebook.com/albertacolourpainting/",
+      "https://homestars.com/companies/YOUR_CORRECT_HOMESTARS_LINK",
     ],
+    areaServed: {
+      "@type": "Place",
+      name: "Calgary",
+    },
+    telephone: "+15879666547",
+    priceRange: "Call for Quote",
   };
-
   return (
     <html lang="en">
       <Script
@@ -120,6 +130,61 @@ export default function RootLayout({
         strategy="afterInteractive"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       ></Script>
+
+      <Script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "HousePainter",
+            name: "Alberta colour Painting",
+            image: "https://www.albertacolourpainting.com/logo.svg",
+            "@id": "",
+            url: "https://www.albertacolourpainting.com/",
+            telephone: "+1 587-966-6547",
+            address: {
+              "@type": "PostalAddress",
+              streetAddress: "370 Brightmotive Green SE",
+              addressLocality: "Calgary",
+              addressRegion: "AB",
+              postalCode: "T2Z 0H1",
+              addressCountry: "CA",
+            },
+            geo: {
+              "@type": "GeoCoordinates",
+              latitude: 50.9240786,
+              longitude: -113.9533784,
+            },
+            openingHoursSpecification: [
+              {
+                "@type": "OpeningHoursSpecification",
+                dayOfWeek: [
+                  "Monday",
+                  "Tuesday",
+                  "Wednesday",
+                  "Thursday",
+                  "Friday",
+                  "Saturday",
+                ],
+                opens: "09:00",
+                closes: "18:00",
+              },
+              {
+                "@type": "OpeningHoursSpecification",
+                dayOfWeek: "Sunday",
+                opens: "09:00",
+                closes: "16:00",
+              },
+            ],
+            sameAs: [
+              "https://www.facebook.com/albertacolourpainting",
+              "https://www.instagram.com/albertacolourpainting/",
+              "https://www.youtube.com/@albertacolourpainting",
+              "https://ca.linkedin.com/in/albertacolourpainting",
+            ],
+          }),
+        }}
+      />
       <head>
         <meta name="msvalidate.01" content="DBD9A18509B447FAF5F19EC3C4B5BFC4" />
         <meta
