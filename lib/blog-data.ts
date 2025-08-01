@@ -24,6 +24,24 @@ import blogThumbCabinet from "@/public/blogs/cabinet_painting_tips_every_homeown
 export const blogPosts: BlogPost[] = [
   {
     id: 1,
+    slug: "cabinet-painting-tips-every-homeowner-should-know",
+    title: "Cabinet Painting Tips Every Homeowner Should Know",
+    date: "AUG 01, 2025",
+    thumb: thumb as any,
+    alt: "cabinet-painting-tips-every-homeowner-should-know",
+    excerpt:
+      "Are you thinking about upgrading your kitchen or bathroom without spending a lot of money on a full renovation? For Calgary homeowners, painting your cabinets is one of the most important and necessary ways to refresh your space. Whether you're going for a modern look or want something classic, clean white, the right approach makes all the difference, especially in Calgary’s unique climate. Before you decide to get cabinet painting done, here are a few smart tips to help you get the job done right.",
+    imageUrl: blogThumbCabinet as any,
+    heading: "Expert Cabinet Painting Tips Everyone Should Know",
+    description: `<p>Before you go for a DIY job or the assistance of a professional cabinet painting company in Calgary, there are a few things that you should keep in mind.</p></br><p>Choosing the right paint for your cabinets is essential to achieve the look you want. Not all paints suit all surfaces, especially when it comes to painting cabinets. Water-based paints are popular for their low odour and easy cleanup, while oil-based or alkyd paints offer a tougher, more durable finish. Many homeowners prefer a semi-gloss or satin finish, as it provides a good balance between easy cleaning and a smooth look.</p></br><p>The second important tip for a great paint job is ensuring that the surface is properly prepared. To ensure a smooth finish, the surface of the cabinets should be cleaned in detail to remove any built-up grime. If you are doing it yourself, follow the steps carefully. If you're not so sure, it's best to reach out to a <a href='https://www.albertacolourpainting.com/cabinet-painting-calgary' class="text-blue">professional cabinet painter in Calgary</a>. Experts are equipped with the right tools and techniques that suit your preferences and budget.</p></br><p>If you are following a DIY approach, it is best advised to label all the cabinet doors and drawers before removing them so you know exactly where each one goes later. This will save you time and effort and ensure everything goes on smoothly.</p></br><p>When it’s time to paint, going slow and applying thin, even coats is the right way to go about it. Applying too much at once can cause drips, uneven texture, or bubbling. A professional knows all the right techniques to get your cabinet that even and clean look, which you might not be able to achieve following a DIY  approach. Depending on the type and colour of the paint, two or three coats might be required for full coverage.</p></br><p>Follow the tips mentioned above and achieve a sleek look for your cabinets. If you are looking for a professional cabinet <a href='https://www.albertacolourpainting.com/' class="text-blue"> painting company in Calgary</a>, Alberta, Colour Painting is where you can get all your needs met with precision and excellent customer satisfaction.</p>`,
+    cronical: `<link rel="canonical" href="https://www.albertacolourpainting.com/blog/cabinet-painting-tips-every-homeowner-should-know"/>`,
+    subHeading: "",
+    subDescription: "",
+    conclusion: "",
+    conclusionDescription: "",
+  },
+  {
+    id: 2,
     slug: "best-time-for-exterior-painting-and-how-to-do-it-right",
     title: "Best Time for Exterior Painting and How to Do It Right",
     date: "JUL 11, 2025",
@@ -53,23 +71,5 @@ export const blogPosts: BlogPost[] = [
     <p>Alberta Colour Painting offers professional, reliable, and weather-smart exterior painting services for both homes and businesses. We believe in using the highest-quality materials, expert preparation techniques, and finishing every job with attention to detail, ensuring your home looks great and stays protected year-round.</p>
 `,
     cronical: `<link rel="canonical" href="https://www.albertacolourpainting.com/blog/best-time-for-exterior-painting-and-how-to-do-it-right"/>`,
-  },
-  {
-    id: 2,
-    slug: "cabinet-painting-tips-every-homeowner-should-know",
-    title: "Cabinet Painting Tips Every Homeowner Should Know",
-    date: "AUG 01, 2025",
-    thumb: thumb as any,
-    alt: "cabinet-painting-tips-every-homeowner-should-know",
-    excerpt:
-      "Are you thinking about upgrading your kitchen or bathroom without spending a lot of money on a full renovation? For Calgary homeowners, painting your cabinets is one of the most important and necessary ways to refresh your space. Whether you're going for a modern look or want something classic, clean white, the right approach makes all the difference, especially in Calgary’s unique climate. Before you decide to get cabinet painting done, here are a few smart tips to help you get the job done right.",
-    imageUrl: blogThumbCabinet as any,
-    heading: "Expert Cabinet Painting Tips Everyone Should Know",
-    description: `<p>Before you go for a DIY job or the assistance of a professional cabinet painting company in Calgary, there are a few things that you should keep in mind.</p></br><p>Choosing the right paint for your cabinets is essential to achieve the look you want. Not all paints suit all surfaces, especially when it comes to painting cabinets. Water-based paints are popular for their low odour and easy cleanup, while oil-based or alkyd paints offer a tougher, more durable finish. Many homeowners prefer a semi-gloss or satin finish, as it provides a good balance between easy cleaning and a smooth look.</p></br><p>The second important tip for a great paint job is ensuring that the surface is properly prepared. To ensure a smooth finish, the surface of the cabinets should be cleaned in detail to remove any built-up grime. If you are doing it yourself, follow the steps carefully. If you're not so sure, it's best to reach out to a <a href='https://www.albertacolourpainting.com/cabinet-painting-calgary' class="text-blue">professional cabinet painter in Calgary</a>. Experts are equipped with the right tools and techniques that suit your preferences and budget.</p></br><p>If you are following a DIY approach, it is best advised to label all the cabinet doors and drawers before removing them so you know exactly where each one goes later. This will save you time and effort and ensure everything goes on smoothly.</p></br><p>When it’s time to paint, going slow and applying thin, even coats is the right way to go about it. Applying too much at once can cause drips, uneven texture, or bubbling. A professional knows all the right techniques to get your cabinet that even and clean look, which you might not be able to achieve following a DIY  approach. Depending on the type and colour of the paint, two or three coats might be required for full coverage.</p></br><p>Follow the tips mentioned above and achieve a sleek look for your cabinets. If you are looking for a professional cabinet <a href='https://www.albertacolourpainting.com/' class="text-blue"> painting company in Calgary</a>, Alberta, Colour Painting is where you can get all your needs met with precision and excellent customer satisfaction.</p>`,
-    cronical: `<link rel="canonical" href="https://www.albertacolourpainting.com/blog/cabinet-painting-tips-every-homeowner-should-know"/>`,
-    subHeading: "",
-    subDescription: "",
-    conclusion: "",
-    conclusionDescription: "",
   },
 ];
