@@ -91,7 +91,7 @@ export default function OurServices() {
                       </p>
                     </CardContent>
                     <CardFooter className="py-1 text-center cursor-pointer hover:bg-[#0D378D] hover:text-white border border-black w-36 rounded-[5px] ml-3">
-                      <Link href={`/services/${service.slug}`}>
+                      <Link href={`/${service.slug}`}>
                         {service.buttonText}
                       </Link>
                     </CardFooter>
