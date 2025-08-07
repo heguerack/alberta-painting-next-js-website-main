@@ -6,9 +6,9 @@ export const viewport: Viewport = {
   initialScale: 1.0,
 };
 export const metadata: Metadata = {
-  title: "Gallery | Alberta Colour Painting",
+  title: "Gallery | Alberta Colour Painting – House & Commercial Painting",
   description:
-    "Looking for affordable Calgary painters? Our top-rated house painting company in Calgary offers professional interior and exterior painting services to meet all your needs.",
+    "Explore our professional painting projects across Calgary. The Alberta Colour Painting gallery features stunning interior & exterior transformations.",
   viewport: "width=device-width, initial-scale=1.0",
   keywords: [
     "calgary painters",

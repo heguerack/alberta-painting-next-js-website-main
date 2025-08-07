@@ -16,9 +16,9 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "Blogs | Alberta Colour Painting",
+  title: "Blogs | Alberta Colour Painting – Calgary Painting Tips & Trends",
   description:
-    "Looking for affordable Calgary painters? Our top-rated house painting company in Calgary offers professional interior and exterior painting services to meet all your needs.",
+    "Discover expert painting tips, colour trends, and home improvement ideas from Alberta Colour Painting—your Calgary painting professionals.",
   keywords: [
     "calgary painters",
     "painting companies calgary",
