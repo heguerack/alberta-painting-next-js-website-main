@@ -18,8 +18,14 @@ export const CalgaryPainting = () => {
 
             <p className="mb-8 text-sm md:text-base">
               Alberta Colour Painting is your trusted partner in Calgary,
-              offering detailed estimates and unparalleled painting services. As
-              a leading Calgary painting company, we pride ourselves on our
+              offering detailed estimates and unparalleled{" "}
+              <a
+                href="https://www.albertacolourpainting.com/services"
+                // className="text-blue"
+              >
+                painting services
+              </a>
+              . As a leading Calgary painting company, we pride ourselves on our
               professional and skilled Calgary painters.
             </p>
 

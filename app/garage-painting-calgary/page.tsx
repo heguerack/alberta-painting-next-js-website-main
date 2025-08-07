@@ -96,7 +96,14 @@ export default function garagePaintingPage() {
               And the best part? Top-tier quality doesn't have to break the
               bank! We offer affordable pricing without compromising on quality.
               Give your car a home that looks just as good as it does! Let's
-              upgrade your garage with our garage painting in Calgary
+              upgrade your garage with our{" "}
+              <a
+                href="https://www.albertacolourpainting.com/services"
+                className="text-blue"
+              >
+                {" "}
+                garage painting in Calgary
+              </a>
             </p>
           </div>
         </div>
@@ -147,9 +154,15 @@ export default function garagePaintingPage() {
           <p className="mb-6">
             So whether you're going for a clean, showroom-style garage or just
             want to protect and refresh a hardworking space, we've got you
-            covered. Alberta Colour Painting is your trusted partner for garage
-            painting in Calgary, offering high-quality work with precision and
-            great value.
+            covered. Alberta Colour Painting is your trusted partner for{" "}
+            <a
+              href="https://www.albertacolourpainting.com/services"
+              className="text-blue"
+            >
+              {" "}
+              garage painting in Calgary
+            </a>
+            , offering high-quality work with precision and great value.
           </p>
         </div>
       </div>

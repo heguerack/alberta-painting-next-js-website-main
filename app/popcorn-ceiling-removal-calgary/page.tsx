@@ -223,9 +223,15 @@ export default function popcornCeilingRemovalPage() {
             From a resale perspective, smooth ceilings improve aesthetics and
             increase your home’s resale value. Buyers see them as one less thing
             to update, giving you a competitive edge. Whether revamping your
-            forever home or getting ready to list, our popcorn ceiling removal
-            service in Calgary ensures a clean, modern finish that aligns and
-            adds lasting value.
+            forever home or getting ready to list, our
+            <a
+              href="https://www.albertacolourpainting.com/services"
+              className="text-blue"
+            >
+              {" "}
+              popcorn ceiling removal service in Calgary{" "}
+            </a>
+            ensures a clean, modern finish that aligns and adds lasting value.
           </p>
         </div>
       </div>

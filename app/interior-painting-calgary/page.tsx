@@ -89,10 +89,16 @@ export default function interiorPaintingCalgary() {
             <p>
               Whether you're updating your living space, revamping your dining
               hall, or want to infuse a new feel into your bedroom, our skilled
-              interior house painters in Calgary use premium, long-lasting
-              paints to deliver a sleek and polished look. We help you choose
-              the perfect colors and finishes to reflect your style and create
-              the atmosphere you want.
+              <a
+                href="https://www.albertacolourpainting.com/services"
+                className="text-blue"
+              >
+                {" "}
+                interior house painters in Calgary{" "}
+              </a>
+              use premium, long-lasting paints to deliver a sleek and polished
+              look. We help you choose the perfect colors and finishes to
+              reflect your style and create the atmosphere you want.
             </p>
             <p>
               Our process is quick and hassle-free, and we handle everything
@@ -122,12 +128,20 @@ export default function interiorPaintingCalgary() {
           </h3>
 
           <p className="text-black mb-4   ">
-            At our painting company in Calgary, interior painting is more than
-            just changing the shade or color of a space; it's about transforming
-            the entire atmosphere and creating a feeling of comfort and style. A
-            fresh coat of paint can breathe new life into a room, making it feel
-            more inviting, spacious, or even more sophisticated, depending on
-            the colors and finishes chosen.
+            At our
+            <a
+              href="https://www.albertacolourpainting.com"
+              className="text-blue"
+            >
+              {" "}
+              painting company in Calgary
+            </a>
+            , interior painting is more than just changing the shade or color of
+            a space; it's about transforming the entire atmosphere and creating
+            a feeling of comfort and style. A fresh coat of paint can breathe
+            new life into a room, making it feel more inviting, spacious, or
+            even more sophisticated, depending on the colors and finishes
+            chosen.
           </p>
           <p className="text-black mb-4   ">
             We understand that choosing the right colors and finishes can be a
