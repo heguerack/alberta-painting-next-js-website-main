@@ -24,14 +24,15 @@ type Props = {
 };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const slug = params.slug;
+  const slug = (await params)?.slug;
+  let post;
+  if (slug) {
+    post = blogPosts?.find((post) => post?.slug === slug);
+  }
 
   return {
-    title: `${slug
-      .replace(/-/g, " ")
-      .replace(/\b\w/g, (c) => c.toUpperCase())}`,
-    description:
-      "Alberta Colour Painting offers professional, reliable, and weather-smart exterior painting services for both homes and businesses.",
+    title: `${post?.metaTitle}`,
+    description: `${post?.metaDescription}`,
     alternates: {
       canonical: `https://www.albertacolourpainting.com/blog/${slug}`,
     },

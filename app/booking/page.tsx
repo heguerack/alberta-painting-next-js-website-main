@@ -5,9 +5,9 @@ export const viewport: Viewport = {
   initialScale: 1.0,
 };
 export const metadata: Metadata = {
-  title: "Booking | Alberta Colour Painting",
+  title: "Book Painting Services | Alberta Colour Painting Calgary",
   description:
-    "Looking for affordable Calgary painters? Our top-rated house painting company in Calgary offers professional interior and exterior painting services to meet all your needs.",
+    "Book your professional interior or exterior painting service in Calgary with Alberta Colour Painting. Easy scheduling and expert results.",
   keywords: [
     "calgary painters",
     "painting companies calgary",
