@@ -141,7 +141,7 @@ export default function commercialPaintingCalgary() {
           <p className="text-black  ">
             Our{" "}
             <a
-              href="https://www.albertacolourpainting.com/services"
+              href="https://www.albertacolourpainting.com/commercial-painting-calgary"
               className="text-blue"
             >
               commercial painters in Calgary

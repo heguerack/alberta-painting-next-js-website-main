@@ -98,7 +98,7 @@ export default function garagePaintingPage() {
               Give your car a home that looks just as good as it does! Let's
               upgrade your garage with our{" "}
               <a
-                href="https://www.albertacolourpainting.com/services"
+                href="https://www.albertacolourpainting.com/cabinet-painting-calgary"
                 className="text-blue"
               >
                 {" "}
@@ -154,13 +154,12 @@ export default function garagePaintingPage() {
           <p className="mb-6">
             So whether you're going for a clean, showroom-style garage or just
             want to protect and refresh a hardworking space, we've got you
-            covered. Alberta Colour Painting is your trusted partner for{" "}
+            covered. Alberta Colour Painting is your trusted partner for garage{" "}
             <a
-              href="https://www.albertacolourpainting.com/services"
+              href="https://www.albertacolourpainting.com"
               className="text-blue"
             >
-              {" "}
-              garage painting in Calgary
+              painting in Calgary
             </a>
             , offering high-quality work with precision and great value.
           </p>

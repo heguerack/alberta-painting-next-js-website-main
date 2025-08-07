@@ -100,7 +100,7 @@ export default function cabinetPaintingPage() {
               Your space should speak volumes of your style and vibe, and that
               is why we offer{" "}
               <a
-                href="https://www.albertacolourpainting.com/services"
+                href="https://www.albertacolourpainting.com/cabinet-painting-calgary"
                 className="text-blue"
               >
                 {" "}
@@ -157,7 +157,7 @@ export default function cabinetPaintingPage() {
           <p className=" ">
             And because we’re among the best{" "}
             <a
-              href="https://www.albertacolourpainting.com/services"
+              href="https://www.albertacolourpainting.com"
               className="text-blue"
             >
               {" "}
