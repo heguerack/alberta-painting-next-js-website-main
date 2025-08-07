@@ -74,9 +74,15 @@ export default function ProjectGalleryPage() {
           Our Painting Projects
         </h1>
         <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-          Explore some of the residential and commercial painting projects we've
-          completed across Calgary and surrounding areas. See the quality of our
-          work and get inspired for your next project!
+          Explore some of the residential and{" "}
+          <a
+            href="https://www.albertacolourpainting.com/commercial-painting-calgary"
+            className="text-blue"
+          >
+            commercial painting
+          </a>{" "}
+          projects we've completed across Calgary and surrounding areas. See the
+          quality of our work and get inspired for your next project!
         </p>
       </div>
 

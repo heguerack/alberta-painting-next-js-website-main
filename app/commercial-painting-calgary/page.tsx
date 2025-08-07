@@ -78,7 +78,14 @@ export default function commercialPaintingCalgary() {
               mean business! First impressions matter; a fresh, stylish paint
               job can make all the difference. If you want people to feel
               welcomed and your company to look its best, then commercial
-              painting in Calgary is exactly what you need.
+              <a
+                href="https://www.albertacolourpainting.com/"
+                className="text-blue"
+              >
+                {" "}
+                painting in Calgary
+              </a>{" "}
+              is exactly what you need.
             </p>
             <p>
               Are you a business owner looking to elevate your commercial space
@@ -132,9 +139,15 @@ export default function commercialPaintingCalgary() {
             also energize the people working within them.
           </p>
           <p className="text-black  ">
-            Our commercial painters in Calgary have shared a few fun facts about
-            how different colours can affect the vibe and energy of your space.
-            Check them out below!
+            Our{" "}
+            <a
+              href="https://www.albertacolourpainting.com/services"
+              className="text-blue"
+            >
+              commercial painters in Calgary
+            </a>{" "}
+            have shared a few fun facts about how different colours can affect
+            the vibe and energy of your space. Check them out below!
           </p>
           <div className="flex gap-4 ">
             <DotFranks />
@@ -202,7 +215,14 @@ export default function commercialPaintingCalgary() {
             between improving your space and staying operational.
           </p>
           <p className="text-black   ">
-            Our commercial painting services in Calgary offer:
+            Our commercial{" "}
+            <a
+              href="https://www.albertacolourpainting.com/services"
+              className="text-blue"
+            >
+              painting services in Calgary
+            </a>{" "}
+            offer:
           </p>
           <div className="flex gap-4 ">
             <DotFranks />

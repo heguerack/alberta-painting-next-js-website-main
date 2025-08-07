@@ -93,7 +93,13 @@ export default function exteriorPaintingCalgary() {
               fresh and transformed look so that it looks stylish,
               well-maintained, and stands the test of time. We use premium and
               certified paints to ensure your home's exterior meets the city’s
-              harsh climatic conditions. Our exterior house painting in Calgary
+              harsh climatic conditions. Our exterior{" "}
+              <a
+                href="https://www.albertacolourpainting.com/services"
+                className="text-blue"
+              >
+                house painting in Calgary{" "}
+              </a>
               covers a wide range of services from refreshing faded walls,
               protecting wooden surfaces, and updating your home's overall look.
               Our Calgary exterior painters take the time to thoroughly clean
@@ -147,9 +153,16 @@ export default function exteriorPaintingCalgary() {
             </p>
           </div>
           <p>
-            Our exterior painters in Calgary know just the right techniques and
-            methods to help address this issue, using the finest products and
-            repairing any damage in a timely manner.
+            Our{" "}
+            <a
+              href="https://www.albertacolourpainting.com/services"
+              className="text-blue"
+            >
+              exterior painters in Calgary{" "}
+            </a>
+            know just the right techniques and methods to help address this
+            issue, using the finest products and repairing any damage in a
+            timely manner.
           </p>
           <div className="flex gap-4 w-8/9 text-[15px]">
             <DotFranks />

@@ -98,14 +98,21 @@ export default function cabinetPaintingPage() {
             </p>
             <p>
               Your space should speak volumes of your style and vibe, and that
-              is why we offer custom cabinet painting in Calgary, understanding
-              your vision and bringing it to life. Our experts use a wide range
-              of colours and finishes to match your style and home décor through
-              a hassle-free process. Our team manages everything from cleaning
-              and sanding to priming and painting, ensuring a durable and
-              professional finish. By choosing our cabinet painting in Calgary,
-              you save money and make an eco-friendly choice by repurposing
-              existing materials.
+              is why we offer{" "}
+              <a
+                href="https://www.albertacolourpainting.com/services"
+                className="text-blue"
+              >
+                {" "}
+                custom cabinet painting in Calgary
+              </a>
+              , understanding your vision and bringing it to life. Our experts
+              use a wide range of colours and finishes to match your style and
+              home décor through a hassle-free process. Our team manages
+              everything from cleaning and sanding to priming and painting,
+              ensuring a durable and professional finish. By choosing our
+              cabinet painting in Calgary, you save money and make an
+              eco-friendly choice by repurposing existing materials.
             </p>
             <p>
               Don't settle for outdated, dull cabinets, and elevate your space's
@@ -148,10 +155,17 @@ export default function cabinetPaintingPage() {
             taste, and our local vibe.
           </p>
           <p className=" ">
-            And because we’re among the best cabinet painting companies in
-            Calgary, you’re getting more than just a service — you're getting a
-            team that knows the city, respects your home, and cares about
-            delivering results that last through all four seasons.
+            And because we’re among the best{" "}
+            <a
+              href="https://www.albertacolourpainting.com/services"
+              className="text-blue"
+            >
+              {" "}
+              cabinet painting companies in Calgary
+            </a>
+            , you’re getting more than just a service — you're getting a team
+            that knows the city, respects your home, and cares about delivering
+            results that last through all four seasons.
           </p>
 
           <h3 className="lg:text-[32px] text-[24px] font-bold text-[#0D378D]">
