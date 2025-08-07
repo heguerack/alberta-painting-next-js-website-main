@@ -28,12 +28,13 @@ export default function EcofriendlySection() {
             Got leftover paint? We've got you covered! We'll collect any unused
             paint and take it to our shop, ensuring it gets properly recycled
             instead of wasted. Plus, all materials from our projects, like
-            garbage, cardboard, and plastics,{" "}
+            garbage, cardboard, and plastics,Our
             <a
               href="https://www.albertacolourpainting.com/"
               className="text-blue"
             >
-              Our painting company in Calgary
+              {" "}
+              painting company in Calgary{" "}
             </a>
             focuses on making a clean and green impact on the environment while
             ensuring perfection in every project that we undertake.

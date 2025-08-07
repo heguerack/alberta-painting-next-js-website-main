@@ -225,7 +225,7 @@ export default function popcornCeilingRemovalPage() {
             to update, giving you a competitive edge. Whether revamping your
             forever home or getting ready to list, our
             <a
-              href="https://www.albertacolourpainting.com/services"
+              href="https://www.albertacolourpainting.com/popcorn-ceiling-removal-calgary"
               className="text-blue"
             >
               {" "}

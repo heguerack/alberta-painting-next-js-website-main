@@ -95,7 +95,7 @@ export default function exteriorPaintingCalgary() {
               certified paints to ensure your home's exterior meets the city’s
               harsh climatic conditions. Our exterior{" "}
               <a
-                href="https://www.albertacolourpainting.com/services"
+                href="https://www.albertacolourpainting.com"
                 className="text-blue"
               >
                 house painting in Calgary{" "}
@@ -155,7 +155,7 @@ export default function exteriorPaintingCalgary() {
           <p>
             Our{" "}
             <a
-              href="https://www.albertacolourpainting.com/services"
+              href="https://www.albertacolourpainting.com/exterior-painting-calgary"
               className="text-blue"
             >
               exterior painters in Calgary{" "}

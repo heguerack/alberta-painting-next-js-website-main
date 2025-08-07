@@ -90,7 +90,7 @@ export default function interiorPaintingCalgary() {
               Whether you're updating your living space, revamping your dining
               hall, or want to infuse a new feel into your bedroom, our skilled
               <a
-                href="https://www.albertacolourpainting.com/services"
+                href="https://www.albertacolourpainting.com/interior-painting-calgary"
                 className="text-blue"
               >
                 {" "}
