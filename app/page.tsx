@@ -22,9 +22,10 @@ export const viewport: Viewport = {
   initialScale: 1.0,
 };
 export const metadata: Metadata = {
-  title: "Painting Company with Expert Calgary Painters for House Painting",
+  title:
+    "Expert Calgary Painters for Interior and Exterior House Painting Services",
   description:
-    "Looking for affordable Calgary painters? Our top-rated painting contractors offer professional house painting services to meet all your needs.",
+    "Looking for affordable Calgary painters? Our top-rated house painting company in Calgary offers professional interior and exterior painting services to meet all your needs.",
   keywords: [
     "calgary painters",
     "painting companies calgary",

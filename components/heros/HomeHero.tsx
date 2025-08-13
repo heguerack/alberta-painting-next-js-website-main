@@ -25,9 +25,9 @@ const HomeHero = () => {
             <h1 className="text-4xl md:text-6xl font-bold text-white mb-4">
               EXPERT <span className="bg-reveal">CALGARY PAINTERS</span>
             </h1>{" "}
-            <p className="text-xl md:text-2xl text-white mb-8">
+            <h2 className="text-xl md:text-2xl text-white mb-8">
               for Interior and Exterior House Painting Services
-            </p>
+            </h2>
             <HeroCallToAction />
           </div>
         </div>
